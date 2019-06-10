@@ -1,55 +1,260 @@
-body {
-  padding-bottom: 5rem;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  width: 100%;
+}
+
+.full-width {
+
 }
 
 header {
-  background: url(../images/snorkeling.png) center / cover;
-  height: 80vh;
-  justify-content: center;
-  text-align: left;
+  background-color: #E8F3F2;
+  padding: 1rem;
 }
 
-h1 {
-  color: hsla(0, 0%, 100%, 90%);
+.hero {
+  height: 100vh;
+  object-fit: cover;
+  text-align: center;
+}
+
+.process-summary {
+  padding: 5%;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 20vh;
+}
+
+.hero-text {
+  color: #E8F3F2;
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  position: absolute;
+  top: 60vh;
+  font-size: 2rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.bold {
   font-weight: bold;
-  padding-left: 10%;
-  padding-top: 2em;
 }
 
-.slogan {
-  color: hsla(0, 0%, 100%, 80%);
-  font-size: 1.6rem;
-  font-weight: lighter;
-  padding-left: 10%;
+.intro {
+  padding: 5%;
 }
 
-main {
-  max-width: 900px;
+.image-centered {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.project-description {
-  padding-left: 0;
+.icon-mobile {
+  position: relative;
+  width: 33px;
+  height: auto;
+}
+
+.image-mobile-full {
+  height: auto;
+  width: 100%;
+}
+
+.image-mobile-padding {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: auto;
+  width: 100%;
 }
 
 .project {
-  img-width: 100%;
+  background-color: #F9F9FA;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding-top: 6rem;
 }
 
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: .5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+.social {
+  margin: 2rem;
 }
 
-footer.mdl-mini-footer > ul {
-  font-size: 2rem;
-  margin: auto;
+.process-1 {
+  margin-left: 5%;
 }
 
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+.process-2 {
+  margin-left: 20%;
+}
+
+.process-3 {
+  margin-left: 40%;
+}
+
+.process-4 {
+  margin-left: 60%;
+}
+
+blockquote {
+  font-size: 1.9rem;
+  color: #730039;
+  font-family: Nunito; "sans serif";
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  text-align: center;
+  background-color: #035F68;
+  color: #F9F9FA;
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-size: 2.6rem;
+  font-weight: regular;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  color: ;
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-size: 1.3rem;
+  font-weight: semibold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #3B3F41;
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-size: 2.6rem;
+  line-height: 120%;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+h4 {
+  color: #730039;
+  font-family: Nunito; "sans serif";
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+h5 {
+  color: #3B3F41;
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-size: 1.8rem;
+  font-weight: semibold;
+  line-height: 141%;
+}
+
+li {
+  color: #3B3F41;
+  font-family: Nunito; "sans serif";
+  font-size: 1.6rem;
+  font-weight: lighter;
+  margin-bottom: .75rem;
+}
+
+.small-list {
+  font-size: 1.4rem;
+}
+
+p {
+  color: #3B3F41;
+  font-family: Nunito; "sans serif";
+  font-size: 1.6rem;
+  font-weight: lighter;
+  line-height: 141%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 1.4rem;
+}
+
+a {
+  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-size: 1.3rem;
+  font-weight: semibold;
+  text-transform: uppercase;
+}
+
+button {
+  background-color: #EF3B68;
+  color: #F2F2F3;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: #035F68;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+/* dogear case study*/
+
+.case-study-hero {
+
+}
+
+.phase-intro {
+
+}
+
+.grey {
+  background-color: #F9F9FA;
+}
+
+.centered {
+
+}
+
+.body-bullet {
+  font-size: 1.6rem;
+  list-style-type: disc;
+  list-style-position: inside;
+  list-style-image: none;
+}
+
+.key-takeaway {
+
+}
+
+hr {
+  background-color: #E8F3F2;
+  display: block;
+  height: 1.5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+.persona-photo {
+
+}
+
+h6 {
+  font-family: Nunito; "sans serif";
+  font-size: 1.4rem;
+  font-weight: semibold;
+  padding-bottom: .5rem;
+}
+
+.content {
+  padding: 2rem;
 }

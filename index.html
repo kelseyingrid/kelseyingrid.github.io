@@ -1,83 +1,122 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta charset="utf-8">
     <title>Portfolio | Kelsey Jacobsen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Material Design lite-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<!--Font Awesome-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
-<!--Custom styles-->
+    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
+
   <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Kelsey Jacobsen</h1>
-      <p class="slogan">UX and UI designer with one foot in the ocean</p>
-    </header>
-    <main class="mdl-layout__content mdl-grid">
-      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-           <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-         </div>
-         <div class="mdl-cell mdl-cell--7-col">
-           <h2 class="mdl-card__title-text">Featured Project Name</h2>
-           <p class="project-description mdl-card__supporting-text">Project description text</p>
-         </div>
-       </div>
-       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-         <div>
-           <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-         </div>
-         <div class="mdl-card__title">
-           <h2 class="mdl-card__title-text">Project Name</h2>
-         </div>
-         <div class="mdl-card__supporting-text">Project description text</div>
-       </div>
+    <div class="container">
+      <header>
+        <img src="images/logo-for-header.png">
+        <a href="dogear.html">WORK</a>
+        <a href="___">BIO</a>
+        <a href="___">CONTACT</a>
+      </header>
 
-       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-         <div>
-           <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-         </div>
-         <div class="mdl-card__title">
-           <h2 class="mdl-card__title-text">Project Name</h2>
-         </div>
-         <div class="mdl-card__supporting-text">Project description text</div>
-       </div>
+      <section class="hero">
+        <img src="images/hero-water.png" alt="rippling water surface" class="hero">
+        <img src="images/hero-logo.png" alt="Kelsey Jacobsen logo" class="hero-logo">
+        <div class="hero-text">digital product designer</div>
+      </section>
 
-       <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-         <div>
-           <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-         </div>
-         <div class="mdl-card__title">
-           <h2 class="mdl-card__title-text">Project Name</h2>
-         </div>
-         <div class="mdl-card__supporting-text">Project description text</div>
-       </div>
-    </main>
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.linkedin.com/in/kelseyingrid/">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/kelseyingrid">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/kelseyingrid">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li> <a href="mailto:kelseyingrid@gmail.com">
-          <i class="fa fa-envelope-square" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </footer>
+      <main>
+        <section class="intro">
+          <p>Hello!</p>
+          <h3>I'm Kelsey,<br>a UX and UI designer<br>in Oakland, CA</h3>
+          <p>I take an <span class="bold">ecosystem approach to design</span>, creating UX and UI that will thrive in the wild.</p>
+        </section>
+
+        <img src="images/banana-drop.png" alt="water droplets on banana leaves">
+
+        <section class="intro">
+          <p>With an background in environmental conservation, I want to know:</p>
+          <blockquote>In what environment does the product live?</blockquote>
+          <blockquote>Who depends on it?</blockquote>
+          <p>And - let’s get real - the birds with the best looking feathers get the mate, so...</p>
+          <blockquote>How can I evolve the design to help it stand out from the flock?</blockquote>
+          <button>view bio</button>
+        </section>
+
+        <img src="images/mobile/feathers.png" alt="feathers">
+
+        <h1>Design process</h1> <!--seems odd to have this hanging by itself, but I wanted it to be full-width.-->
+
+        <section class="process-summary">
+          <h4>Here’s a summary of my typical steps.</h4>
+          <img src="images/icon-research.png" class="icon">
+          <img src="images/process-1.png" class="process-1">
+          <h5>Research and scoping</h5>
+            <ul>
+              <li>Surveys, interviews, and problem identification</li>
+              <li>Competitive analysis</li>
+              <li>User personas</li>
+              <li>User stories</li>
+            </ul>
+            <img src="images/icon-info-arch.png">
+            <img src="images/process-2.png" class="process-2">
+          <h5>Information architecture</h5>
+            <ul>
+              <li>User flows</li>
+              <li>Sitemapping</li>
+              <li>Content strategy</li>
+              <li>Sketching and wireframes</li>
+              <li>Prototyping</li>
+              <li>User testing</li>
+            </ul>
+            <img src="images/icon-visual-design.png">
+            <img src="images/process-3.png" class="process-3">
+          <h5>Visual design</h5>
+            <ul>
+              <li>Name and logo design</li>
+              <li>Style guides</li>
+              <li>High-fidelity mockups and prototypes</li>
+              <li>Preference testing</li>
+              <li>User testing</li>
+            </ul>
+            <img src="images/icon-dev-deploy.png">
+            <img src="images/process-4.png" class="process-4">
+          <h5>Development and deployment</h5>
+            <ul>
+              <li>Basic frontend</li>
+              <li>Developer deliverables</li>
+              <li>Process presentation</li>
+              <li>User testing</li>
+            </ul>
+        </section>
+
+        <img src="images/mobile/trees.png" alt="aerial view of trees">
+
+        <feature class="work">
+          <h1>Work</h1>
+          <section class="project">
+            <img src="images/dogear-for-landing.png" alt="dogear dashboard shown on a laptop" class="image-centered">
+            <img src="images/dogear-logo.png" alt="dogear logo" class="image-centered">
+            <h4>Ease your writing process</h4>
+            <button>VIEW CASE STUDY</button>
+          </section>
+        </feature>
+        <img src="images/mobile/coral.png" alt="branching fan coral resembling Kelsey's personal logo" class="divider">
+      </main>
+
+      <footer class="content">
+        <img src="images/logo-for-footer.png">
+        <h4>Want to get in touch?</h4>
+        <p>Shoot me a line at kelseyingrid@gmail.com</p>
+        <a href="https://www.linkedin.com/in/kelseyingrid/" class="social">
+          <img src="images/linkedin.png">
+        </a>
+        <a href="https://github.com/kelseyingrid" class="social">
+          <img src="images/github.png">
+        </a>
+        <a href="https://www.instagram.com/kelseyingrid8/" class="social">
+          <img src="images/instagram.png">
+        </a>
+      </footer>
+    </container>
   </body>
 </html>
