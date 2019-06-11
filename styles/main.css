@@ -10,7 +10,22 @@ html {
   width: 100%;
 }
 
-.full-width {
+.img-wrapper > img {
+  height: auto;
+  width: 100%;
+}
+
+.img-wrapper-med > img {
+    height: auto;
+    width: 75%;
+}
+
+.img-wrapper-small > img {
+    height: auto;
+    width: 50%;
+}
+
+.work {
 
 }
 
@@ -25,8 +40,8 @@ header {
   text-align: center;
 }
 
-.process-summary {
-  padding: 5%;
+.design-process {
+
 }
 
 .hero-logo {
@@ -49,30 +64,13 @@ header {
 }
 
 .intro {
-  padding: 5%;
-}
 
-.image-centered {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .icon-mobile {
   position: relative;
   width: 33px;
   height: auto;
-}
-
-.image-mobile-full {
-  height: auto;
-  width: 100%;
-}
-
-.image-mobile-padding {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  height: auto;
-  width: 100%;
 }
 
 .project {
@@ -209,11 +207,7 @@ footer {
 /* dogear case study*/
 
 .case-study-hero {
-
-}
-
-.phase-intro {
-
+  text-align: center;
 }
 
 .grey {
@@ -221,7 +215,7 @@ footer {
 }
 
 .centered {
-
+  text-align: center;
 }
 
 .body-bullet {
@@ -231,8 +225,12 @@ footer {
   list-style-image: none;
 }
 
-.key-takeaway {
 
+/* padding isn't working */
+.key-takeaway {
+  height: auto;
+  padding: 2rem;
+  width: 100%;
 }
 
 hr {
@@ -244,8 +242,9 @@ hr {
   width: 10%;
 }
 
-.persona-photo {
-
+.persona-img > img {
+  height: auto;
+  width: 30%;
 }
 
 h6 {
