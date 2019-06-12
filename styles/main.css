@@ -125,12 +125,18 @@ header {
 }
 
 .key-takeaway {
-  align-items: center;
-  background: url("images/mobile/parentheses.png");
+  background-image: url("/images/mobile/parentheses.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
   padding: 5%;
+}
+
+.key-takeaway p {
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
 .survey-flex {
@@ -419,8 +425,6 @@ a {
 
 .img-wrapper > img {
   height: auto;
-  /* margin-bottom: 2rem;
-  margin-top: 2rem; */
   width: 100%;
 }
 
@@ -442,6 +446,10 @@ a {
   width: 50%;
 }
 
+.std-shadow {
+  box-shadow: -1px 4px 8px #E0E0E0;
+}
+
 .hero-logo {
   /* margin-left: auto;
   margin-right: auto;
@@ -451,8 +459,8 @@ a {
 
 .icon-mobile {
   position: relative;
-  width: 33px;
-  height: auto;
+  height: 3rem;
+  width: auto;
 }
 
 .persona-photo, .persona-profile {
@@ -472,20 +480,30 @@ a {
   margin: 0 5%;
 }
 
+.process-1, .process-2, .process-3, .process-4 {
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+margin: 4rem 5%;
+/* margin-bottom: 4rem;
+margin-top: 4rem; */
+padding: 5%;
+}
+
 .process-1 {
-  margin-left: 5%;
+  background-image: url("/images/mobile/process-1-background.png");
 }
 
 .process-2 {
-  margin-left: 20%;
+  background-image: url("/images/mobile/process-2-background.png");
 }
 
 .process-3 {
-  margin-left: 40%;
+  background-image: url("/images/mobile/process-3-background.png");
 }
 
 .process-4 {
-  margin-left: 60%;
+  background-image: url("/images/mobile/process-4-background.png");
 }
 
 .overview-section .icon-mobile {
