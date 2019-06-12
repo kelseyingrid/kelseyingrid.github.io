@@ -12,52 +12,66 @@
   <body>
     <div class="container">
       <header>
-        <img src="images/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral">
-        <a href="dogear.html">WORK</a>
-        <a href="___">BIO</a>
-        <a href="___">CONTACT</a>
+        <ul class="header-flex">
+          <li class="header-logo">
+            <a href="index.html" class="image-icon">
+              <img src="images/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral">
+            </a>
+          </li>
+          <li class="header-work"><a href="dogear.html">work</a></li>
+          <li class="header-bio"><a href="bio.html">bio</a></li>
+          <li class=header.contact><a href="contact.html">contact</a></li> <!--change link to jump to end of page-->
+        </ul>
       </header>
 
       <section class="hero">
-        <div class="img-wrapper">
-          <img src="images/hero-water.png" alt="full-screen photo of rippling water surface" class="hero">
+        <img src="images/hero-water.png" alt="full-screen photo of rippling water surface">
+        <div class="hero-content">
+          <div class="img-wrapper-small">
+            <img src="images/hero-logo.png" alt="Kelsey Jacobsen's logo" class="hero-logo">
+          </div>
+          <div class="hero-text">digital product designer</div>
         </div>
-        <div class="img-wrapper-small">
-          <img src="images/hero-logo.png" alt="Kelsey Jacobsen's logo" class="hero-logo">
-        </div>
-        <div class="hero-text">digital product designer</div>
       </section>
 
       <main>
-        <section class="intro">
-          <div class="content">
-            <p>Hello!</p>
+        <section>
+          <div class="content intro-1">
+            <h4>Hello!</h4>
             <h3>I'm Kelsey,<br>a UX and UI designer<br>in Oakland, CA</h3>
-            <p>I take an <span class="bold">ecosystem approach to design</span>, creating UX and UI that will thrive in the wild.</p>
+            <h4>I take an <span class="bold">ecosystem approach to design</span>, creating UX and UI that will thrive in the wild.</h4>
           </div>
           <div class="img-wrapper">
             <img src="images/banana-drop.png" alt="water droplets on banana leaves">
           </div>
           <div class="content">
+            <br>
             <p>With an background in environmental conservation, I want to know:</p>
             <blockquote>In what environment does the product live?</blockquote>
             <blockquote>Who depends on it?</blockquote>
+            <br>
             <p>And - let’s get real - the birds with the best looking feathers get the mate, so...</p>
             <blockquote>How can I evolve the design to help it stand out from the flock?</blockquote>
-            <button>view bio</button>
-          </div>
-          <div class="img-wrapper">
-            <img src="images/mobile/feathers.png" alt="feathers">
+            <br>
+            <br>
+            <a href="bio.html">
+              <div class="button-flex">
+                <button>view bio</button>
+              </div>
+            </a>
           </div>
         </section>
 
         <section class="design-process">
+          <div class="img-wrapper">
+            <img src="images/mobile/feathers.png" alt="feathers">
+          </div>
           <h1>Design process</h1>
           <div class="content">
             <h4>Here’s a summary of my typical steps.</h4>
           </div>
-          <div class="content">
-            <img src="images/icon-research.png" alt="research icon" class="icon">
+          <div class="content"> <!--might need to take out process-desc from all these-->
+            <img src="images/icon-research.png" alt="research icon" class="icon-mobile">
             <img src="images/process-1.png" alt="the number one" class="process-1">
             <h5>Research and scoping</h5>
               <ul>
@@ -68,7 +82,7 @@
               </ul>
           </div>
           <div class="content">
-            <img src="images/icon-info-arch.png" alt="information architecture icon">
+            <img src="images/icon-info-arch.png" alt="information architecture icon" class="icon-mobile">
             <img src="images/process-2.png" alt="the number two" class="process-2">
             <h5>Information architecture</h5>
               <ul>
@@ -81,7 +95,7 @@
               </ul>
           </div>
           <div class="content">
-            <img src="images/icon-visual-design.png" alt="visual design icon">
+            <img src="images/icon-visual-design.png" alt="visual design icon" class="icon-mobile">
             <img src="images/process-3.png" alt="the number three" class="process-3">
             <h5>Visual design</h5>
               <ul>
@@ -93,7 +107,7 @@
               </ul>
           </div>
           <div class="content">
-            <img src="images/icon-dev-deploy.png" alt="development and deployment icon">
+            <img src="images/icon-dev-deploy.png" alt="development and deployment icon" class="icon-mobile">
             <img src="images/process-4.png" alt="the number four" class="process-4">
             <h5>Development and deployment</h5>
               <ul>
@@ -102,30 +116,39 @@
                 <li>Process presentation</li>
                 <li>User testing</li>
               </ul>
-          </div>
-          <div class="img-wrapper">
-            <img src="images/mobile/trees.png" alt="aerial view of trees">
+            <br>
           </div>
         </section>
 
         <section class="work">
+          <div class="img-wrapper">
+            <img src="images/mobile/trees.png" alt="aerial view of trees">
+          </div>
           <h1>Work</h1>
           <section class="project">
             <div class="img-wrapper">
               <img src="images/dogear-for-landing.png" alt="dogear dashboard shown on a laptop">
             </div>
+            <br>
+            <br>
             <div class="img-wrapper-small">
               <img src="images/dogear-logo.png" alt="dogear logo">
             </div>
             <h4>Ease your writing process</h4>
-            <button>VIEW CASE STUDY</button>
+            <a href="dogear.html">
+              <div class="button-flex">
+                <button>view case study</button>
+              </div>
+            </a>
           </section>
         </section>
-        <img src="images/mobile/coral.png" alt="branching fan coral resembling Kelsey's personal logo">
       </main>
 
+      <div class="img-wrapper">
+        <img src="images/mobile/coral.png" alt="branching fan coral resembling Kelsey's personal logo">
+      </div>
       <footer class="content">
-        <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo">
+        <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo" class="logo-footer">
         <h4>Want to get in touch?</h4>
         <p>Shoot me a line at kelseyingrid@gmail.com</p>
         <a href="https://www.linkedin.com/in/kelseyingrid/" class="social">
@@ -138,6 +161,6 @@
           <img src="images/instagram.png" alt="Instagram logo">
         </a>
       </footer>
-    </container>
+    </div>
   </body>
 </html>
