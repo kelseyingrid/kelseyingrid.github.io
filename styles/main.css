@@ -12,6 +12,10 @@ html {
   width: 100%;
 }
 
+main {
+  padding-top: 7rem;
+}
+
 /* -------------------------------------------------------- */
 /* sections and flex*/
 
@@ -128,7 +132,7 @@ header {
   background-image: url("/images/mobile/parentheses.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 90% 100%;
   margin-bottom: 4rem;
   margin-top: 4rem;
   padding: 5%;
