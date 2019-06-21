@@ -60,10 +60,6 @@ header {
   width: 100vw;
 }
 
-.blobs {
-  width: 100vw;
-}
-
 .design-process {
 
 }
@@ -73,9 +69,9 @@ header {
 }
 
 .intro {
-  background-color: #E8F3F2;
+  background-color: #F9F9FA;
   padding-bottom: 4rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
   position: relative;
 }
 
@@ -84,17 +80,12 @@ header {
   z-index: 2;
 }
 
-
-.intro .button-flex {
-  margin: 0;
-}
-
 .project {
   background-color: #F9F9FA;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
   margin-top: 2rem;
-  padding-bottom: 3rem;
+  padding-bottom: 0;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 6rem;
@@ -104,9 +95,16 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 90vw;
   margin-bottom: 3rem;
-  min-width: 80%;
+}
+
+.intro .button-flex {
+  margin: 0 auto;
+}
+
+.work .button-flex {
+  padding-bottom: 0;
 }
 
 .case-study-hero {
@@ -128,6 +126,10 @@ header {
 
 .process-step {
   margin-bottom: 2rem;
+}
+
+.process-step:active {
+  top: 1px;
 }
 
 /* .process-list, .process-icon {
@@ -178,8 +180,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% 100%;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+  margin-bottom: 7rem;
+  margin-top: 5rem;
   padding: 5%;
 }
 
@@ -355,13 +357,13 @@ h4 {
   color: #3B3F41;
   margin-left: 5%;
   margin-right: 5%;
-  padding-bottom: 0;
+  padding-bottom: 1rem;
   padding-top: 0;
 }
 
 .project h4 {
   color: #05055E;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   padding-top: 0rem;
 }
 
@@ -405,6 +407,11 @@ h5 {
 
 .persona-profile h5 {
   margin-top: 0;
+}
+
+.underline:active {
+  color: #D4345C;
+  top: 1px;
 }
 
 .underline::after {
@@ -485,6 +492,10 @@ header li {
   font-size: 1.4rem;
 }
 
+.extra-space-top {
+  margin-top: 3rem;
+}
+
 
 /* -------------------------------------------------------- */
 /* Button and link styling */
@@ -497,23 +508,25 @@ button {
   font-family: "josefin sans", "brandon grotesque", "sans serif";
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  min-width: 80%;
+  min-width: 70vw;
   padding-bottom: 1.25rem;
   padding-top: 1.5rem;
+  position: relative;
   text-align: center;
   text-transform: uppercase;
 }
 
 button:active {
-  background-color: #D4224E;
+  background-color: #D4345C;
   top: 1px;
 }
 
 .case-study-hero button {
   display: block;
-  margin-bottom: -2rem;
+  margin-bottom: -5rem;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3rem;
   position: relative;
 }
 
@@ -521,6 +534,12 @@ button:active {
   display: block;
   margin-bottom: -6rem;
   margin-top: 3rem;
+  position: relative;
+}
+
+.work button {
+  display: block;
+  margin-bottom: -2rem;
   position: relative;
 }
 
@@ -533,6 +552,18 @@ a {
   text-transform: uppercase;
 }
 
+.process-steps a {
+  text-transform: none;
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor a {
+  position: absolute;
+  top: -8rem;
+}
 
 /* -------------------------------------------------------- */
 /* Image and icon styling */
@@ -540,7 +571,7 @@ a {
 .blobs {
   display: block;
   margin-bottom: -64rem;
-  margin-top: -15rem;
+  margin-top: -20rem;
   position: absolute;
   width: 100vw;
   z-index: 1;
@@ -552,8 +583,6 @@ a {
   width: 100%;
   margin-bottom: 3rem;
   margin-top: 3rem;
-  /* position: relative; */
-  /* z-index: 1; */
 }
 
 .img-wrapper > img {
@@ -688,8 +717,8 @@ a {
 
 .grey {
   background-color: #F9F9FA;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
   padding-bottom: 4rem;
   padding-top: 2rem;
 }
