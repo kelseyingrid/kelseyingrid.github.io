@@ -24,7 +24,7 @@ header {
   padding: 2rem 5%;
   position: fixed;
   width: 100vw;
-  z-index: 2;
+  z-index: 3;
 }
 
 .header-flex {
@@ -78,6 +78,12 @@ header {
   padding-top: 3rem;
   position: relative;
 }
+
+.intro-1, .intro-2 {
+  position: relative;
+  z-index: 2;
+}
+
 
 .intro .button-flex {
   margin: 0;
@@ -498,6 +504,11 @@ button {
   text-transform: uppercase;
 }
 
+button:active {
+  background-color: #D4224E;
+  top: 1px;
+}
+
 .case-study-hero button {
   display: block;
   margin-bottom: -2rem;
@@ -530,7 +541,9 @@ a {
   display: block;
   margin-bottom: -64rem;
   margin-top: -15rem;
+  position: absolute;
   width: 100vw;
+  z-index: 1;
 }
 
 .hello-img {
