@@ -23,7 +23,7 @@ header {
   background-color: #E8F3F2;
   padding: 2rem 5%;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -43,8 +43,8 @@ header {
 
 .hero {
   height: 100vh;
-  object-fit: cover;
   text-align: center;
+  width: 100vw;
 }
 
 /* centering seems like a hack */
@@ -53,6 +53,11 @@ header {
   top: 30vh;
   left: calc(50% - 40%);
   width: 80%;
+}
+
+.hero-img, .blobs {
+  object-fit: cover;
+  width: 100vw;
 }
 
 .design-process {
@@ -285,6 +290,7 @@ h2 {
   font-family: "Josefin sans", "brandon grotesque", "sans serif";
   font-size: 1.3rem;
   font-weight: semibold;
+  line-height: 141%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -462,7 +468,7 @@ button {
   font-family: "josefin sans", "brandon grotesque", "sans serif";
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  min-width: 70%;
+  min-width: 80%;
   padding-bottom: 1.25rem;
   padding-top: 1.5rem;
   text-align: center;
@@ -501,7 +507,7 @@ a {
   display: block;
   margin-bottom: -64rem;
   margin-top: -15rem;
-  width: 100%;
+  width: 100vwF;
 }
 
 .hello-img {
@@ -519,11 +525,15 @@ a {
   margin-top: 0;
 }
 
-.img-wrapper-med > img {
+.img-wrapper-med img {
   height: auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
   width: 75%;
+}
+
+.pref-test-flex img {
+  margin: 0;
 }
 
 .img-wrapper-small > img {
@@ -605,6 +615,7 @@ a {
 .persona-img, .persona-img-left {
   height: auto;
   flex: 1.8;
+  margin-top: 1rem;
 }
 
 .persona-img-right {
@@ -619,6 +630,7 @@ a {
 
 .persona-profile {
   flex: 2;
+  margin-top: 1rem;
 }
 
 .persona-img-left > img {
@@ -666,7 +678,7 @@ hr {
   background-image: url("/images/background-triangle.png");
   background-position: top;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 110% auto;
 }
 
 .animation {
