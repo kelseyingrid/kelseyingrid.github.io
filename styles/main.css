@@ -74,15 +74,19 @@ header {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  padding-bottom: 3rem;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 6rem;
 }
 
 .button-flex {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  min-width: 80%;
   max-width: 100%;
-  align-items: center;
+  margin-bottom: 3rem;
+  min-width: 80%;
 }
 
 .case-study-hero {
@@ -93,7 +97,7 @@ header {
 .process-steps {
   background-color: #E8F3F2;
   padding-bottom: 3rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .process-steps-flex {
@@ -104,6 +108,27 @@ header {
 
 .process-step {
   margin-bottom: 2rem;
+}
+
+/* .process-list, .process-icon {
+  align-items: top;
+} */
+
+.process-list {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+
+.process-icon {
+  display: inline-block;
+  margin: 0;
+  width: 15%;
+  vertical-align: top;
+}
+
+.process-1 {
+
 }
 
 .phase {
@@ -167,22 +192,31 @@ header {
 }
 
 .pref-test-flex {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .option-a {
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .option-b {
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .option-c {
+  width: 90%;
   max-width: 400px;
+  text-align: center;
+}
+
+.add-solution-text {
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  text-align: left;
 }
 
 .final-thoughts {
@@ -294,7 +328,8 @@ h4 {
 
 .project h4 {
   color: #05055E;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
+  padding-top: 0rem;
 }
 
 .case-study-hero h4 {
@@ -330,6 +365,15 @@ h5 {
   position: relative;
 }
 
+.process-list h5 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.persona-profile h5 {
+  margin-top: 0;
+}
+
 .underline::after {
   background-color: #EF3B68;
   bottom: 0;
@@ -344,7 +388,17 @@ h6 {
   font-family: Nunito; "sans serif";
   font-size: 1.4rem;
   font-weight: semibold;
+  line-height: 141%;
   margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+ul + h6 {
+  margin-top: 2rem;
+}
+
+.pref-test-flex h6 {
+  margin-top: 2rem;
 }
 
 p {
@@ -374,6 +428,7 @@ li {
   font-family: Nunito; "sans serif";
   font-size: 1.6rem;
   font-weight: lighter;
+  line-height: 141%;
   margin-bottom: 1rem;
 }
 
@@ -397,7 +452,7 @@ header li {
 
 
 /* -------------------------------------------------------- */
-/* Button link styling */
+/* Button and link styling */
 
 button {
   background-color: #EF3B68;
@@ -414,6 +469,21 @@ button {
   text-transform: uppercase;
 }
 
+.case-study-hero button {
+  display: block;
+  margin-bottom: -2rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.intro-2 button {
+  display: block;
+  margin-bottom: -5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
 a {
   color: #035F68;
   font-family: "Josefin sans", "brandon grotesque", "sans serif";
@@ -427,7 +497,20 @@ a {
 /* -------------------------------------------------------- */
 /* Image and icon styling */
 
+.blobs {
+  display: block;
+  margin-bottom: -64rem;
+  margin-top: -15rem;
+  width: 100%;
+}
+
+.hello-img {
+  position: relative;
+  z-index: -1;
+}
+
 .img-wrapper > img {
+  display: block;
   height: auto;
   width: 100%;
 }
@@ -467,14 +550,6 @@ a {
   width: auto;
 }
 
-.persona-photo, .persona-profile {
-  display: inline-block;
-}
-
-/* .persona-intro {
-  float: left;
-} */
-
 .logo-footer {
   height: auto;
   width: 7%;
@@ -485,17 +560,17 @@ a {
 }
 
 .process-1, .process-2, .process-3, .process-4 {
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-margin: 4rem 5%;
-/* margin-bottom: 4rem;
-margin-top: 4rem; */
-padding: 5%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 2rem 5%;
+  padding-top: 3rem;
 }
 
 .process-1 {
   background-image: url("/images/mobile/process-1-background.png");
+  background-position: top;
+  margin-bottom: 0;
 }
 
 .process-2 {
@@ -508,6 +583,7 @@ padding: 5%;
 
 .process-4 {
   background-image: url("/images/mobile/process-4-background.png");
+  margin-bottom: 4rem;
 }
 
 .overview-section .icon-mobile {
@@ -515,14 +591,44 @@ padding: 5%;
   margin-top: 4rem;
 }
 
-.persona-img > img {
+.persona-1-flex, .persona-2-flex, .persona-3-flex {
+  justify-content: space-around;
+  align-items: top;
+  display: flex;
+  flex-direction: row;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.persona-img, .persona-img-left {
+  height: auto;
+  flex: 1.8;
+}
+
+.persona-img-right {
+  border-radius: 2px;
+  box-shadow: -1px 4px 8px #BDBDBD;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  width: 90%
+}
+
+.persona-profile {
+  flex: 2;
+}
+
+.persona-img-left > img {
   border-radius: 2px;
   box-shadow: -1px 4px 8px #BDBDBD;
   height: auto;
   margin-bottom: 1.5rem;
-  width: 40%
+  margin-right: 1rem;
+  width: 90%
 }
-
 
 /* -------------------------------------------------------- */
 /* Spacing and colors */
@@ -531,7 +637,7 @@ padding: 5%;
   background-color: #F9F9FA;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   padding-top: 2rem;
 }
 
@@ -554,6 +660,18 @@ hr {
 .content {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.triangle {
+  background-image: url("/images/background-triangle.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.animation {
+  display: block;
+  text-align: center;
 }
 
 
