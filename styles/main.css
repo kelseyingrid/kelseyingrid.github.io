@@ -132,10 +132,6 @@ header {
   top: 1px;
 }
 
-/* .process-list, .process-icon {
-  align-items: top;
-} */
-
 .process-list {
   display: inline-block;
   width: 75%;
@@ -249,7 +245,7 @@ footer {
   background-color: #035F68;
   margin-top: 4rem;
   padding-top: 4rem;
-  padding-bottom: 8rem;
+  padding-bottom: 0;
   text-align: center;
 }
 
@@ -259,10 +255,7 @@ footer {
 .hero-text {
   color: #E8F3F2;
   font-family: "Josefin sans", "brandon grotesque", "sans serif";
-  /* position: absolute; */
   font-size: 2rem;
-  /* margin: 0 auto; */
-  /* display: block; */
 }
 
 .bold {
@@ -276,9 +269,7 @@ blockquote {
   font-family: Nunito; "sans serif";
   line-height: 141%;
   margin-top: 1rem;
-  /* padding-bottom: 1rem; */
   padding-left: 1.5rem;
-  /* padding-top: 1rem; */
 }
 
 .intro blockquote {
@@ -710,6 +701,13 @@ a {
   margin-bottom: 1.5rem;
   margin-right: 1rem;
   width: 90%
+}
+
+.footer-blobs {
+  display: block;
+  margin-bottom: 0;
+  position: relative;
+  width: 100vw;
 }
 
 /* -------------------------------------------------------- */
