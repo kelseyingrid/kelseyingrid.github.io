@@ -55,8 +55,12 @@ header {
   width: 80%;
 }
 
-.hero-img, .blobs {
-  object-fit: cover;
+.hero-img {
+  background-size: cover;
+  width: 100vw;
+}
+
+.blobs {
   width: 100vw;
 }
 
@@ -68,10 +72,15 @@ header {
 
 }
 
-.intro-1 {
+.intro {
   background-color: #E8F3F2;
-  padding-bottom: 3rem;
+  padding-bottom: 4rem;
   padding-top: 3rem;
+  position: relative;
+}
+
+.intro .button-flex {
+  margin: 0;
 }
 
 .project {
@@ -264,6 +273,12 @@ blockquote {
   /* padding-top: 1rem; */
 }
 
+.intro blockquote {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2rem;
+}
+
 h1 {
   text-align: center;
   background-color: #035F68;
@@ -315,8 +330,10 @@ h3 {
   padding-top: 0rem;
 }
 
-.intro-1 h3 {
+.intro h3 {
   color: #730039;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h4 {
@@ -328,8 +345,12 @@ h4 {
   padding-top: 1rem;
 }
 
-.intro-1 h4 {
+.intro h4 {
   color: #3B3F41;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 .project h4 {
@@ -417,8 +438,10 @@ p {
   margin-bottom: 2rem;
 }
 
-.intro-1 p {
-  margin-bottom: 0;
+.intro p {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2rem;
 }
 
 .user-stories p {
@@ -483,10 +506,10 @@ button {
   position: relative;
 }
 
-.intro-2 button {
+.intro button {
   display: block;
-  margin-bottom: -5rem;
-  margin-top: 1rem;
+  margin-bottom: -6rem;
+  margin-top: 3rem;
   position: relative;
 }
 
@@ -507,12 +530,17 @@ a {
   display: block;
   margin-bottom: -64rem;
   margin-top: -15rem;
-  width: 100vwF;
+  width: 100vw;
 }
 
 .hello-img {
-  position: relative;
-  z-index: -1;
+  display: block;
+  height: auto;
+  width: 100%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  /* position: relative; */
+  /* z-index: 1; */
 }
 
 .img-wrapper > img {
