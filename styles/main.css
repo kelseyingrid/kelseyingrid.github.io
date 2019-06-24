@@ -47,6 +47,16 @@ header {
   width: 100vw;
 }
 
+
+.bio {
+
+}
+
+.bio-hero {
+  background-color: #E8F3F2;
+  margin-top: 0;
+}
+
 /* centering seems like a hack */
 .hero-content {
   position: absolute;
@@ -89,6 +99,17 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 6rem;
+}
+
+.bio-section-title {
+  background-color: #F9F9FA;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  padding: 3rem 5%;
+}
+
+.bio-section-title-1 {
+  margin-top: 0;
 }
 
 .button-flex {
@@ -241,12 +262,23 @@ header {
 
 }
 
+.really {
+  background-color: #3B3F41;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
 footer {
   background-color: #035F68;
   margin-top: 4rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
   padding-bottom: 0;
   text-align: center;
+}
+
+.bio footer {
+  margin-top: 0;
 }
 
 /* -------------------------------------------------------- */
@@ -254,8 +286,9 @@ footer {
 
 .hero-text {
   color: #E8F3F2;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .bold {
@@ -266,7 +299,7 @@ blockquote {
   border-left: 1.75px solid #99CCCC;
   color: #730039;
   font-size: 1.9rem;
-  font-family: Nunito; "sans serif";
+  font-family: 'Nunito', sans-serif;
   line-height: 141%;
   margin-top: 1rem;
   padding-left: 1.5rem;
@@ -278,13 +311,20 @@ blockquote {
   margin-top: 2rem;
 }
 
+.bio-section blockquote {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
 h1 {
   text-align: center;
   background-color: #035F68;
   color: #F9F9FA;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2.6rem;
-  font-weight: regular;
+  line-height: 141%;
   margin-bottom: 2rem;
   margin-top: 4rem;
   padding-top: 2rem;
@@ -299,11 +339,28 @@ h1 {
   margin: 0;
 }
 
+.bio-hero h3 {
+  color: #730039;
+  margin-left: 5%;
+  margin-top: 0;
+  padding-top: 6rem;
+  text-align: left;
+}
+
+.bio-section-title h1 {
+  background-color: inherit;
+  color: #035F68;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: left;
+}
+
 h2 {
   color: ;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
-  font-weight: semibold;
   line-height: 141%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -314,9 +371,13 @@ h2 {
   color: #035F68;
 }
 
+.bio h2 {
+  color: #035F68;
+}
+
 h3 {
   color: #3B3F41;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 2.6rem;
   line-height: 120%;
   padding-bottom: 2rem;
@@ -337,7 +398,7 @@ h3 {
 
 h4 {
   color: #730039;
-  font-family: Nunito; "sans serif";
+  font-family: 'Nunito', sans-serif;
   font-size: 1.9rem;
   line-height: 141%;
   padding-bottom: 1rem;
@@ -374,9 +435,9 @@ footer p {
 
 h5 {
   color: #3B3F41;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: semibold;
+  font-weight: 600;
   line-height: 141%;
   margin-bottom: 0.5rem;
   margin-top: 2.5rem;
@@ -400,6 +461,23 @@ h5 {
   margin-top: 0;
 }
 
+.tldr h5 {
+  color: #035F68;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.bio-section h5 {
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+.really h5 {
+  color: #EF3B68;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
 .underline:active {
   color: #D4345C;
   top: 1px;
@@ -416,9 +494,9 @@ h5 {
  }
 
 h6 {
-  font-family: Nunito; "sans serif";
+  font-family: 'Nunito', sans-serif;
   font-size: 1.4rem;
-  font-weight: semibold;
+  font-weight: 600;
   line-height: 141%;
   margin-bottom: .5rem;
   margin-top: .5rem;
@@ -434,7 +512,7 @@ ul + h6 {
 
 p {
   color: #3B3F41;
-  font-family: Nunito; "sans serif";
+  font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   font-weight: lighter;
   line-height: 141%;
@@ -448,6 +526,22 @@ p {
   margin-top: 2rem;
 }
 
+.key-takeaway p {
+  margin-bottom: 1rem;
+}
+
+.tldr p {
+  color: #730039;
+  margin-bottom: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.really p {
+  color: #F9F9FA;
+  margin-bottom: 1rem;
+}
+
 .user-stories p {
   margin-bottom: 0;
 }
@@ -456,9 +550,13 @@ p {
   font-size: 1.4rem;
 }
 
+.bio-list {
+  padding-left: 5%;
+}
+
 li {
   color: #3B3F41;
-  font-family: Nunito; "sans serif";
+  font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   font-weight: lighter;
   line-height: 141%;
@@ -466,7 +564,12 @@ li {
 }
 
 header li {
+  text-align: right;
   margin-bottom: 0;
+}
+
+header .header-logo {
+  text-align: left;
 }
 
 .body-bullet {
@@ -496,7 +599,7 @@ button {
   border: none;
   border-radius: 2rem;
   color: #F2F2F3;
-  font-family: "josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 2rem;
   min-width: 70vw;
@@ -534,9 +637,14 @@ button:active {
   position: relative;
 }
 
+.overlap {
+  display: block;
+  margin-bottom: -2rem;
+}
+
 a {
   color: #035F68;
-  font-family: "Josefin sans", "brandon grotesque", "sans serif";
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
   font-weight: normal;
   text-decoration: none;
@@ -568,12 +676,30 @@ a {
   z-index: 1;
 }
 
+.blobs-bio {
+  display: block;
+  margin-bottom: -64rem;
+  margin-left: 30vw;
+  margin-top: -10rem;
+  position: absolute;
+  width: 70vw;
+  z-index: 1;
+}
+
 .hello-img {
   display: block;
   height: auto;
-  width: 100%;
   margin-bottom: 3rem;
   margin-top: 3rem;
+  width: 100%;
+}
+
+.tldr {
+  background-color: #F9F9FA;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+  padding-bottom: 0;
+  padding-top: 2rem;
 }
 
 .img-wrapper > img {
@@ -738,8 +864,8 @@ hr {
 }
 
 .content {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .triangle {
