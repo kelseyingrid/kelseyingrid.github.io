@@ -47,11 +47,6 @@ header {
   width: 100vw;
 }
 
-
-.bio {
-
-}
-
 .bio-hero {
   background-color: #E8F3F2;
   margin-top: 0;
@@ -70,14 +65,6 @@ header {
   width: 100vw;
 }
 
-.design-process {
-
-}
-
-.work {
-
-}
-
 .intro {
   background-color: #F9F9FA;
   padding-bottom: 4rem;
@@ -88,6 +75,21 @@ header {
 .intro-1, .intro-2 {
   position: relative;
   z-index: 2;
+}
+
+.bio-title {
+  color: #730039;
+  text-align: left;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 0;
+  padding-top: 6rem;
+  position: relative;
+  z-index: 2;
+}
+
+.col-3-flex {
+/*used in media queries*/
 }
 
 .project {
@@ -164,14 +166,6 @@ header {
   margin: 0;
   width: 15%;
   vertical-align: top;
-}
-
-.process-1 {
-
-}
-
-.phase {
-
 }
 
 .overview-flex {
@@ -258,10 +252,6 @@ header {
   text-align: left;
 }
 
-.final-thoughts {
-
-}
-
 .really {
   background-color: #3B3F41;
   padding-bottom: 3rem;
@@ -311,6 +301,7 @@ blockquote {
   margin-top: 2rem;
 }
 
+
 .bio-section blockquote {
   margin-left: 5%;
   margin-right: 5%;
@@ -337,14 +328,6 @@ h1 {
 
 .overview-flex h1 {
   margin: 0;
-}
-
-.bio-hero h3 {
-  color: #730039;
-  margin-left: 5%;
-  margin-top: 0;
-  padding-top: 6rem;
-  text-align: left;
 }
 
 .bio-section-title h1 {
@@ -463,8 +446,8 @@ h5 {
 
 .tldr h5 {
   color: #035F68;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .bio-section h5 {
@@ -533,8 +516,8 @@ p {
 .tldr p {
   color: #730039;
   margin-bottom: 4rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .really p {
@@ -602,7 +585,7 @@ button {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  min-width: 70vw;
+  min-width: 65vw;
   padding-bottom: 1.25rem;
   padding-top: 1.5rem;
   position: relative;
@@ -679,7 +662,7 @@ a {
 .blobs-bio {
   display: block;
   margin-bottom: -64rem;
-  margin-left: 30vw;
+  margin-left: 30%;
   margin-top: -10rem;
   position: absolute;
   width: 70vw;
@@ -734,13 +717,6 @@ a {
   box-shadow: -1px 4px 8px #E0E0E0;
 }
 
-.hero-logo {
-  /* margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 20vh; */
-}
-
 .icon-mobile {
   position: relative;
   height: 3rem;
@@ -749,7 +725,7 @@ a {
 
 .logo-footer {
   height: auto;
-  width: 7%;
+  width: 25px;
 }
 
 .social {
@@ -829,11 +805,18 @@ a {
   width: 90%
 }
 
-.footer-blobs {
+.footer-blobs-mobile {
   display: block;
   margin-bottom: 0;
   position: relative;
   width: 100vw;
+}
+
+.footer-blobs-desktop {
+  display: block;
+  margin-bottom: 0;
+  position: relative;
+  width: 90vw;
 }
 
 /* -------------------------------------------------------- */
@@ -864,8 +847,8 @@ hr {
 }
 
 .content {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .triangle {
@@ -880,5 +863,202 @@ hr {
   text-align: center;
 }
 
+/* -------------------------------------------------------- */
+/*media queries*/
 
-/* for desktop links: https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+/*mobile*/
+@media screen and (max-width: 768px) {
+
+  .col-3-flex {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .footer-blobs-desktop {
+    display: none;
+  }
+}
+
+/*tablet*/
+
+@media screen and (min-width: 767px) {
+
+  .content {
+      padding-left: 20vw;
+      padding-right: 20vw;
+    }
+
+  .bio-hero .img-wrapper {
+    margin-bottom: calc(.493 * 60vw * -1);
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .bio-hero h3 {
+    margin-left: 20vw;
+  }
+
+  .blobs-bio {
+    margin-left: 40%;
+    width: 60%;
+  }
+
+  .tldr {
+    padding-top: calc(.493 * 60vw);
+  }
+
+  .tldr p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tldr h5 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-3-flex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .col-3-flex p {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-left: 0;
+  }
+
+  .key-takeaway {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/images/tablet/parentheses.png");
+    width: 70vw;
+  }
+
+  .key-takeaway p {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .intro blockquote {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    padding-left: 1.5rem;
+  }
+
+  .bio-section blockquote {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 1.5rem;
+  }
+
+  button {
+    max-width: 40vw;
+    min-width: 30vw;
+  }
+
+  .footer-blobs-mobile {
+    display: none;
+  }
+}
+
+/*desktop*/
+@media screen and (min-width: 1024px) {
+  .content {
+    padding-left: 30vw;
+    padding-right: 30vw;
+  }
+
+  .blobs-bio {
+    margin-left: 50%;
+    width: 50%;
+  }
+
+  .bio-hero .img-wrapper {
+    margin-bottom: calc(.49 * 40vw * -1);
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+
+  .tldr {
+    padding-top: calc(.49 * 40vw);
+  }
+
+  .bio-hero h3 {
+    margin-left: 30vw;
+  }
+
+  .col-3-flex {
+    justify-content: center; /*not working*/
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 120rem;
+  }
+
+  .col-3-flex p {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    padding-left: 0;
+  }
+
+  .intro blockquote {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding-left: 1.5rem;
+  }
+
+  .bio-section blockquote {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding-left: 1.5rem;
+  }
+
+  .footer-blobs-mobile {
+    display: none;
+  }
+
+  button {
+    max-width: 30rem;
+    min-width: 25vw;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    width: 1500px;
+  }
+}
+
+
+
+/* -------------------------------------------------------- */
+/* Unused classes
+.bio {
+
+}
+
+.design-process {
+
+}
+
+.work {
+
+}
+
+.process-1 {
+
+}
+
+.phase {
+
+}
+
+.final-thoughts {
+
+} */
