@@ -9,6 +9,7 @@ html {
 }
 
 .container {
+  display: relative;
   width: 100%;
 }
 
@@ -23,7 +24,7 @@ header {
   background-color: #E8F3F2;
   padding: 2rem 5%;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 3;
 }
 
@@ -255,6 +256,8 @@ header {
 .really {
   background-color: #3B3F41;
   padding-bottom: 3rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
   padding-top: 1rem;
   text-align: center;
 }
@@ -632,6 +635,7 @@ a {
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .process-steps a {
@@ -651,7 +655,7 @@ a {
 /* Image and icon styling */
 
 .blobs {
-  display: block;
+  display: absolute;
   margin-bottom: -64rem;
   margin-top: -20rem;
   position: absolute;
@@ -660,7 +664,7 @@ a {
 }
 
 .blobs-bio {
-  display: block;
+  display: absolute;
   margin-bottom: -64rem;
   margin-left: 30%;
   margin-top: -10rem;
@@ -966,6 +970,15 @@ hr {
   }
 }
 
+/*mobile and tablet*/
+
+@media screen and (max-width: 1023px) {
+  .really-bullet {
+    display: none;
+  }
+}
+
+
 /*desktop*/
 @media screen and (min-width: 1024px) {
   .content {
@@ -974,7 +987,8 @@ hr {
   }
 
   .blobs-bio {
-    margin-left: 50%;
+    display: absolute;
+    right: 0;
     width: 50%;
   }
 
@@ -1019,6 +1033,19 @@ hr {
     padding-left: 1.5rem;
   }
 
+  .key-takeaway {
+    background-image: url("/images/desktop/parentheses.png");
+  }
+
+  .really {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .really-break {
+    display: none;
+  }
+
   .footer-blobs-mobile {
     display: none;
   }
@@ -1031,7 +1058,20 @@ hr {
 
 @media screen and (min-width: 1500px) {
   .container {
+    margin: 0 auto;
+    position: relative;
     width: 1500px;
+  }
+
+  .blobs-bio {
+    display: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .footer-blobs-desktop {
+    display: absolute;
+    width: 90%;
   }
 }
 
@@ -1040,25 +1080,19 @@ hr {
 /* -------------------------------------------------------- */
 /* Unused classes
 .bio {
-
 }
 
 .design-process {
-
 }
 
 .work {
-
 }
 
 .process-1 {
-
 }
 
 .phase {
-
 }
 
 .final-thoughts {
-
 } */
