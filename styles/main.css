@@ -22,7 +22,7 @@ main {
 
 header {
   background-color: #E8F3F2;
-  padding: 2rem 5%;
+  padding: 2rem 5vw;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -38,19 +38,23 @@ header {
   flex-grow: 3;
 }
 
+.logo-header-desktop {
+  max-height: 4.5rem;
+  vertical-align: middle;
+}
+
 .header-work, .header-bio, .header-contact {
   flex-grow: .5;
 }
 
 .hero {
-  height: 100vh;
   text-align: center;
   width: 100vw;
 }
 
-.bio-hero {
-  background-color: #E8F3F2;
-  margin-top: 0;
+.hero-logo {
+  max-height: 236px;
+  max-width: 140px;
 }
 
 /* centering seems like a hack */
@@ -62,8 +66,18 @@ header {
 }
 
 .hero-img {
-  background-size: cover;
+  background-size: contain;
+  height: 100vh;
   width: 100vw;
+}
+
+.design-process-flex {
+  /*used in media queries*/
+}
+
+.bio-hero {
+  background-color: #E8F3F2;
+  margin-top: 0;
 }
 
 .intro {
@@ -78,7 +92,7 @@ header {
   z-index: 2;
 }
 
-.bio-title {
+.page-title-small {
   color: #730039;
   text-align: left;
   margin-left: 20vw;
@@ -102,6 +116,17 @@ header {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 6rem;
+}
+
+.screen-in-back {
+  max-width: 80rem;
+}
+
+.animation-on-top {
+  display: absolute;
+  max-width: 30%;
+  margin-top: -35rem;
+  margin-left: 60vw;
 }
 
 .bio-section-title {
@@ -285,7 +310,7 @@ footer {
 }
 
 .bold {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 blockquote {
@@ -532,10 +557,6 @@ p {
   margin-bottom: 0;
 }
 
-.small {
-  font-size: 1.4rem;
-}
-
 .bio-list {
   padding-left: 5%;
 }
@@ -601,6 +622,15 @@ button:active {
   top: 1px;
 }
 
+            /* need to figure out how to change color of png on click */
+.logo-header-desktop:active {
+  color: #730039;
+}
+
+.header-work:active, .header-bio:active, .header-contact:active {
+  color: #730039;
+}
+
 .case-study-hero button {
   display: block;
   margin-bottom: -5rem;
@@ -655,11 +685,11 @@ a {
 /* Image and icon styling */
 
 .blobs {
-  display: absolute;
   margin-bottom: -64rem;
-  margin-top: -20rem;
+  margin-top: -15rem;
   position: absolute;
-  width: 100vw;
+  right: 0;
+  width: 90vw;
   z-index: 1;
 }
 
@@ -706,6 +736,11 @@ a {
   width: 75%;
 }
 
+.project-image {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 .pref-test-flex img {
   margin: 0;
 }
@@ -714,6 +749,7 @@ a {
   height: auto;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  max-width: 329px;
   width: 50%;
 }
 
@@ -739,15 +775,13 @@ a {
 .process-1, .process-2, .process-3, .process-4 {
   background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto auto;
   margin: 2rem 5%;
   padding-top: 3rem;
 }
 
 .process-1 {
   background-image: url("/images/mobile/process-1-background.png");
-  background-position: top;
-  margin-bottom: 0;
 }
 
 .process-2 {
@@ -873,15 +907,37 @@ hr {
 /*mobile*/
 @media screen and (max-width: 768px) {
 
-  .col-3-flex {
+  .hero-video {
+    display: none;
+  }
+
+  .logo-header-desktop {
+    display: none;
+  }
+
+    .col-3-flex {
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .small {
+    font-size: 1.4rem;
   }
 
   .footer-blobs-desktop {
     display: none;
   }
 }
+
+
+/*mobile and tablet*/
+
+@media screen and (max-width: 1023px) {
+  .really-bullet {
+    display: none;
+  }
+}
+
 
 /*tablet*/
 
@@ -892,8 +948,67 @@ hr {
       padding-right: 20vw;
     }
 
+  .logo-header-mobile {
+    display: none;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .hero-video {
+    width: 100vw;
+  }
+
+  .hero-content {
+    top: 12rem;
+  }
+
   .bio-hero .img-wrapper {
     margin-bottom: calc(.493 * 60vw * -1);
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .intro-1 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .intro-1 h3 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .intro-1 h4 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .intro-2 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .intro-2 p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .extra-space-top {
+    margin-top: 5rem;
+  }
+
+  .small {
+    font-size: 1.8rem;
+  }
+
+  .intro-2 blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .process-1, .process-2, .process-3, .process-4 {
     margin-left: 20vw;
     margin-right: 20vw;
   }
@@ -948,12 +1063,6 @@ hr {
     padding-right: 5vw;
   }
 
-  .intro blockquote {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    padding-left: 1.5rem;
-  }
-
   .bio-section blockquote {
     margin-left: 20%;
     margin-right: 20%;
@@ -965,15 +1074,43 @@ hr {
     min-width: 30vw;
   }
 
-  .footer-blobs-mobile {
-    display: none;
+  h1 {
+    font-size: 4rem;
   }
-}
 
-/*mobile and tablet*/
+  h2 {
+    font-size: 1.6rem;
+  }
 
-@media screen and (max-width: 1023px) {
-  .really-bullet {
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  h5 {
+    font-size: 2.1rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
+
+  li {
+    font-size: 2.2rem;
+  }
+
+  .body-bullet {
+    font-size: 2.2rem;
+  }
+
+  blockquote {
+    font-size: 2.2rem;
+  }
+
+  .footer-blobs-mobile {
     display: none;
   }
 }
@@ -982,8 +1119,12 @@ hr {
 /*desktop*/
 @media screen and (min-width: 1024px) {
   .content {
-    padding-left: 30vw;
-    padding-right: 30vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+  }
+
+  .hero-content {
+    top: 20rem;
   }
 
   .blobs-bio {
@@ -992,10 +1133,56 @@ hr {
     width: 50%;
   }
 
+  .intro-1 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .intro-2 {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .intro-2 blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .design-process-flex {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .process-1, .process-2, .process-3, .process-4 {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: auto;
+  }
+
+  .process-1 {
+    background-image: url("/images/desktop/process-1-background.png");
+    flex-basis: 25%;
+  }
+
+  .process-2 {
+    background-image: url("/images/desktop/process-2-background.png");
+    flex-basis: 25%;
+  }
+
+  .process-3 {
+    background-image: url("/images/desktop/process-3-background.png");
+    flex-basis: 25%;
+  }
+
+  .process-4 {
+    background-image: url("/images/desktop/process-4-background.png");
+    flex-basis: 25%;
+  }
+
   .bio-hero .img-wrapper {
     margin-bottom: calc(.49 * 40vw * -1);
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
   .tldr {
@@ -1003,7 +1190,7 @@ hr {
   }
 
   .bio-hero h3 {
-    margin-left: 30vw;
+    margin-left: 20vw;
   }
 
   .col-3-flex {
@@ -1016,20 +1203,15 @@ hr {
   }
 
   .col-3-flex p {
+    flex-basis: 33%;
     margin-left: 2.5%;
     margin-right: 2.5%;
     padding-left: 0;
   }
 
-  .intro blockquote {
-    margin-left: 30vw;
-    margin-right: 30vw;
-    padding-left: 1.5rem;
-  }
-
   .bio-section blockquote {
-    margin-left: 30vw;
-    margin-right: 30vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     padding-left: 1.5rem;
   }
 
@@ -1057,10 +1239,33 @@ hr {
 }
 
 @media screen and (min-width: 1500px) {
+
+  header {
+    max-width: 1500px;
+  }
+
   .container {
     margin: 0 auto;
     position: relative;
     width: 1500px;
+  }
+
+  .hero-content {
+    top: 30rem;
+  }
+
+  .hero {
+    width: 1500px;
+  }
+
+  .hero-video {
+    width: 1500px;
+  }
+
+  .blobs {
+    display: absolute;
+    right: 0;
+    width: 90%;
   }
 
   .blobs-bio {
@@ -1082,13 +1287,7 @@ hr {
 .bio {
 }
 
-.design-process {
-}
-
 .work {
-}
-
-.process-1 {
 }
 
 .phase {

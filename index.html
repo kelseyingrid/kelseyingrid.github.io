@@ -6,7 +6,7 @@
     <title>Portfolio | Kelsey Jacobsen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
   </head>
 
@@ -15,21 +15,25 @@
       <header>
         <ul class="header-flex">
           <li class="header-logo">
-            <a href="index.html" class="image-icon">
-              <img src="images/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral">
+            <a href="index.html">
+              <img src="images/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-mobile">
+              <img src="images/desktop/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-desktop">
             </a>
           </li>
-          <li class="header-work"><a href="dogear.html">work</a></li>
-          <li class="header-bio"><a href="bio.html">bio</a></li>
-          <li class="header-contact"><a href="#contact">contact</a></li>
+          <li class="header-work"><a href="dogear.html" class="header-work">work</a></li>
+          <li class="header-work"><a href="bio.html" class="header-bio">bio</a></li>
+          <li class="header-work"><a href="#contact" class="header-contact">contact</a></li>
         </ul>
       </header>
 
       <main>
         <section class="hero">
           <img src="images/hero-water.png" alt="full-screen photo of rippling water surface" class="hero-img">
+          <video autoplay loop width="1500px" height="auto" class="hero-video">
+            <source src="images/desktop/hero-video.mov" type="video/mp4">
+          </video>
           <div class="hero-content">
-            <div class="img-wrapper-small">
+            <div>
               <img src="images/hero-logo.png" alt="Kelsey Jacobsen's logo" class="hero-logo">
             </div>
             <div class="hero-text">digital product designer</div>
@@ -37,13 +41,13 @@
         </section>
 
         <section class="intro">
-          <img src="images/blobs-landing.png" class="blobs">
+          <img src="images/desktop/blobs-hero.png" class="blobs">
           <div class="intro-1">
             <h4>Hello!</h4>
             <h3>I'm Kelsey,<br>a UX and UI designer<br>in Oakland, CA</h3>
             <h4>I take an <span class="bold">ecosystem approach to design</span>, creating UX and UI that will thrive in the wild.</h4>
           </div>
-          <img src="images/banana-drop.png" alt="water droplets on banana leaves" class="hello-img">
+          <img src="images/trees.png" alt="black and white areal image of coniferous trees" class="hello-img">
           <div class="intro-2">
             <p>With an background in environmental conservation, I want to know:</p>
             <blockquote>In what environment does the product live?</blockquote>
@@ -64,23 +68,24 @@
           </div>
           <h1>Design process</h1>
           <div class="content">
-            <h4>Here’s a summary of my typical steps.</h4>
+            <h4 class="centered">Here’s a summary of my typical steps.</h4>
           </div>
 
-          <div class="process-1">
-            <div class="process-icon">
-              <img src="images/icon-research.png" alt="research icon" class="icon-mobile">
-            </div>
-            <div class="process-list">
-              <h5>Research and scoping</h5>
-                <ul>
-                  <li>Surveys, interviews, and problem identification</li>
-                  <li>Competitive analysis</li>
-                  <li>User personas</li>
-                  <li>User stories</li>
-                </ul>
+          <div class="design-process-flex">
+            <div class="process-1">
+              <div class="process-icon">
+                <img src="images/icon-research.png" alt="research icon" class="icon-mobile">
               </div>
-          </div>
+              <div class="process-list">
+                <h5>Research and scoping</h5>
+                  <ul>
+                    <li class="small">Surveys, interviews, and problem identification</li>
+                    <li class="small">Competitive analysis</li>
+                    <li class="small">User personas</li>
+                    <li class="small">User stories</li>
+                  </ul>
+              </div>
+            </div>
 
           <div class="process-2">
             <div class="process-icon">
@@ -88,13 +93,13 @@
             </div>
             <div class="process-list">
             <h5>Information architecture</h5>
-              <ul>
-                <li>User flows</li>
-                <li>Sitemapping</li>
-                <li>Content strategy</li>
-                <li>Sketching and wireframes</li>
-                <li>Prototyping</li>
-                <li>User testing</li>
+              <ul class="small">
+                <li class="small">User flows</li>
+                <li class="small">Sitemapping</li>
+                <li class="small">Content strategy</li>
+                <li class="small">Sketching and wireframes</li>
+                <li class="small">Prototyping</li>
+                <li class="small">User testing</li>
               </ul>
             </div>
           </div>
@@ -105,11 +110,11 @@
             <div class="process-list">
             <h5>Visual design</h5>
               <ul>
-                <li>Name and logo design</li>
-                <li>Style guides</li>
-                <li>High-fidelity mockups and prototypes</li>
-                <li>Preference testing</li>
-                <li>User testing</li>
+                <li class="small">Name and logo design</li>
+                <li class="small">Style guides</li>
+                <li class="small">High-fidelity mockups and prototypes</li>
+                <li class="small">Preference testing</li>
+                <li class="small">User testing</li>
               </ul>
             </div>
           </div>
@@ -120,32 +125,33 @@
             <div class="process-list">
             <h5>Development and deployment</h5>
               <ul>
-                <li>Basic frontend</li>
-                <li>Developer deliverables</li>
-                <li>Process presentation</li>
-                <li>User testing</li>
+                <li class="small">Basic frontend</li>
+                <li class="small">Developer deliverables</li>
+                <li class="small">Process presentation</li>
+                <li class="small">User testing</li>
               </ul>
             </div>
           </div>
         </section>
         <section class="work">
-          <div class="img-wrapper">
-            <img src="images/trees.png" alt="aerial view of trees">
+          <div class="img-wrapper extra-space-top">
+            <img src="images/sand.png" alt="aerial view of trees">
           </div>
           <h1>Work</h1>
           <section class="project">
-            <div class="img-wrapper">
-              <img src="images/mobile/dogear-2screens-onload.gif" alt="dogear dashboard shown on a laptop">
+            <div class="img-wrapper project-image extra-space-top">
+              <img src="images/dogear-dashboard-desktop.png" alt="dogear dashboard shown on a laptop" class="screen-in-back">
+              <img src="images/dogear-onload.gif" alt="animation of dogear logo displayed in iPhone" class="animation-on-top">
             </div>
             <br>
             <br>
-            <div class="img-wrapper-small">
-              <img src="images/dogear-logo.png" alt="dogear logo">
+            <div class="img-wrapper-small extra-space-top">
+              <img src="images/dogear-logo.png" alt="dogear logo, which resembles a folded corner of paper">
             </div>
             <h4>Ease your writing process</h4>
             <div class="button-flex">
               <a href="dogear.html">
-                <button>view case study</button>
+                <button class="extra-space-top">view case study</button>
               </a>
             </div>
           </section>
@@ -173,7 +179,8 @@
             <img src="images/instagram.png" alt="Instagram logo">
           </a>
         </div>
-        <img src="images/mobile/blobs-for-footer.png" class="footer-blobs">
+        <img src="images/mobile/blobs-for-footer.png" class="footer-blobs-mobile">
+        <img src="images/desktop/blobs-for-footer.png" class="footer-blobs-desktop">
       </footer>
     </div>
   </body>
