@@ -27,11 +27,12 @@
       </header>
 
       <main>
+      <div class="scroll">
         <section class="case-study-hero content triangle">
-          <div class="img-wrapper">
+          <div class="img-wrapper extra-space-top">
             <img src="images/dogear-outline.png" alt="An outine shown in the dogear dashboard on a laptop">
           </div>
-          <div class="img-wrapper-small">
+          <div class="img-wrapper-small extra-space-top">
             <img src="images/dogear-logo.png" alt="dogear logo, which resembles a folded corner of paper">
           </div>
           <h4>Ease your writing process</h4>
@@ -42,10 +43,10 @@
           </div>
         </section>
 
-        <section class="process-steps centered content">
-          <p class="extra-space-top">Skip to design process step</p>
+        <section class="process-steps centered">
+          <p class="extra-space-top small step-skip-label">Skip to design process step</p>
           <div class="process-steps-flex">
-            <div class="process-step">
+            <div class="process-step step-skip-label">
               <img src="images/mobile/chevron-down.png" alt="down arrow">
             </div>
             <div class="process-step">
@@ -79,58 +80,67 @@
         <div class="anchor">
           <a id="overview-step"></a>
         </div>
-        <section class="overview-flex">
-          <h1>Overview</h1>
-          <div class="overview-section content">
-            <img src="images/icon-roles.png" alt="roles icon" class="icon-mobile">
-            <h5>Roles</h5>
-            <ul>
-              <li class="small-list">Researcher and analyst</li>
-              <li class="small-list">UX and UI designer</li>
-            </ul>
-          </div>
 
-          <div class="overview-section content">
+        <section class="project-overview">
+          <h1>Overview</h1>
+          <div class="col-4-flex">
+            <div class="overview-section">
+              <img src="images/icon-roles.png" alt="roles icon" class="icon-mobile">
+              <h5>Roles</h5>
+              <ul>
+                <li class="small-list">Researcher and analyst</li>
+                <li class="small-list">UX and UI designer</li>
+              </ul>
+            </div>
+
+            <div class="overview-section">
+              <img src="images/icon-tools.png" alt="tools icon" class="icon-mobile">
+              <h5>Tools</h5>
+                <ul>
+                <li class="small-list">Google Forms</li>
+                <li class="small-list">Numbers for Mac</li>
+                <li class="small-list">Draw.io</li>
+                <li class="small-list">Sketch</li>
+                <li class="small-list">Adobe Illustrator</li>
+                <li class="small-list">Figma</li>
+                <li class="small-list">Usability Hub</li>
+                <li class="small-list">Keynote for Mac</li>
+                <li class="small-list">Adobe After Effects</li>
+              </ul>
+            </div>
+
+            <div class="overview-section">
+              <img src="images/icon-dev-deploy.png" alt="deveopment and deployment icon" class="icon-mobile">
+              <ul>
+                <h5>Deliverables</h5>
+                <li class="small-list">Style guide</li>
+                <li class="small-list">High-fidelity mockups (desktop and mobile)</li>
+                <li class="small-list">Clickable prototypes</li>
+                <li class="small-list">Assets for developer handoff</li>
+              </ul>
+            </div>
+
+          <div class="overview-section">
             <img src="images/icon-timeframe.png" alt="timeframe icon" class="icon-mobile">
             <h5>Timeframe</h5>
             <ul>
               <li class="small-list">8 weeks</li>
             </ul>
           </div>
+        </div>
+        </section>
 
-          <div class="overview-section content">
-            <img src="images/icon-tools.png" alt="tools icon" class="icon-mobile">
-            <h5>Tools</h5>
-              <ul>
-              <li class="small-list">Google Forms</li>
-              <li class="small-list">Numbers for Mac</li>
-              <li class="small-list">Draw.io</li>
-              <li class="small-list">Sketch</li>
-              <li class="small-list">Adobe Illustrator</li>
-              <li class="small-list">Figma</li>
-              <li class="small-list">Usability Hub</li>
-              <li class="small-list">Keynote for Mac</li>
-              <li class="small-list">Adobe After Effects</li>
-            </ul>
-          </div>
-          <div class="overview-section content">
-            <img src="images/icon-dev-deploy.png" alt="deveopment and deployment icon" class="icon-mobile">
-            <ul>
-              <h5>Deliverables</h5>
-              <li class="small-list">Style guide</li>
-              <li class="small-list">High-fidelity mockups (desktop and mobile)</li>
-              <li class="small-list">Clickable prototypes</li>
-              <li class="small-list">Assets for developer handoff</li>
-            </div>
-          </ul>
           <br>
           <br>
-          <div class="img-wrapper">
+          <div class="img-wrapper progression-mobile extra-space-top">
             <img src="images/mobile/dogear-intro-progression.png" alt="three images: an initial paper sketch, wireframe, and final dashboard">
+          </div>
+          <div class="img-wrapper progression-desktop extra-space-top">
+            <img src="images/desktop/dogear-intro-progression.png" alt="three images: an initial paper sketch, wireframe, and final dashboard">
           </div>
         </section>
 
-        <section class="content prob-sol-flex">
+        <section class="col-2-flex extra-space-top">
           <div>
             <h5>Problem</h5>
             <p>Writing is hard. Especially when you have all kinds of sources to draw from. How many times have you saved a bunch of source files, then when it came time to write you couldn’t remember where you read that important fact?</p>
@@ -157,63 +167,73 @@
                 </a>
               </div>
             </div>
-            <div class="img-wrapper">
-              <img src="images/competitors.png" alt="snapshots of landing pages of Evernote, Mendeley, and Diigo">
-            </div>
           </section>
+        </section>
+      </div>
 
-          <section class="content">
-            <h4 class="extra-space-top">Competitive analysis</h4>
-            <p>I started by surveying the landscape, looking into three existing cloud storage platforms that writers might use.</p>
-            <div class="img-wrapper">
-              <img src="images/competitor-logos.png" alt="logos of Evernote, diigo, and Mendeley">
-            </div>
-            <h5>Key findings</h5>
-            <p>There are lots of things that work well in each of these platforms. Each of them has different strengths, but there is no one that provides a comprehensive set of features especially for writers, like the ability to:</p>
-            <ul class="body-bullet">
-              <li>Save any type of file or web source</li>
-              <li>Highlight and leave notes</li>
-              <li>Perform global keyword searches</li>
-              <li>Create tags</li>
-              <li>Create outlines</li>
-            </ul>
-          </section>
+      <div class="parallax-competitors" alt="snapshots of landing pages of Evernote, Mendeley, and Diigo">
+      </div>
 
-          <section class="key-takeaway">
-            <div class="centered">
-              <img src="images/icon-challenge.png" alt="challenge icon" class="icon-mobile">
-              <h2>challenge</h2>
-            </div>
-            <p>Faced with a blank slate - a prompt to develop a cloud storage platform - an initial challenge was to pinpoint an audience. My writing experience led me to believe there could be a gap in the landscape of tools designed specifically for writers.</p>
-          </section>
+      <div class="scroll">
+        <section class="content">
+          <h4 class="extra-space-top">Competitive analysis</h4>
+          <p>I started by surveying the landscape, looking into three existing cloud storage platforms that writers might use.</p>
+          <div class="img-wrapper extra-space-top">
+            <img src="images/competitor-logos.png" alt="logos of Evernote, diigo, and Mendeley">
+          </div>
+        </section>
 
-          <section class="step-intro">
-            <div class="content">
-            <hr>
-            <h2>user research</h2>
-              <h3>What problems, if any, could a new product solve for writers?</h3>
-                <div class="button-flex">
-                  <a href="https://drive.google.com/open?id=1EMYFXByepl0wOZw-wv4pzwjWr9qgpa3Rqvzjf9gKnNw">
-                    <button>view survey questions</button>
-                  </a>
-                  <a href="https://drive.google.com/open?id=1ehcL7eBeKqPJ6eW4af1nBTa3N3h3a_CVMpmT5IAtBbQ">
-                    <button>view survey summary</button>
-                  </a>
-                </div>
-              <div class="img-wrapper">
-                <img src="images/survey.png" alt="View of the first question on the online survey in a laptop">
+        <section class="content grey">
+          <h5>Key findings</h5>
+          <p>There are lots of things that work well in each of these platforms. Each of them has different strengths, but there is no one that provides a comprehensive set of features especially for writers, like the ability to:</p>
+          <ul class="body-bullet">
+            <li>Save any type of file or web source</li>
+            <li>Highlight and leave notes</li>
+            <li>Perform global keyword searches</li>
+            <li>Create tags</li>
+            <li>Create outlines</li>
+          </ul>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-challenge.png" alt="challenge icon" class="icon-mobile">
+            <h2>challenge</h2>
+          </div>
+          <p>Faced with a blank slate - a prompt to develop a cloud storage platform - an initial challenge was to pinpoint an audience. My writing experience led me to believe there could be a gap in the landscape of tools designed specifically for writers.</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+          <hr>
+          <h2>user research</h2>
+            <h3>What problems, if any, could a new product solve for writers?</h3>
+              <div class="button-flex">
+                <a href="https://drive.google.com/open?id=1EMYFXByepl0wOZw-wv4pzwjWr9qgpa3Rqvzjf9gKnNw">
+                  <button>view survey questions</button>
+                </a>
+                <a href="https://drive.google.com/open?id=1ehcL7eBeKqPJ6eW4af1nBTa3N3h3a_CVMpmT5IAtBbQ">
+                  <button>view survey summary</button>
+                </a>
               </div>
             </div>
           </section>
+        </div>
 
-          <section class="content grey">
-            <h4>User survey</h4>
-            <p>28 people shared insights through an online survey.</p>
-            <p>Paired with the gaps in the competitive landscape, the survey helped me see an opportunity for a new cloud storage platform tailored for writers. Below are some key findings from the survey.</p>
-            <div class="survey-flex">
+        <div class="parallax-survey" alt="View of the first question on the online survey in a laptop">
+        </div>
+
+        <div class="scroll">
+          <section class="grey">
+            <div class="content">
+              <h4>User survey</h4>
+              <p>28 people shared insights through an online survey.</p>
+              <p>Paired with the gaps in the competitive landscape, the survey helped me see an opportunity for a new cloud storage platform tailored for writers. Below are some key findings from the survey.</p>
+            </div>
+            <div class="col-3-flex">
               <div>
                 <h5>Writing types</h5>
-                  <p>Survey respondents most often write for professional, personal/hobby, and academic purposes.</p>
+                <p>Survey respondents most often write for professional, personal/hobby, and academic purposes.</p>
               </div>
               <div>
                 <h5>Platforms used</h5>
@@ -223,17 +243,20 @@
                 <h5>Processes</h5>
                 <p>They compile sources by copying links into a text document, creating internet browser bookmarks, and/or saving files to a local folder.</p>
               </div>
-              <div>
-                <h5>Frustrations</h5>
-                <p>Writers have difficulty organizing and searching through large numbers of files, especially when they’re saved in multiple places.</p>
-              </div>
-              <div class="img-wrapper-med centered">
-                <img src="images/mobile/frustrations-graph.png" alt="graph showing the greatest frustrations are organizing and searching through files and having sources saved in various places">
-              </div>
+            </div>
+            <div class="content">
+              <h5>Frustrations</h5>
+              <p>Writers have difficulty organizing and searching through large numbers of files, especially when they’re saved in multiple places.</p>
+            </div>
+            <div class="img-wrapper-medium centered extra-space-top">
+              <img src="images/mobile/frustrations-graph.png" alt="graph showing the greatest frustrations are organizing and searching through files and having sources saved in various places" class="frustrations-mobile">
+            </div>
+            <div class="img-wrapper-medium centered">
+              <img src="images/desktop/frustrations-graph.png" alt="graph showing the greatest frustrations are organizing and searching through files and having sources saved in various places" class="frustrations-desktop">
             </div>
           </section>
 
-          <section class="key-takeaway content">
+          <section class="key-takeaway">
             <div class="centered">
               <img src="images/icon-do-different.png" alt="would do differently icon" class="icon-mobile">
               <h2>would do<br>differently</h2>
@@ -255,19 +278,24 @@
                 </a>
               </div>
             </div>
-            <div class="img-wrapper">
-              <img src="images/mobile/personas.png" alt="image of three personas stacked on each other">
-            </div>
           </section>
+        </div>
 
-          <section class="content">
+        <div class="img-wrapper personas-mobile">
+          <img src="images/mobile/personas.png" alt="image of three personas stacked on each other">
+        </div>
+        <div class="personas-desktop parallax-personas" alt="image of three personas stacked on each other">
+        </div>
+
+        <div class="scroll">
+          <section class="content extra-space-top">
             <h4>User personas</h4>
             <p>The online survey gave me the information needed to personify the target audiences for the new product. </p>
           </section>
 
-          <section class="content grey">
-            <div class="persona-1-flex">
-              <div class="persona-img-left">
+          <section class="personas-grid margin extra-space-top">
+            <div class="persona-1">
+              <div class="photo persona-img-left">
                 <img src="images/persona-remy.png" alt="photo of student writer">
               </div>
               <div class="persona-profile">
@@ -276,49 +304,47 @@
                 <h6>Austin, TX</h6>
                 <h6>Writes academic reports</h6>
               </div>
+              <div class="frust-goals">
+                <h6>Frustrations</h6>
+                <ul>
+                  <li class="small-list">Too many browser tabs and bookmarks</li>
+                  <li class="small-list">Hard to remember which sources had which info</li>
+                </ul>
+                <h6>Goals</h6>
+                <ul>
+                  <li class="small-list">Spend less time rummaging through files</li>
+                  <li class="small-list">Separate her school and personal repositories</li>
+                </ul>
+              </div>
             </div>
-            <h6>Frustrations</h6>
-            <ul>
-              <li class="small-list">Too many browser tabs and bookmarks</li>
-              <li class="small-list">Hard to remember which sources had which info</li>
-            </ul>
-            <h6>Goals</h6>
-            <ul>
-              <li class="small-list">Spend less time rummaging through files</li>
-              <li class="small-list">Separate her school and personal repositories</li>
-            </ul>
-          </section>
 
-          <section class="content">
-            <div class="persona-2-flex right-align">
+            <div class="persona-2">
+              <div class="photo">
+                <img src="images/persona-terrence.png" alt="photo of professinal writer" class="persona-img-right">
+              </div>
               <div class="persona-profile">
                 <h5>The Busy Professional</h5>
                 <h6>Age 33</h6>
                 <h6>Oakland, CA</h6>
                 <h6>Writes professional reports</h6>
               </div>
-              <div class="persona-img">
-                <img src="images/persona-terrence.png" alt="photo of professinal writer" class="persona-img-right">
+              <div class="frust-goals">
+                <h6>Frustrations</h6>
+                <ul>
+                  <li class="small-list">Can’t include links to all files in Google Docs</li>
+                  <li class="small-list">Can’t remember why he saved some sources</li>
+                  <li class="small-list">Can’t leave notes in all types of content</li>
+                </ul>
+                <h6>Goals</h6>
+                <ul>
+                  <li class="small-list">Maximize team efficiency</li>
+                  <li class="small-list">Plug information into an outline</li>
+                </ul>
               </div>
             </div>
-            <div class="right-align"> <!--might need to remove and put right-align on individual items below-->
-              <h6>Frustrations</h6>
-              <ul>
-                <li class="small-list">Can’t include links to all files in Google Docs</li>
-                <li class="small-list">Can’t remember why he saved some sources</li>
-                <li class="small-list">Can’t leave notes in all types of content</li>
-              </ul>
-              <h6>Goals</h6>
-              <ul>
-                <li class="small-list">Maximize team efficiency</li>
-                <li class="small-list">Plug information into an outline</li>
-              </ul>
-            </div>
-          </section>
 
-          <section class="content grey">
-            <div class="persona-3-flex">
-              <div class="persona-img-left">
+            <div class="persona-3">
+              <div class="photo">
                 <img src="images/persona-lucile.png" alt="photo of hobbyist writer">
               </div>
               <div class="persona-profile">
@@ -327,23 +353,25 @@
                 <h6>Richmond, VA<h6>
                 <h6>Writes novels and short stories</h6>
               </div>
+              <div class="frust-goals">
+                <h6>Frustrations</h6>
+                <ul>
+                  <li class="small-list">Overwhelmed by scattered ideas</li>
+                  <li class="small-list">Doesn’t have storylines written down</li>
+                </ul>
+                <h6>Goals</h6>
+                <ul>
+                  <li class="small-list">Store all notes and files in one place</li>
+                  <li class="small-list">Be more organized</li>
+                </ul>
+              </div>
             </div>
-            <h6>Frustrations</h6>
-            <ul>
-              <li class="small-list">Overwhelmed by scattered ideas</li>
-              <li class="small-list">Doesn’t have storylines written down</li>
-            </ul>
-            <h6>Goals</h6>
-            <ul>
-              <li class="small-list">Store all notes and files in one place</li>
-              <li class="small-list">Be more organized</li>
-            </ul>
           </section>
 
           <section class="content user-stories">
             <h4>User stories</h4>
             <p>With the personas in mind, I needed to clarify: What do these people want a new platform to do?</p>
-            <div class="user-stories-flex">
+            <div class="col-3-flex extra-space-top">
               <div>
                 <h5>New users</h5>
                 <ul>
@@ -360,9 +388,11 @@
                   <li>Save a web source</li>
                   <li>Upload a source file</li>
                   <li>Categorize sources into folders </li>
-                </ul>
-                <ul>
                   <li>Search by keyword</li>
+                </ul>
+              </div>
+              <div class="col-no-title">
+                <ul>
                   <li>Leave “sticky notes” within a source</li>
                   <li>Share a source with another person</li>
                   <li>Create an outline for a writing project</li>
@@ -371,7 +401,7 @@
             </div>
           </section>
 
-          <section class="key-takeaway content">
+          <section class="key-takeaway">
             <div class="centered">
               <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
               <h2>lesson learned</h2>
@@ -399,15 +429,20 @@
                 </a>
               </div>
             </div>
-            <div class="img-wrapper std-shadow">
-              <img src="images/mobile/sitemap.png" alt="sitemap">
-            </div>
           </section>
+        </div>
 
+        <div class="img-wrapper std-shadow sitemap-mobile">
+          <img src="images/mobile/sitemap.png" alt="sitemap">
+        </div>
+        <div class="sitemap-desktop parallax-sitemap">
+        </div>
+
+        <div class="scroll">
           <section class="content">
             <h4 class="extra-space-top">User flows</h4>
-            <p>To map the process for accomplishing user stories, I created user flows, first on paper and then digitally.</p>
-            <div class="img-wrapper">
+            <p>To map the process for accomplishing user stories, I created user flows - first rough paper sketches and then digitally.</p>
+            <div class="img-wrapper extra-space-top">
               <img src="images/flows-sketch.png" alt="image of a section of user flow pen sketches">
             </div>
             <div class="img-wrapper std-shadow extra-space-top">
@@ -422,7 +457,7 @@
             <p>With the sitemap in hand, I drafted a content strategy for each of the main screens. I would refine the content throughout the design process. </p>
           </section>
 
-          <section class="key-takeaway content">
+          <section class="key-takeaway">
             <div class="centered">
               <img src="images/icon-challenge.png" alt="challenge icon" class="icon-mobile">
               <h2>challenge</h2>
@@ -442,21 +477,26 @@
                     </a>
                   </div>
             </div>
-            <div class="img-wrapper">
-              <img src="images/wireframe-sketch.png" alt="sketch of dashboard wireframe">
-            </div>
           </section>
+        </div>
 
+        <div class="parallax-wireframes" alt="sketch of dashboard wireframe">
+        </div>
+
+        <div class="scroll">
           <section class="content">
             <h4 class="extra-space-top">Wireframes</h4>
             <p>I started by iterating on the basic information architecture of key screens - again, on paper and then digitally.</p>
-            <div class="img-wrapper std-shadow">
-              <img src="images/wireframe-digital.png" alt="digitally rendered dashboard wireframe">
+            <div class="img-wrapper std-shadow wireframes-mobile">
+              <img src="images/mobile/wireframe-digital.png" alt="digitally rendered dashboard wireframe">
+            </div>
+            <div class="img-wrapper std-shadow extra-space-top wireframes-mobile">
+              <img src="images/mobile/wireframes-digital.png" alt="zoomed-out images of many digitally rendered wireframes">
+            </div>
+            <div class="img-wrapper extra-space-top wireframes-desktop">
+              <img src="images/desktop/wireframe-triptic.png" alt="Three images of wireframes: paper sketch, one digitally rendered dashboard wireframe, and a zoomed out image of many digitally rendered wireframes">
             </div>
             <br>
-            <div class="img-wrapper std-shadow extra-space-top">
-              <img src="images/wireframes-digital.png" alt="zoomed-out images of many digitally rendered wireframes">
-            </div>
           </section>
 
           <section class="content grey">
@@ -478,7 +518,7 @@
             </ul>
           </section>
 
-          <section class="key-takeaway content">
+          <section class="key-takeaway">
             <div class="centered">
               <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
               <h2>lesson learned</h2>
@@ -502,76 +542,81 @@
               </a>
             </div>
           </section>
-            <div class="img-wrapper">
-              <img src="images/logo-sketches.png" alt="image of initial sketches of dogear logo" class="image-mobile-full">
-            </div>
-          </section>
+        </section>
+      </div>
 
-          <section class="content">
-            <h4 class="extra-space-top">Logo iterations<h4>
-            <div class="img-wrapper">
-              <img src="images/mobile/logo-progressions.png" alt="three iterations each of four logo and name otpions considered: Scout, Sourcery, dogear, and File Ferret" class="centered, image-mobile-padding">
-            </div>
-          </section>
+      <div class="parallax-visual" alt="image of initial sketches of dogear logo">
+      </div>
 
-          <section class="content grey">
-            <h4>Preference testing</h4>
-            <p>Not sure which concept to run with, I turned to users for their opinions on four options.</p>
-            <div class="img-wrapper">
-              <img src="images/mobile/logo-options.png" alt="four logo and name options"  class="extra-space-top">
-            </div>
-            <div class="logo-pref-flex">
-              <div>
-                <h5 class="extra-space-top">Results</h5>
-                <p>The results were clear: users liked dogear because it most tangibly relates to the purpose of the platform.</p>
-                <p>I was surprised; I thought the dogear logo was a bit boring, even dated. I wanted it to be more modern, edgy, and relatable.</p>
-              </div>
-              <div>
-                <h5>Revisions</h5>
-                <p>One key change was to update the colors, where vibrant blues are associated with computers and technological energy. I also swapped out the typeface for one that’s lighter and more contemporary, complemting the logo’s 45-degree angle.</p>
-              </div>
-            </div>
-          </section>
-
-          <div class="img-wrapper-small centered">
-            <img src="images/dogear-logo.png">
+      <div class="scroll">
+        <section class="content">
+          <h4 class="extra-space-top">Logo iterations<h4>
+          <p>Lots of sketching and word associations left me with diverging options for the brand’s name and logo.</p>
+          <div class="img-wrapper-med extra-space-top centered">
+            <img src="images/logo-progressions.png" alt="three iterations each of four logo and name otpions considered: Scout, Sourcery, dogear, and File Ferret" class="centered, image-mobile-padding">
           </div>
+        </section>
 
-          <section class="content grey">
-            <h4>Look and feel</h4>
-            <p>With a general tone set by the logo, I created a moodboard and style guide.</p>
-            <div class="img-wrapper std-shadow">
-              <img src="images/mobile/style-guide.png" alt="image of section of one style guide page, showing typography specifications">
+        <section class="grey">
+          <h4 class="content">Preference testing</h4>
+          <p class="content">Not sure which concept to run with, I turned to users for their opinions on four options.</p>
+          <div class="img-wrapper-med centered content">
+            <img src="images/desktop/logo-options.png" alt="four logo and name options"  class="extra-space-top">
+          </div>
+          <div class="col-2-flex">
+            <div>
+              <h5 class="extra-space-top">Results</h5>
+              <p>The results were clear: users liked dogear because it most tangibly relates to the purpose of the platform.</p>
+              <p>I was surprised; I thought the dogear logo was a bit boring, even dated. I wanted it to be more modern, edgy, and relatable.</p>
+            </div>
+            <div>
+              <h5>Revisions</h5>
+              <p>One key change was to update the colors, where vibrant blues are associated with computers and technological energy. I also swapped out the typeface for one that’s lighter and more contemporary, complemting the logo’s 45-degree angle.</p>
+            </div>
+          </div>
+        </section>
+
+        <div class="img-wrapper-small centered">
+          <img src="images/dogear-logo.png">
+        </div>
+
+        <section class="content grey">
+          <h4>Look and feel</h4>
+          <p>With a general tone set by the logo, I created a moodboard and style guide.</p>
+          <div class="img-wrapper std-shadow">
+            <img src="images/mobile/style-guide.png" alt="image of section of one style guide page, showing typography specifications">
+          </div>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-do-different.png" alt="would do differently icon" class="icon-mobile">
+            <h2>would do differently</h2>
+          </div>
+          <p>I sent the logo preference test in color, but next time I’ll use greyscale so participants aren’t swayed by their color preferences. I might even deploy separate tests for the name and logo, since the logos got much more attention than the associated names.</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+            <hr>
+            <h2>mockups & preference testing</H2>
+              <H3>How does the style look on the actual product?</h3>
+                <div class="button-flex">
+                  <a href="https://www.figma.com/file/TcnbzZMDaGHhpgK9jU121V0n/dogear-prototypes?node-id=1%3A11860">
+                    <button>view hi-fi prototypes</button>
+                  </a>
+                  <a href="https://drive.google.com/open?id=1rUwk1TTw-xybnsbcoPSbKFsmD7ZwZocSnfvPC3lLU7I">
+                    <button>view preference test findings</button>
+                  </a>
+                </div>
             </div>
           </section>
+        </div>
 
-          <section class="key-takeaway content">
-            <div class="centered">
-              <img src="images/icon-do-different.png" alt="would do differently icon" class="icon-mobile">
-              <h2>would do differently</h2>
-            </div>
-            <p>I sent the logo preference test in color, but next time I’ll use greyscale so participants aren’t swayed by their color preferences. I might even deploy separate tests for the name and logo, since the logos got much more attention than the associated names.</p>
-          </section>
+        <div class="parallax-mockups" alt="top section of final desktop landing design">
+        </div>
 
-          <section class="step-intro">
-            <div class="content">
-              <hr>
-              <h2>mockups & preference testing</H2>
-                <H3>How does the style look on the actual product?</h3>
-                  <div class="button-flex">
-                    <a href="https://www.figma.com/file/TcnbzZMDaGHhpgK9jU121V0n/dogear-prototypes?node-id=1%3A11860">
-                      <button>view hi-fi prototypes</button>
-                    </a>
-                    <a href="https://drive.google.com/open?id=1rUwk1TTw-xybnsbcoPSbKFsmD7ZwZocSnfvPC3lLU7I">
-                      <button>view preference test findings</button>
-                    </a>
-                  </div>
-              </div>
-            <div class="img-wrapper">
-              <img src="images/desktop-landing.png" alt="top section of final desktop landing design">
-            </div>
-          </section>
-
+        <div class="scroll">
           <section>
             <div class="content">
               <h4 class="extra-space-top">Design iterations</h4>
@@ -639,7 +684,7 @@
               </section>
             </section>
 
-            <section class="key-takeaway content">
+            <section class="key-takeaway">
               <div class="centered">
                 <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
                 <h2>lesson learned</h2>
@@ -667,11 +712,13 @@
                     </a>
                   </div>
                 </div>
-              <div class="img-wrapper">
-                <img src="images/mobile/mobile-triptic.png" alt="image of three final mobile screens on an iPhone">
-              </div>
-            </section>
+              </section>
+        </div>
 
+        <div class="parallax-prototypes" alt="image of three final mobile screens on an iPhone">
+        </div>
+
+        <div class="scroll">
             <section class="content">
               <h4 class="extra-space-top">User testing</h4>
               <p>With revisions in place based on preference testing, I wanted to test the high-fidelity clickable prototype with users.</p>
@@ -690,12 +737,12 @@
             <section class="content grey">
               <h4>Final deliverables</h4>
               <p>With these and other revisions in place, the dogear design assets are ready to hand off to developers.</p>
-              <div class="img-wrapper">
+              <div class="img-wrapper extra-space-top">
                 <img src="images/dogear-for-closing.png" alt="dogear dashboard displaying a source in a laptop and iPhone">
               </img>
             </section>
 
-            <section class="key-takeaway content">
+            <section class="key-takeaway">
               <div class="centered">
                 <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
                 <h2>lesson learned</h2>
@@ -746,7 +793,8 @@
               <img src="images/instagram.png" alt="Instagram logo">
             </a>
           </div>
-          <img src="images/mobile/blobs-for-footer.png" class="footer-blobs">
+          <img src="images/mobile/blobs-for-footer.png" class="footer-blobs-mobile">
+          <img src="images/desktop/blobs-for-footer.png" class="footer-blobs-desktop">
         </footer>
       </div>
     </body>

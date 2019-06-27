@@ -47,6 +47,11 @@ header {
   flex-grow: .5;
 }
 
+.margin {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
 .hero {
   text-align: center;
   width: 100vw;
@@ -69,10 +74,6 @@ header {
   background-size: contain;
   height: 100vh;
   width: 100vw;
-}
-
-.design-process-flex {
-  /*used in media queries*/
 }
 
 .bio-hero {
@@ -103,10 +104,6 @@ header {
   z-index: 2;
 }
 
-.col-3-flex {
-/*used in media queries*/
-}
-
 .project {
   background-color: #F9F9FA;
   text-align: center;
@@ -118,15 +115,24 @@ header {
   padding-top: 6rem;
 }
 
+.project-image {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 .screen-in-back {
-  max-width: 80rem;
+  position: relative;
+  width: 100%;
 }
 
 .animation-on-top {
-  display: absolute;
-  max-width: 30%;
-  margin-top: -35rem;
-  margin-left: 60vw;
+  position: absolute;
+  width: 20%;
+  /* margin-bottom: auto; */
+  margin-left: 50%;
+  /* margin-right: auto; */
+  margin-top: 8%;
+  z-index: 2;
 }
 
 .bio-section-title {
@@ -145,7 +151,7 @@ header {
   display: flex;
   flex-direction: column;
   max-width: 90vw;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .intro .button-flex {
@@ -165,12 +171,6 @@ header {
   background-color: #E8F3F2;
   padding-bottom: 3rem;
   padding-top: 4rem;
-}
-
-.process-steps-flex {
-  align-items: center;
-  display: inline-flex;
-  flex-direction: column;
 }
 
 .process-step {
@@ -194,18 +194,8 @@ header {
   vertical-align: top;
 }
 
-.overview-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .overview-section {
   text-align: center;
-}
-
-.prob-sol-flex {
-  flex-direction: column;
 }
 
 .step-intro {
@@ -218,7 +208,7 @@ header {
   background-repeat: no-repeat;
   background-size: 90% 100%;
   margin-bottom: 7rem;
-  margin-top: 5rem;
+  margin-top: 7rem;
   padding: 5%;
 }
 
@@ -227,20 +217,13 @@ header {
   padding-right: 12%;
 }
 
-.survey-flex {
-  flex-direction: column;
-}
-
-.user-stories-flex {
-  display: flex;
-  flex-direction: column;
-}
-
+      /*maybe delete*/
 .logo-pref-flex {
   display: flex;
   flex-direction: column;
 }
 
+      /*maybe delete*/
 .enter-mobile-flex {
   display: flex;
   flex-direction: row;
@@ -354,7 +337,7 @@ h1 {
   margin-top: 0;
 }
 
-.overview-flex h1 {
+.project-overview h1 {
   margin: 0;
 }
 
@@ -736,11 +719,6 @@ a {
   width: 75%;
 }
 
-.project-image {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
 .pref-test-flex img {
   margin: 0;
 }
@@ -800,47 +778,6 @@ a {
 .overview-section .icon-mobile {
   margin-bottom: .5rem;
   margin-top: 4rem;
-}
-
-.persona-1-flex, .persona-2-flex, .persona-3-flex {
-  justify-content: space-around;
-  align-items: top;
-  display: flex;
-  flex-direction: row;
-}
-
-.right-align {
-  text-align: right;
-}
-
-.persona-img, .persona-img-left {
-  height: auto;
-  flex: 1.8;
-  margin-top: 1rem;
-}
-
-.persona-img-right {
-  border-radius: 2px;
-  box-shadow: -1px 4px 8px #BDBDBD;
-  height: auto;
-  margin-left: 1rem;
-  margin-right: 0;
-  margin-bottom: 1.5rem;
-  width: 90%
-}
-
-.persona-profile {
-  flex: 2;
-  margin-top: 1rem;
-}
-
-.persona-img-left > img {
-  border-radius: 2px;
-  box-shadow: -1px 4px 8px #BDBDBD;
-  height: auto;
-  margin-bottom: 1.5rem;
-  margin-right: 1rem;
-  width: 90%
 }
 
 .footer-blobs-mobile {
@@ -907,25 +844,22 @@ hr {
 /*mobile*/
 @media screen and (max-width: 768px) {
 
-  .hero-video {
+  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop {
     display: none;
   }
 
-  .logo-header-desktop {
-    display: none;
+          /*not working*/
+  .parallax-competitors, .parallax-survey {
+    background-attachment: scroll;
   }
 
-    .col-3-flex {
+  .col-3-flex {
     margin-left: 5%;
     margin-right: 5%;
   }
 
   .small {
     font-size: 1.4rem;
-  }
-
-  .footer-blobs-desktop {
-    display: none;
   }
 }
 
@@ -944,17 +878,87 @@ hr {
 @media screen and (min-width: 767px) {
 
   .content {
-      padding-left: 20vw;
-      padding-right: 20vw;
-    }
-
-  .logo-header-mobile {
-    display: none;
+    padding-left: 20vw;
+    padding-right: 20vw;
   }
 
-  .hero-img {
-    display: none;
-  }
+ .parallax-competitors {
+   background-image: url("/images/desktop/competitors.png");
+   min-height: 40vh;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+
+ .parallax-survey {
+   background-image: url("/images/survey.png");
+   min-height: 40vh;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+
+.parallax-personas {
+  background-image: url("/images/desktop/personas.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax-sitemap {
+  background-image: url("/images/desktop/sitemap.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-wireframes {
+  background-image: url("/images/desktop/wireframes-sketches.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax-visual {
+  background-image: url("/images/logo-sketches.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax-mockups {
+  background-image: url("/images/desktop-landing.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.parallax-prototypes {
+  background-image: url("/images/mobile/mobile-triptic.png");
+  min-height: 40vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+        /*not working?*/
+ .scroll {
+   box-shadow: 0px 0px 12px #BDBDBD;
+ }
 
   .hero-video {
     width: 100vw;
@@ -999,10 +1003,6 @@ hr {
     margin-top: 5rem;
   }
 
-  .small {
-    font-size: 1.8rem;
-  }
-
   .intro-2 blockquote {
     margin-left: 0;
     margin-right: 0;
@@ -1036,17 +1036,13 @@ hr {
     margin-right: 0;
   }
 
-  .col-3-flex {
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    margin-right: 5%;
+  .col-no-title {
+    padding-top: 6rem;
   }
 
-  .col-3-flex p {
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    padding-left: 0;
+  .grey {
+    padding-bottom: 8rem;
+    padding-top: 6rem;
   }
 
   .key-takeaway {
@@ -1076,6 +1072,8 @@ hr {
 
   h1 {
     font-size: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 10rem;
   }
 
   h2 {
@@ -1084,6 +1082,7 @@ hr {
 
   h3 {
     font-size: 2.6rem;
+    margin-bottom: 2rem;
   }
 
   h4 {
@@ -1092,6 +1091,11 @@ hr {
 
   h5 {
     font-size: 2.1rem;
+    margin-top: 3rem;
+  }
+
+  h6 {
+    font-size: 1.8rem;
   }
 
   p {
@@ -1106,18 +1110,82 @@ hr {
     font-size: 2.2rem;
   }
 
+  .small {
+    font-size: 1.8rem;
+  }
+
+  .small-list {
+    font-size: 1.8rem;
+  }
+
   blockquote {
     font-size: 2.2rem;
   }
 
-  .footer-blobs-mobile {
+  .underline::after {
+    height: 2px;
+   }
+
+  .progression-desktop {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+  }
+
+  .col-2-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    }
+  }
+
+  .col-2-flex div {
+    flex-basis: 47.5%;
+  }
+
+  .col-3-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .col-3-flex div {
+    flex-basis: 30%;
+  }
+
+  .col-4-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .col-4-flex div {
+    flex-basis: 22.5%;
+  }
+
+  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile {
     display: none;
   }
+
+  .footer-blobs-desktop {
+    display: absolute;
+    width: 90%;
 }
 
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
+
+   .step-skip-label {
+     display: none;
+   }
+
   .content {
     padding-left: 20vw;
     padding-right: 20vw;
@@ -1146,11 +1214,6 @@ hr {
   .intro-2 blockquote {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .design-process-flex {
-    display: flex;
-    flex-direction: row;
   }
 
   .process-1, .process-2, .process-3, .process-4 {
@@ -1193,22 +1256,6 @@ hr {
     margin-left: 20vw;
   }
 
-  .col-3-flex {
-    justify-content: center; /*not working*/
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-    margin-right: 5%;
-    max-width: 120rem;
-  }
-
-  .col-3-flex p {
-    flex-basis: 33%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    padding-left: 0;
-  }
-
   .bio-section blockquote {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -1235,6 +1282,79 @@ hr {
   button {
     max-width: 30rem;
     min-width: 25vw;
+  }
+
+  .process-steps-flex {
+    align-items: flex-end;
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .process-step {
+    margin: 1.6%;
+  }
+
+  .process-step h5 {
+    font-size: 1.8rem;
+  }
+
+  .personas-grid {
+    display: grid;
+    grid-column-gap: 2.5%;
+    grid-row-gap: 2.5%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "persona-1 persona-2"
+      "persona-3 persona-2";
+  }
+
+  .persona-1, .persona-3 {
+    background-color: #F9F9FA;
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "photo frust-goals"
+      "persona-profile frust-goals";
+    padding: 5%;
+  }
+
+  .persona-2 {
+    background-color: #F9F9FA;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "photo"
+      "persona-profile"
+      "frust-goals";
+    padding: 5%;
+  }
+
+  .persona-1 {
+    grid-area: persona-1;
+  }
+
+  .persona-2 {
+    grid-area: persona-2;
+  }
+
+  .persona-3 {
+    grid-area: persona-3;
+  }
+
+  .photo {
+    grid-area: photo;
+  }
+
+  .personas-grid img {
+    box-shadow: -1px 4px 8px #BDBDBD;
+    max-width: 15vw;
   }
 }
 
@@ -1273,17 +1393,13 @@ hr {
     right: 0;
     width: 50%;
   }
-
-  .footer-blobs-desktop {
-    display: absolute;
-    width: 90%;
-  }
 }
 
 
 
 /* -------------------------------------------------------- */
 /* Unused classes
+
 .bio {
 }
 
