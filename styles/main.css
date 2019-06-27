@@ -870,6 +870,94 @@ hr {
   .really-bullet {
     display: none;
   }
+
+  .personas-grid {
+    display: grid;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "persona-1"
+      "persona-2"
+      "persona-3";
+  }
+
+  .persona-1, .persona-3 {
+    background-color: #F9F9FA;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+      "photo persona-profile"
+      "frust-goals frust-goals";
+    justify-content: start;
+    padding: 5vw;
+  }
+
+  .persona-2 {
+    background-color: #F9F9FA;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "persona-profile photo"
+      "frust-goals frust-goals";
+    justify-content: start;
+    padding: 5vw;
+    text-align: right;
+  }
+
+  .persona-1 {
+    grid-area: persona-1;
+  }
+
+  .persona-2 {
+    grid-area: persona-2;
+  }
+
+  .persona-3 {
+    grid-area: persona-3;
+  }
+
+  .photo {
+    grid-area: photo;
+  }
+
+  .persona-profile {
+    grid-area: persona-profile;
+    margin-top: 5%;
+  }
+
+  .persona-1 .persona-profile {
+    margin-left: 3rem;
+  }
+
+  .persona-2 .persona-profile {
+    margin-right: 3rem;
+  }
+
+  .persona-3 .persona-profile {
+    margin-left: 3rem;
+  }
+
+  .frust-goals {
+    grid-area: frust-goals;
+    margin-top: 3rem;
+  }
+
+  .personas-grid img {
+    box-shadow: -1px 4px 8px #BDBDBD;
+  }
+
+  .persona-1 .frust-goals {
+    margin-left: 2.5vw;
+  }
+
+  .persona-3 .frust-goals {
+    margin-left: 2.5vw;
+  }
+
+  .block {
+    display: block;
+  }
+
 }
 
 
@@ -1304,9 +1392,9 @@ hr {
 
   .personas-grid {
     display: grid;
-    grid-column-gap: 2.5%;
-    grid-row-gap: 2.5%;
-    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1.75fr 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       "persona-1 persona-2"
@@ -1316,12 +1404,12 @@ hr {
   .persona-1, .persona-3 {
     background-color: #F9F9FA;
     display: grid;
-    grid-template-columns: .75fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: .66fr 1fr;
     grid-template-areas:
       "photo frust-goals"
       "persona-profile frust-goals";
-    padding: 5%;
+    justify-content: start;
+    padding: 5rem;
   }
 
   .persona-2 {
@@ -1333,7 +1421,8 @@ hr {
       "photo"
       "persona-profile"
       "frust-goals";
-    padding: 5%;
+    justify-content: start;
+    padding: 5rem;
   }
 
   .persona-1 {
@@ -1352,10 +1441,35 @@ hr {
     grid-area: photo;
   }
 
+  .persona-profile {
+    grid-area: persona-profile;
+    margin-top: 5%;
+  }
+
+  .persona-1 .persona-profile {
+    margin-top: 3rem;
+  }
+
+  .persona-3 .persona-profile {
+    margin-top: 3rem;
+  }
+
+  .frust-goals {
+    grid-area: frust-goals;
+  }
+
   .personas-grid img {
     box-shadow: -1px 4px 8px #BDBDBD;
-    max-width: 15vw;
   }
+
+  .persona-1 .frust-goals {
+    margin-left: 2.5rem;
+  }
+
+  .persona-3 .frust-goals {
+    margin-left: 2.5rem;
+  }
+
 }
 
 @media screen and (min-width: 1500px) {
