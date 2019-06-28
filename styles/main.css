@@ -127,11 +127,9 @@ header {
 
 .animation-on-top {
   position: absolute;
-  width: 20%;
-  /* margin-bottom: auto; */
-  margin-left: 50%;
-  /* margin-right: auto; */
-  margin-top: 8%;
+  max-width: 25vw;
+  margin-left: 65%;
+  margin-top: 12%;
   z-index: 2;
 }
 
@@ -821,21 +819,18 @@ hr {
 /*media queries*/
 
 /*mobile*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
-  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .design-prog-desktop, .style-guide-desktop {
+  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .design-prog-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey {
     display: none;
-  }
-
-          /*not working*/
-  .parallax-competitors, .parallax-survey {
-    background-attachment: scroll;
   }
 
   .col-3-flex {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 
   .col-4-flex {
@@ -873,6 +868,7 @@ hr {
   .small {
     font-size: 1.4rem;
   }
+
 }
 
 
@@ -970,7 +966,6 @@ hr {
   .persona-3 .frust-goals {
     margin-left: 2.5vw;
   }
-
 }
 
 
@@ -981,6 +976,10 @@ hr {
   .content {
     padding-left: 20vw;
     padding-right: 20vw;
+  }
+
+  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile, .logo-options-mobile, .competitors-mobile, .survey-mobile {
+    display: none;
   }
 
  .parallax-competitors {
@@ -1060,6 +1059,7 @@ hr {
    box-shadow: 0px 4px 20px #BDBDBD;
    padding-bottom: 2rem;
    padding-top: 6rem;
+   position: relative;
  }
 
   .hero-video {
@@ -1226,7 +1226,7 @@ hr {
 
   .underline::after {
     height: 2px;
-   }
+  }
 
   .progression-desktop {
     margin-left: auto;
@@ -1238,7 +1238,6 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
   }
 
   .col-2-flex div {
@@ -1288,18 +1287,19 @@ hr {
     max-width: 22rem;
   }
 
-  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile {
-    display: none;
-  }
-
   .footer-blobs-desktop {
     display: absolute;
     width: 90%;
+  }
 }
 
 
 /*desktop*/
 @media screen and (min-width: 1024px) {
+
+    .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile, .logo-options-mobile {
+      display: none;
+    }
 
    .step-skip-label {
      display: none;
