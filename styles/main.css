@@ -799,8 +799,6 @@ a {
 
 .grey {
   background-color: #F9F9FA;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
   padding-bottom: 4rem;
   padding-top: 2rem;
 }
@@ -844,7 +842,7 @@ hr {
 /*mobile*/
 @media screen and (max-width: 768px) {
 
-  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop {
+  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .design-prog-desktop, .style-guide-desktop {
     display: none;
   }
 
@@ -854,8 +852,13 @@ hr {
   }
 
   .col-3-flex {
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .col-4-flex {
+    flex-direction: column;
   }
 
   .small {
@@ -959,6 +962,7 @@ hr {
     margin-left: 2.5vw;
   }
 
+      /*might not be working*/
   .block {
     display: block;
   }
@@ -968,7 +972,7 @@ hr {
 
 /*tablet*/
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
   .content {
     padding-left: 20vw;
@@ -977,7 +981,7 @@ hr {
 
  .parallax-competitors {
    background-image: url("/images/desktop/competitors.png");
-   min-height: 40vh;
+   min-height: 60vh;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -986,7 +990,7 @@ hr {
 
  .parallax-survey {
    background-image: url("/images/survey.png");
-   min-height: 40vh;
+   min-height: 60vh;
    background-attachment: fixed;
    background-position: center;
    background-repeat: no-repeat;
@@ -995,7 +999,7 @@ hr {
 
 .parallax-personas {
   background-image: url("/images/desktop/personas.png");
-  min-height: 40vh;
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1004,7 +1008,7 @@ hr {
 
 .parallax-sitemap {
   background-image: url("/images/desktop/sitemap.png");
-  min-height: 40vh;
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1013,7 +1017,7 @@ hr {
 
 .parallax-wireframes {
   background-image: url("/images/desktop/wireframes-sketches.png");
-  min-height: 40vh;
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1022,7 +1026,7 @@ hr {
 
 .parallax-visual {
   background-image: url("/images/logo-sketches.png");
-  min-height: 40vh;
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1031,7 +1035,7 @@ hr {
 
 .parallax-mockups {
   background-image: url("/images/desktop-landing.png");
-  min-height: 40vh;
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1039,8 +1043,8 @@ hr {
 }
 
 .parallax-prototypes {
-  background-image: url("/images/mobile/mobile-triptic.png");
-  min-height: 40vh;
+  background-image: url("/images/desktop/mobile-triptic.png");
+  min-height: 60vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -1050,7 +1054,7 @@ hr {
 
         /*not working?*/
  .scroll {
-   box-shadow: 0px 0px 12px #BDBDBD;
+   box-shadow: 0px 4px 20px #BDBDBD;
  }
 
   .hero-video {
@@ -1222,15 +1226,13 @@ hr {
   .progression-desktop {
     margin-left: auto;
     margin-right: auto;
-    width: 90vw;
+    width: 90%;
   }
 
   .col-2-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 5vw;
-    margin-right: 5vw;
     }
   }
 
@@ -1240,7 +1242,6 @@ hr {
 
   .col-3-flex {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-left: 5vw;
     margin-right: 5vw;
@@ -1262,7 +1263,7 @@ hr {
     flex-basis: 22.5%;
   }
 
-  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile {
+  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile {
     display: none;
   }
 
@@ -1404,6 +1405,8 @@ hr {
     grid-template-areas:
       "persona-1 persona-2"
       "persona-3 persona-2";
+    margin-left: auto;
+    margin-right: auto;
     max-width: 995px;
   }
 
