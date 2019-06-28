@@ -233,34 +233,6 @@ header {
   margin-right: 5%;
 }
 
-.pref-test-flex {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.option-a {
-  max-width: 45%;
-}
-
-.option-b {
-  max-width: 45%;
-}
-
-.option-c {
-  width: 90%;
-  max-width: 400px;
-  text-align: center;
-}
-
-.add-solution-text {
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-  text-align: left;
-}
-
 .really {
   background-color: #3B3F41;
   padding-bottom: 3rem;
@@ -475,6 +447,10 @@ h5 {
 .underline:active {
   color: #D4345C;
   top: 1px;
+}
+
+.underline {
+  display: inline-block;
 }
 
 .underline::after {
@@ -794,6 +770,11 @@ a {
   width: 90vw;
 }
 
+      /*might not be working*/
+  .block {
+    display: block;
+  }
+
 /* -------------------------------------------------------- */
 /* Spacing and colors */
 
@@ -859,6 +840,34 @@ hr {
 
   .col-4-flex {
     flex-direction: column;
+  }
+
+  .pref-test-flex {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .option-a {
+    max-width: 40vw;
+  }
+
+  .option-b {
+    max-width: 40vw;
+  }
+
+  .option-c {
+    max-width: 55vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .add-solution-text {
+    text-align: left;
   }
 
   .small {
@@ -962,11 +971,6 @@ hr {
     margin-left: 2.5vw;
   }
 
-      /*might not be working*/
-  .block {
-    display: block;
-  }
-
 }
 
 
@@ -981,80 +985,81 @@ hr {
 
  .parallax-competitors {
    background-image: url("/images/desktop/competitors.png");
-   min-height: 60vh;
    background-attachment: fixed;
-   background-position: center;
+   background-position: top 7rem left 50%;
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: contain;
+   min-height: 60vh;
  }
 
  .parallax-survey {
    background-image: url("/images/survey.png");
-   min-height: 60vh;
    background-attachment: fixed;
-   background-position: center;
+   background-position: top 20vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
- }
+   min-height: 60vh;
+}
 
 .parallax-personas {
   background-image: url("/images/desktop/personas.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 60vh;
 }
 
 .parallax-sitemap {
   background-image: url("/images/desktop/sitemap.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 10rem left 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  min-height: 60vh;
 }
 
 .parallax-wireframes {
   background-image: url("/images/desktop/wireframes-sketches.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 60vh;
 }
 
 .parallax-visual {
   background-image: url("/images/logo-sketches.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 60vh;
 }
 
 .parallax-mockups {
   background-image: url("/images/desktop-landing.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 60vh;
 }
 
 .parallax-prototypes {
   background-image: url("/images/desktop/mobile-triptic.png");
-  min-height: 60vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 60vh;
 }
-
 
         /*not working?*/
  .scroll {
    box-shadow: 0px 4px 20px #BDBDBD;
+   padding-bottom: 2rem;
+   padding-top: 6rem;
  }
 
   .hero-video {
@@ -1261,6 +1266,26 @@ hr {
 
   .col-4-flex div {
     flex-basis: 22.5%;
+  }
+
+  .pref-test-flex {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .option-a {
+    max-width: 22rem;
+  }
+
+  .option-b {
+    max-width: 22rem;
+  }
+
+  .option-c {
+    max-width: 22rem;
   }
 
   .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile {
@@ -1477,6 +1502,29 @@ hr {
 
   .persona-3 .frust-goals {
     margin-left: 2.5rem;
+  }
+
+  .pref-test-flex {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    max-width: 60%
+  }
+
+  .option-a {
+    max-width: 30%;
+  }
+
+  .option-b {
+    max-width: 30%;
+  }
+
+  .option-c {
+    max-width: 30%;;
+  }
+
+  .large-margin {
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
 }
