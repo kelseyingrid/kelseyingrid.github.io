@@ -117,7 +117,9 @@ header {
 
 .project-image {
   margin: 0 auto;
-  max-width: 800px;
+  margin-bottom: 15%;
+  max-width: 80%;
+  position: relative;
 }
 
 .screen-in-back {
@@ -127,8 +129,8 @@ header {
 
 .animation-on-top {
   position: absolute;
-  max-width: 25vw;
-  margin-left: 65%;
+  max-width: 30%;
+  margin-left: 72%;
   margin-top: 12%;
   z-index: 2;
 }
@@ -706,7 +708,7 @@ a {
 }
 
 .std-shadow {
-  box-shadow: -1px 4px 8px #E0E0E0;
+  box-shadow: -1px 4px 8px rgba(0,0,0,.2);
 }
 
 .icon-mobile {
@@ -956,7 +958,7 @@ hr {
   }
 
   .personas-grid img {
-    box-shadow: -1px 4px 8px #BDBDBD;
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
   }
 
   .persona-1 .frust-goals {
@@ -982,8 +984,13 @@ hr {
     display: none;
   }
 
+        /*not working*/
+  .logo-options-desktop {
+    max-width: 90%;
+  }
+
  .parallax-competitors {
-   background-image: url("/images/desktop/competitors.png");
+   background-image: url("/images/competitors.png");
    background-attachment: fixed;
    background-position: top 7rem left 50%;
    background-repeat: no-repeat;
@@ -1054,9 +1061,8 @@ hr {
   min-height: 60vh;
 }
 
-        /*not working?*/
  .scroll {
-   box-shadow: 0px 4px 20px #BDBDBD;
+   box-shadow: 0px 10px 30px rgba(0,0,0,.2);
    padding-bottom: 2rem;
    padding-top: 6rem;
    position: relative;
@@ -1108,11 +1114,6 @@ hr {
   .intro-2 blockquote {
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .process-1, .process-2, .process-3, .process-4 {
-    margin-left: 20vw;
-    margin-right: 20vw;
   }
 
   .bio-hero h3 {
@@ -1255,14 +1256,6 @@ hr {
     flex-basis: 30%;
   }
 
-  .col-4-flex {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-
   .col-4-flex div {
     flex-basis: 22.5%;
   }
@@ -1297,9 +1290,9 @@ hr {
 /*desktop*/
 @media screen and (min-width: 1024px) {
 
-    .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile, .logo-options-mobile {
-      display: none;
-    }
+  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .design-prog-mobile, .style-guide-mobile, .logo-options-mobile {
+    display: none;
+  }
 
    .step-skip-label {
      display: none;
@@ -1403,6 +1396,14 @@ hr {
     min-width: 25vw;
   }
 
+  .col-4-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   .process-steps-flex {
     align-items: flex-end;
     display: flex;
@@ -1493,7 +1494,7 @@ hr {
   }
 
   .personas-grid img {
-    box-shadow: -1px 4px 8px #BDBDBD;
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
   }
 
   .persona-1 .frust-goals {
