@@ -30,8 +30,8 @@ header {
 }
 
 .header-flex {
-  display: flex;
   align-items: center;
+  display: flex;
   flex-direction: row;
 }
 
@@ -54,32 +54,49 @@ header {
 }
 
 .hero {
+  overflow: hidden;
   text-align: center;
-  width: 100vw;
 }
 
 .hero-logo {
-  max-height: 236px;
-  max-width: 140px;
+  max-height: 328px;
+  max-width: 357px;
+  position: relative;
+  width: 80%;
 }
 
-/* centering seems like a hack */
 .hero-content {
-  position: absolute;
-  top: 30vh;
   left: calc(50% - 40%);
+  position: absolute;
+  top: 25vh;
   width: 80%;
 }
 
 .hero-img {
-  background-size: contain;
-  height: 100vh;
-  width: 100vw;
+  height: 90vh;
+  position: relative;
+  width: auto;
 }
 
 .bio-hero {
   background-color: #E8F3F2;
   margin-top: 0;
+}
+
+.margin-top {
+  margin-top: 3rem;
+}
+
+.margin-bottom {
+  margin-bottom: 3rem;
+}
+
+.padding-bottom {
+  padding-bottom: 3rem;
+}
+
+.padding-top {
+  padding-top: 3rem;
 }
 
 .intro {
@@ -117,8 +134,10 @@ header {
 }
 
 .project-image {
-  margin: 0 auto;
   margin-bottom: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
   max-width: 80%;
   position: relative;
 }
@@ -226,13 +245,6 @@ header {
   z-index: 2;
 }
 
-      /*maybe delete*/
-.logo-pref-flex {
-  display: flex;
-  flex-direction: column;
-}
-
-      /*maybe delete*/
 .enter-mobile-flex {
   display: flex;
   flex-direction: row;
@@ -242,6 +254,10 @@ header {
   margin-right: 5%;
 }
 
+.enter-mobile-1, .enter-mobile-2 {
+  flex-basis: 45%;
+}
+
 .really {
   background-color: #3B3F41;
   padding-bottom: 3rem;
@@ -249,9 +265,6 @@ header {
   padding-right: 5vw;
   padding-top: 1rem;
   text-align: center;
-}
-
-.resume-page {
 }
 
 .resume-page .button-flex {
@@ -279,7 +292,7 @@ footer {
 /* Typography */
 
 .hero-text {
-  color: #E8F3F2;
+  color: #F9F9FA;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   margin-top: 2rem;
@@ -304,7 +317,6 @@ blockquote {
   margin-right: 5%;
   margin-top: 2rem;
 }
-
 
 .bio-section blockquote {
   margin-left: 5%;
@@ -410,6 +422,11 @@ h4 {
   margin-bottom: 3rem;
 }
 
+.grey > h4 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 footer h4 {
   color: #F9F9FA;
 }
@@ -426,7 +443,7 @@ h5 {
   font-weight: 600;
   line-height: 141%;
   margin-bottom: 0.5rem;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
 }
 
 .overview-section h5 {
@@ -462,6 +479,10 @@ h5 {
   color: #EF3B68;
   margin-bottom: 1rem;
   margin-top: 2rem;
+}
+
+.grey > h5 {
+  margin-top: 0;
 }
 
 .underline:active {
@@ -504,7 +525,7 @@ p {
   color: #3B3F41;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 141%;
   margin-top: .5rem;
   margin-bottom: 2rem;
@@ -536,7 +557,7 @@ li {
   color: #3B3F41;
   font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 141%;
   margin-bottom: 1rem;
 }
@@ -562,10 +583,6 @@ header .header-logo {
 
 .small-list {
   font-size: 1.4rem;
-}
-
-.extra-space-top {
-  margin-top: 3rem;
 }
 
 
@@ -594,15 +611,8 @@ button:active {
   top: 1px;
 }
 
-            /* need to figure out how to change color of png on click */
-.logo-header-desktop:active {
-  color: #730039;
-  top: 1px;
-}
-
 .header-work:active, .header-bio:active, .header-contact:active {
   color: #730039;
-  top: 1px;
 }
 
 .case-study-hero button {
@@ -661,7 +671,7 @@ a {
 
 .blobs {
   margin-bottom: -64rem;
-  margin-top: -15rem;
+  margin-top: -18rem;
   position: absolute;
   right: 0;
   width: 110vw;
@@ -689,7 +699,6 @@ a {
 .tldr {
   background-color: #F9F9FA;
   margin-bottom: 6rem;
-  margin-top: 2rem;
   padding-bottom: 0;
   padding-top: 2rem;
 }
@@ -786,18 +795,13 @@ a {
   width: 90vw;
 }
 
-      /*might not be working*/
-  .block {
-    display: block;
-  }
-
 /* -------------------------------------------------------- */
 /* Spacing and colors */
 
 .grey {
   background-color: #F9F9FA;
   padding-bottom: 4rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
 }
 
 .centered {
@@ -839,10 +843,17 @@ hr {
 /* -------------------------------------------------------- */
 /*media queries*/
 
-/*mobile*/
+/*mobile only*/
+@media screen and (max-width: 414px) {
+    video {
+      display: none;
+    }
+}
+
+/*mobile to large mobile*/
 @media screen and (max-width: 767px) {
 
-  .hero-video, .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey {
+  .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey, .enter-mobile-3 {
     display: none;
   }
 
@@ -886,6 +897,10 @@ hr {
     text-align: left;
   }
 
+  .tldr {
+    margin-top: 3rem;
+  }
+
   .small {
     font-size: 1.4rem;
   }
@@ -898,7 +913,7 @@ hr {
 @media screen and (max-width: 1023px) {
 
   .blobs {
-    margin-top: -11rem;
+    margin-top: -13rem;
   }
 
   .really-bullet {
@@ -1022,13 +1037,17 @@ hr {
     grid-area: draft-3;
     max-width: 90vw;
   }
-
 }
 
 
 /*awkward size between phone and tablet*/
 
 @media screen and (min-width: 415px) and (max-width: 767px) {
+
+  .hero-img, .enter-mobile-3 {
+    display: none;
+  }
+
   .process-1, .process-2, .process-3, .process-4 {
     background-position: 3vw 0vw;
     background-size: auto auto;
@@ -1045,7 +1064,23 @@ hr {
     padding-right: 20vw;
   }
 
-  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .style-guide-mobile, .logo-options-mobile, .competitors-mobile, .survey-mobile {
+  .margin-top {
+    margin-top: 4rem;
+  }
+
+  .padding-top {
+    padding-top: 4rem;
+  }
+
+  .margin-bottom {
+    margin-bottom: 4rem;
+  }
+
+  .padding-bottom {
+    padding-bottom: 4rem;
+  }
+
+  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile {
     display: none;
   }
 
@@ -1054,8 +1089,8 @@ hr {
   }
 
   .button-flex {
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
   }
 
   button {
@@ -1064,13 +1099,13 @@ hr {
 
   .logo-options-desktop {
     margin: auto;
-    width: 90%;
     max-width: 800px;
+    width: 90%;
   }
 
  .parallax-competitors {
-   background-image: url("/images/competitors.png");
    background-attachment: fixed;
+   background-image: url("/images/competitors.png");
    background-position: top 7rem left 50%;
    background-repeat: no-repeat;
    background-size: contain;
@@ -1078,18 +1113,18 @@ hr {
  }
 
  .parallax-survey {
-   background-image: url("/images/survey.png");
    background-attachment: fixed;
+   background-image: url("/images/survey.png");
    background-position: top 20vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
-   background-size: 100vh;
+   background-size: 90%;
    min-height: 60vh;
 }
 
 .parallax-personas {
-  background-image: url("/images/desktop/personas.png");
   background-attachment: fixed;
+  background-image: url("/images/desktop/personas.png");
   background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1098,8 +1133,8 @@ hr {
 }
 
 .parallax-sitemap {
-  background-image: url("/images/desktop/sitemap.png");
   background-attachment: fixed;
+  background-image: url("/images/desktop/sitemap.png");
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1108,8 +1143,8 @@ hr {
 }
 
 .parallax-wireframes {
-  background-image: url("/images/desktop/wireframes-sketches.png");
   background-attachment: fixed;
+  background-image: url("/images/desktop/wireframes-sketches.png");
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1117,8 +1152,8 @@ hr {
 }
 
 .parallax-visual {
-  background-image: url("/images/logo-sketches.png");
   background-attachment: fixed;
+  background-image: url("/images/logo-sketches.png");
   background-position: top 10vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1127,8 +1162,8 @@ hr {
 }
 
 .parallax-mockups {
-  background-image: url("/images/desktop-landing.png");
   background-attachment: fixed;
+  background-image: url("/images/desktop-landing.png");
   background-position: top 8rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1137,12 +1172,14 @@ hr {
 }
 
 .parallax-prototypes {
-  background-image: url("/images/desktop/mobile-triptic.png");
   background-attachment: fixed;
+  background-image: url("/images/desktop/mobile-triptic.png");
   background-position: top 12rem left 50%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  max-width: 1500px;
   min-height: 60vh;
+  width: 100%;
 }
 
  .scroll {
@@ -1151,14 +1188,6 @@ hr {
    padding-top: 6rem;
    position: relative;
  }
-
-  .hero-video {
-    width: 100vw;
-  }
-
-  .hero-content {
-    top: 12rem;
-  }
 
   .bio-hero .img-wrapper {
     margin-bottom: calc(.493 * 60vw * -1);
@@ -1195,10 +1224,6 @@ hr {
     text-indent: -3rem;
   }
 
-  .extra-space-top {
-    margin-top: 5rem;
-  }
-
   .intro-2 blockquote {
     margin-left: 0;
     margin-right: 0;
@@ -1214,7 +1239,7 @@ hr {
   }
 
   .tldr {
-    padding-top: calc(.493 * 60vw);
+    padding-top: calc(.5 * 60vw);
   }
 
   .tldr p {
@@ -1233,10 +1258,10 @@ hr {
   }
 
   .key-takeaway {
+    background-image: url("/images/tablet/parentheses.png");
     margin-bottom: 15rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("/images/tablet/parentheses.png");
     width: 70vw;
   }
 
@@ -1264,7 +1289,6 @@ hr {
     margin-top: 0;
   }
 
-
   h1 {
     font-size: 4rem;
     margin-bottom: 4rem;
@@ -1278,6 +1302,10 @@ hr {
   h3 {
     font-size: 2.6rem;
     margin-bottom: 2rem;
+  }
+
+  .step-intro h3 {
+    padding-bottom: 0;
   }
 
   h4 {
@@ -1295,6 +1323,10 @@ hr {
 
   p {
     font-size: 2.2rem;
+  }
+
+  .bio-para-1 {
+    padding-top: 1.5rem;
   }
 
   li {
@@ -1382,13 +1414,13 @@ hr {
   }
 
   .stories-grid {
-    display: grid;
     grid-gap: 2.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
     grid-template-areas:
       "title-1 title-2 title-2"
-      "list-1 list-2 list-3"
+      "list-1 list-2 list-3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    display: grid;
   }
 
   .title-1 {
@@ -1419,13 +1451,13 @@ hr {
 
   .personas-grid {
     display: grid;
-    grid-column-gap: 2rem; /**/
-    grid-row-gap: 2rem; /**/
-    grid-template-columns: 1.75fr 1fr;
-    grid-template-rows: auto auto;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
     grid-template-areas:
       "persona-1 persona-2"
       "persona-3 persona-2";
+    grid-template-columns: 1.75fr 1fr;
+    grid-template-rows: auto auto;
     margin-left: auto;
     margin-right: auto;
     max-width: 995px;
@@ -1434,12 +1466,12 @@ hr {
   .persona-1, .persona-3 {
     background-color: #F9F9FA;
     display: grid;
-    grid-template-columns: .66fr 1fr;
     grid-template-areas:
       "photo frust-goals"
       "persona-profile frust-goals";
+    grid-template-columns: .66fr 1fr;
     justify-content: start;
-    padding: 2rem; /**/
+    padding: 2rem;
   }
 
   .persona-2 {
@@ -1452,7 +1484,7 @@ hr {
       "persona-profile"
       "frust-goals";
     justify-content: start;
-    padding: 2rem; /**/
+    padding: 2rem;
   }
 
   .persona-1 {
@@ -1461,7 +1493,7 @@ hr {
 
   .persona-2 {
     grid-area: persona-2;
-    text-align: left; /**/
+    text-align: left;
   }
 
   .persona-3 {
@@ -1478,16 +1510,16 @@ hr {
   }
 
   .persona-1 .persona-profile {
-    margin-left: 0; /**/
+    margin-left: 0;
     margin-top: 3rem;
   }
 
-  .persona-2 .persona-profile { /**/
-    margin-left: 0; /**/
+  .persona-2 .persona-profile {
+    margin-left: 0;
   }
 
   .persona-3 .persona-profile {
-    margin-left: 0; /**/
+    margin-left: 0;
     margin-top: 3rem;
   }
 
@@ -1497,26 +1529,39 @@ hr {
 
   .personas-grid img {
     box-shadow: -1px 4px 8px rgba(0,0,0,.2);
-    max-width: 18rem; /**/
+    max-width: 18rem;
   }
 
   .persona-1 .frust-goals {
-    margin-left: 2rem; /**/
-    margin-top: 0; /**/
+    margin-left: 2rem;
+    margin-top: 0;
   }
 
   .persona-3 .frust-goals {
-    margin-left: 2rem; /**/
-    margin-top: 0; /**/
+    margin-left: 2rem;
+    margin-top: 0;
   }
 
-  .less-space-bottom {
-    padding-bottom: 2rem;
+  .enter-mobile-flex {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    width: 90vw;
+  }
+
+  .enter-mobile-1, .enter-mobile-2, .enter-mobile-3 {
+    flex-basis: 30%;
+  }
+
+  .enter-mobile-2 {
+    margin-right: 5%;
   }
 
   footer.scroll {
+    margin-top: 0;
     padding-bottom: 0;
   }
+}
 
 
 /*desktop*/
@@ -1526,17 +1571,8 @@ hr {
     display: none;
   }
 
-   .step-skip-label {
-     display: none;
-   }
-
-  .content {
-    padding-left: 20vw;
-    padding-right: 20vw;
-  }
-
-  .hero-content {
-    top: 20rem;
+  .step-skip-label {
+    display: none;
   }
 
   .blobs-bio {
@@ -1590,14 +1626,14 @@ hr {
     flex-basis: 25%;
   }
 
-  .bio-hero .img-wrapper {
-    margin-bottom: calc(.49 * 40vw * -1);
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
-
   .tldr {
     padding-top: calc(.49 * 40vw);
+  }
+
+  .bio-hero .img-wrapper {
+    margin-bottom: -20vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
   .bio-hero h3 {
@@ -1632,6 +1668,10 @@ hr {
     min-width: 25vw;
   }
 
+  .parallax-survey {
+    background-size: 75%;
+  }
+
   .col-4-flex {
     display: flex;
     flex-wrap: nowrap;
@@ -1641,18 +1681,16 @@ hr {
   }
 
   .process-1, .process-2, .process-3, .process-4 {
-    /* background-position: 0vw 0vw; */
     background-size: contain;
   }
 
   .progression-grid {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 1.5fr 2fr 3fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "draft-1 draft-2 draft-3";
-    justify-items: center;
+    grid-template-columns: 1.5fr 2fr 3fr;
+    grid-template-rows: auto;
     margin-left: 5vw;
     margin-right: 5vw;
   }
@@ -1698,11 +1736,11 @@ hr {
   }
 
   .persona-1, .persona-3 {
-    padding: 5rem; /**/
+    padding: 5rem;
   }
 
   .persona-2 {
-    padding: 5rem; /**/
+    padding: 5rem;
   }
 
   .pref-test-flex {
@@ -1727,7 +1765,6 @@ hr {
     margin-left: 20vw;
     margin-right: 20vw;
   }
-
 }
 
 @media screen and (min-width: 1500px) {
@@ -1750,20 +1787,23 @@ hr {
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);
   }
 
-  .hero-content {
-    top: 30rem;
-  }
-
-  .hero {
-    width: 1500px;
-  }
-
-  .hero-video {
-    width: 1500px;
+  button {
+    min-width: 30rem;
   }
 
   .parallax-prototypes {
-    max-width: 1500px;
+    background-image: url("/images/desktop/mobile-triptic-wide.png")
+  }
+
+  .parallax-survey {
+    background-size: 1000px;
+  }
+
+  .key-takeaway {
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
   }
 
   .blobs {
@@ -1778,20 +1818,3 @@ hr {
     width: 50%;
   }
 }
-
-
-
-/* -------------------------------------------------------- */
-/* Unused classes
-
-.bio {
-}
-
-.work {
-}
-
-.phase {
-}
-
-.final-thoughts {
-} */
