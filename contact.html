@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Resume | Kelsey Jacobsen</title>
+    <title>Bio | Kelsey Jacobsen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=auto">
     <link rel="stylesheet" href="styles/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container home">
       <header>
         <ul class="header-flex">
           <li class="header-logo">
@@ -22,32 +22,24 @@
           </li>
           <li class="header-work"><a href="dogear.html" class="header-work">work</a></li>
           <li class="header-bio"><a href="bio.html" class="header-bio">bio</a></li>
-          <li class="header-contact"><a href="mailto: kelseyingrid@gmail.com" class="header-contact">contact</a></li>
+          <li class="header-contact"><a href="feedback_form.html" class="header-contact">contact</a></li>
         </ul>
       </header>
 
-      <main>
-        <section class="resume-page centered">
-          <div class="button-flex">
-            <a download href="images/kelsey-jacobsen-resume.pdf">
-              <button>download resume</button>
-            </a>
-          </div>
-          <div class="img-wrapper-med">
-            <img src="images/kelsey-jacobsen-resume.png" class="resume">
-          </div>
-        </section>
+      <main class="content margin-bottom contact">
+        <h3 class="page-title-small margin-top">Send me an email</h3>
+        <p class="small">I'd love to hear from you!</p>
+          <form action="https://formspree.io/kelseyingrid@gmail.com" class="margin-top" method="POST"/>
+            <h6>Name</h6>
+            <input type="text" name="name" placeholder="Your name...">
+            <h6>Message</h6>
+            <textarea name="message" placeholder="Your message..."></textarea>
+            <input type="submit" value="Send" class="email-button margin-top">
+          </form>
       </main>
 
-    <footer>
-        <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo" class="logo-footer">
+      <footer>
         <div class="content">
-          <h4>Want to get in touch?</h4>
-          <div class="button-flex">
-            <a href="mailto: kelseyingrid@gmail.com">
-              <button>email me</button>
-            </a>
-          </div>
           <a href="https://www.linkedin.com/in/kelseyingrid/" class="social">
             <img src="images/linkedin.png" alt="LinkedIn logo">
           </a>
@@ -58,8 +50,8 @@
             <img src="images/instagram.png" alt="Instagram logo">
           </a>
         </div>
-        <img src="images/mobile/blobs-for-footer.png" class="footer-blobs-mobile">
-        <img src="images/desktop/blobs-for-footer.png" class="footer-blobs-desktop">
+        <img src="images/mobile/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-mobile">
+        <img src="images/desktop/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-desktop">
       </footer>
 
     </div>
