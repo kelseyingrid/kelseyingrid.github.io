@@ -278,12 +278,17 @@ header {
 }
 
 input[type=text], textarea {
-  border: 1.5px solid #D5EAEF;
   background-color: #f9f9fa;
+  border: 1.5px solid #D5EAEF;
   border-radius: 8px;
+  box-shadow: none;
   margin-bottom: 3rem;
   padding: 1rem;
   width: 100%;
+}
+
+input[type=submit] {
+  box-shadow: none;
 }
 
 footer {
@@ -1820,6 +1825,11 @@ hr {
   .large-margin {
     margin-left: 20vw;
     margin-right: 20vw;
+  }
+
+  .parallax-prototypes {
+    background-image: url("../images/desktop/mobile-triptic-wide.png");
+    background-size: 90%;
   }
 }
 
