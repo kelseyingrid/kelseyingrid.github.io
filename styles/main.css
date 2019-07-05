@@ -289,6 +289,7 @@ input[type=text], textarea {
 }
 
 input[type=submit] {
+  -webkit-appearance: none;
   box-shadow: none;
 }
 
@@ -638,6 +639,7 @@ button:active, .email-button:active {
 
 .header-work:active, .header-bio:active, .header-contact:active {
   color: #730039;
+  top: 1px;
 }
 
 .case-study-hero button {
@@ -774,6 +776,7 @@ a {
 
 .social {
   margin: 0 5%;
+  width: 4rem;
 }
 
 .process-1, .process-2, .process-3, .process-4 {
@@ -944,6 +947,12 @@ hr {
     display: none;
   }
 
+  .survey-mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
   .personas-grid {
     display: grid;
     grid-row-gap: 2rem;
@@ -1072,6 +1081,10 @@ hr {
 
   .contact p {
     text-align: center;
+  }
+
+  footer button {
+    margin-top: 2rem;
   }
 }
 
@@ -1728,6 +1741,10 @@ hr {
   button {
     max-width: 30rem;
     min-width: 25vw;
+  }
+
+  .underline:hover {
+    color: #035668;
   }
 
   .parallax-survey {
