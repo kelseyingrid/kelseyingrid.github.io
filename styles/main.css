@@ -228,7 +228,7 @@ header {
 }
 
 .key-takeaway {
-  background-image: url("/images/mobile/parentheses.png");
+  background-image: url("../images/mobile/parentheses.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% 100%;
@@ -1029,6 +1029,10 @@ hr {
     margin-top: 3rem;
   }
 
+  .frustrations-mobile {
+    max-width: 80%;
+  }
+
   .personas-grid img {
     box-shadow: -1px 4px 8px rgba(0,0,0,.2);
   }
@@ -1307,7 +1311,7 @@ hr {
   }
 
   .key-takeaway {
-    background-image: url("/images/tablet/parentheses.png");
+    background-image: url("../images/tablet/parentheses.png");
     margin-bottom: 15rem;
     margin-left: auto;
     margin-right: auto;
@@ -1319,6 +1323,10 @@ hr {
     margin-right: 0;
     padding-left: 5vw;
     padding-right: 5vw;
+  }
+
+  .frustrations-desktop {
+    max-width: 80%;
   }
 
   .bio-section blockquote {
@@ -1722,7 +1730,7 @@ hr {
   }
 
   .key-takeaway {
-    background-image: url("/images/desktop/parentheses.png");
+    background-image: url("../images/desktop/parentheses.png");
   }
 
   .really {
