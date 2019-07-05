@@ -278,7 +278,7 @@ header {
 }
 
 input[type=text], textarea {
-  appearance: none;
+  -webkit-appearance: none;
   background-color: #f9f9fa;
   border: 1.5px solid #D5EAEF;
   border-radius: 8px;
