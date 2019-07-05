@@ -23,7 +23,7 @@ main {
 /* sections and flex*/
 
 header {
-  background-color: #E8F3F2;
+  background-color: #EBF3F6;
   padding: 2rem 5vw;
   position: fixed;
   width: 100%;
@@ -63,7 +63,7 @@ header {
   max-height: 328px;
   max-width: 357px;
   position: relative;
-  width: 80%;
+  width: 90%;
 }
 
 .hero-content {
@@ -80,7 +80,7 @@ header {
 }
 
 .bio-hero {
-  background-color: #E8F3F2;
+  background-color: #EBF3F6;
   margin-top: 0;
 }
 
@@ -193,7 +193,7 @@ header {
 }
 
 .process-steps {
-  background-color: #E8F3F2;
+  background-color: #EBF3F6;
   padding-bottom: 3rem;
   padding-top: 4rem;
 }
@@ -278,7 +278,7 @@ header {
 }
 
 input[type=text], textarea {
-  border: 1.5px solid #99CCCC;
+  border: 1.5px solid #D5EAEF;
   background-color: #f9f9fa;
   border-radius: 8px;
   margin-bottom: 3rem;
@@ -287,7 +287,7 @@ input[type=text], textarea {
 }
 
 footer {
-  background-color: #035F68;
+  background-color: #035668;
   margin-top: 4rem;
   padding-top: 6rem;
   padding-bottom: 0;
@@ -315,7 +315,7 @@ footer {
 }
 
 blockquote {
-  border-left: 1.75px solid #99CCCC;
+  border-left: 1.75px solid #D5EAEF;
   color: #730039;
   font-size: 1.9rem;
   font-family: 'Nunito', sans-serif;
@@ -339,7 +339,7 @@ blockquote {
 
 h1 {
   text-align: center;
-  background-color: #035F68;
+  background-color: #035668;
   color: #F9F9FA;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.6rem;
@@ -360,7 +360,7 @@ h1 {
 
 .bio-section-title h1 {
   background-color: inherit;
-  color: #035F68;
+  color: #035668;
   margin-bottom: 0;
   margin-top: 0;
   padding-bottom: 0;
@@ -378,11 +378,11 @@ h2 {
 }
 
 .step-intro h2 {
-  color: #035F68;
+  color: #035668;
 }
 
 .bio h2 {
-  color: #035F68;
+  color: #035668;
 }
 
 h3 {
@@ -477,7 +477,7 @@ h5 {
 }
 
 .tldr h5 {
-  color: #035F68;
+  color: #035668;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -662,7 +662,7 @@ button:active, .email-button:active {
 }
 
 a {
-  color: #035F68;
+  color: #035668;
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.3rem;
@@ -828,9 +828,8 @@ a {
 }
 
 hr {
-  background-color: #E8F3F2;
+  background-color: #D5EAEF;
   border: none;
-  color: #E8F3F2;
   display: block;
   height: 1.5px;
   margin-left: auto;
@@ -1136,7 +1135,7 @@ hr {
 
  .parallax-competitors {
    background-attachment: fixed;
-   background-image: url("/images/competitors.png");
+   background-image: url("../images/competitors.png");
    background-position: top 7rem left 50%;
    background-repeat: no-repeat;
    background-size: contain;
@@ -1145,7 +1144,7 @@ hr {
 
  .parallax-survey {
    background-attachment: fixed;
-   background-image: url("/images/survey.png");
+   background-image: url("../images/survey.png");
    background-position: top 20vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
@@ -1155,7 +1154,7 @@ hr {
 
 .parallax-personas {
   background-attachment: fixed;
-  background-image: url("/images/desktop/personas.png");
+  background-image: url("../images/desktop/personas.png");
   background-position: top 20vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1165,7 +1164,7 @@ hr {
 
 .parallax-sitemap {
   background-attachment: fixed;
-  background-image: url("/images/desktop/sitemap.png");
+  background-image: url("../images/desktop/sitemap.png");
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1175,7 +1174,7 @@ hr {
 
 .parallax-wireframes {
   background-attachment: fixed;
-  background-image: url("/images/desktop/wireframes-sketches.png");
+  background-image: url("../images/desktop/wireframes-sketches.png");
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1184,7 +1183,7 @@ hr {
 
 .parallax-visual {
   background-attachment: fixed;
-  background-image: url("/images/logo-sketches.png");
+  background-image: url("../images/logo-sketches.png");
   background-position: top 10vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1194,7 +1193,7 @@ hr {
 
 .parallax-mockups {
   background-attachment: fixed;
-  background-image: url("/images/desktop-landing.png");
+  background-image: url("../images/desktop-landing.png");
   background-position: top 8rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1204,7 +1203,7 @@ hr {
 
 .parallax-prototypes {
   background-attachment: fixed;
-  background-image: url("/images/desktop/mobile-triptic.png");
+  background-image: url("../images/desktop/mobile-triptic.png");
   background-position: top 12rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1455,12 +1454,12 @@ hr {
   }
 
   .title-1 {
-    border-bottom: 1.4px solid #99CCCC;
+    border-bottom: 1.4px solid #D5EAEF;
     grid-area: title-1;
   }
 
   .title-2 {
-    border-bottom: 1.4px solid #99CCCC;
+    border-bottom: 1.4px solid #D5EAEF;
     grid-area: title-2;
   }
 
@@ -1588,6 +1587,18 @@ hr {
     margin-right: 5%;
   }
 
+  .contact h3 {
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+
   input[type=text], textarea {
     margin-bottom: 3rem;
     padding: 1rem;
@@ -1641,6 +1652,10 @@ hr {
     margin-right: 0;
   }
 
+  .header-work:hover, .header-bio:hover, .header-contact:hover {
+    color: #730039;
+  }
+
   .process-1, .process-2, .process-3, .process-4 {
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -1648,22 +1663,22 @@ hr {
   }
 
   .process-1 {
-    background-image: url("/images/desktop/process-1-background.png");
+    background-image: url("../images/desktop/process-1-background.png");
     flex-basis: 25%;
   }
 
   .process-2 {
-    background-image: url("/images/desktop/process-2-background.png");
+    background-image: url("../images/desktop/process-2-background.png");
     flex-basis: 25%;
   }
 
   .process-3 {
-    background-image: url("/images/desktop/process-3-background.png");
+    background-image: url("../images/desktop/process-3-background.png");
     flex-basis: 25%;
   }
 
   .process-4 {
-    background-image: url("/images/desktop/process-4-background.png");
+    background-image: url("../images/desktop/process-4-background.png");
     flex-basis: 25%;
   }
 
