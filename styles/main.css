@@ -277,7 +277,7 @@ header {
   box-shadow: 0px 10px 30px rgba(0,0,0,.2);
 }
 
-input[type=text], textarea {
+input[type=text], textarea, input[type=email] {
   -webkit-appearance: none;
   background-color: #f9f9fa;
   border: 1.5px solid #D5EAEF;
@@ -1626,7 +1626,7 @@ hr {
     text-align: center;
   }
 
-  input[type=text], textarea {
+  input[type=text], textarea, input[type=email] {
     margin-bottom: 3rem;
     padding: 1rem;
     width: 100%;
