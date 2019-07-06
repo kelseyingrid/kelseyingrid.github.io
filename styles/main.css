@@ -872,9 +872,13 @@ hr {
 
 /*mobile only*/
 @media screen and (max-width: 414px) {
-    video {
-      display: none;
-    }
+  video {
+    display: none;
+  }
+
+  .logo-header-mobile {
+    width: 8vw;
+  }
 }
 
 /*mobile to large mobile*/
@@ -1096,6 +1100,10 @@ hr {
 /*awkward size between phone and tablet*/
 
 @media screen and (min-width: 415px) and (max-width: 767px) {
+
+    .logo-header-mobile {
+      width: 3.5rem;
+    }
 
   .hero-img, .enter-mobile-3 {
     display: none;
