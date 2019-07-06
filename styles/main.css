@@ -495,7 +495,7 @@ h5 {
 }
 
 .really h5 {
-  color: #EF3B68;
+  color: #FF5E86;
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
@@ -611,13 +611,13 @@ header .header-logo {
 button, .email-button {
   background-color: #EF3B68;
   border: none;
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: #F2F2F3;
   cursor: pointer;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  min-width: 65vw;
+  min-width: 90vw;
   padding-bottom: 1.25rem;
   padding-top: 1.5rem;
   position: relative;
@@ -1151,7 +1151,9 @@ hr {
   }
 
   button {
+    font-size: 1.6rem;
     margin: 2rem;
+    min-width: 40vw;
   }
 
   .logo-options-desktop {
@@ -1337,11 +1339,6 @@ hr {
     margin-left: 20%;
     margin-right: 20%;
     padding-left: 1.5rem;
-  }
-
-  button {
-    max-width: 40vw;
-    min-width: 30vw;
   }
 
   .bottom-button, .top-button {
