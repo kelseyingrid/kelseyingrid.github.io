@@ -1133,6 +1133,10 @@ hr {
     padding-bottom: 4rem;
   }
 
+  header {
+    padding-top: 1.5rem;
+  }
+
   .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile {
     display: none;
   }
@@ -1168,7 +1172,7 @@ hr {
  .parallax-survey {
    background-attachment: fixed;
    background-image: url("../images/survey.png");
-   background-position: top 20vh left 50%;
+   background-position: top 15vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
    background-size: 90%;
@@ -1178,10 +1182,10 @@ hr {
 .parallax-personas {
   background-attachment: fixed;
   background-image: url("../images/desktop/personas.png");
-  background-position: top 20vh left 50%;
+  background-position: top 15vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 100vh;
+  background-size: 70vw;
   min-height: 60vh;
 }
 
