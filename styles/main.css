@@ -1176,7 +1176,7 @@ hr {
    background-position: top 7rem left 50%;
    background-repeat: no-repeat;
    background-size: contain;
-   min-height: 60vh;
+   min-height: 70vh;
  }
 
  .parallax-survey {
@@ -1186,27 +1186,27 @@ hr {
    background-repeat: no-repeat;
    background-size: contain;
    background-size: 90%;
-   min-height: 60vh;
+   min-height: 70vh;
 }
 
 .parallax-personas {
   background-attachment: fixed;
-  background-image: url("../images/desktop/personas.png");
-  background-position: top 15vh left 50%;
+  background-image: url("../images/mobile/personas.png");
+  background-position: top 10vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 70vw;
-  min-height: 60vh;
+  background-size: 100vw;
+  min-height: 70vh;
 }
 
 .parallax-sitemap {
   background-attachment: fixed;
   background-image: url("../images/desktop/sitemap.png");
-  background-position: top 10rem left 50%;
+  background-position: center top 1rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vh;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .parallax-wireframes {
@@ -1215,7 +1215,7 @@ hr {
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .parallax-visual {
@@ -1225,7 +1225,7 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vh;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .parallax-mockups {
@@ -1235,7 +1235,7 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vh;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .parallax-prototypes {
@@ -1245,7 +1245,7 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 1500px;
-  min-height: 60vh;
+  min-height: 70vh;
   width: 100%;
 }
 
@@ -1440,6 +1440,7 @@ hr {
     justify-content: space-between;
     margin-left: 5vw;
     margin-right: 5vw;
+    margin-top: 3rem;
   }
 
   .col-3-flex div {
@@ -1611,8 +1612,8 @@ hr {
   .enter-mobile-flex {
     margin-left: auto;
     margin-right: auto;
-    max-width: 1200px;
-    width: 90vw;
+    max-width: 90%;
+    width: 100vw;
   }
 
   .enter-mobile-1, .enter-mobile-2, .enter-mobile-3 {
@@ -1768,6 +1769,16 @@ hr {
     background-size: 75%;
   }
 
+  .parallax-personas {
+    background-image: url("../images/desktop/personas.png");
+    background-size: 90vw;
+  }
+
+  .parallax-prototypes {
+    background-image: url("../images/desktop/mobile-triptic-wide.png");
+    background-size: 90%;
+  }
+
   .col-4-flex {
     display: flex;
     flex-wrap: nowrap;
@@ -1857,14 +1868,13 @@ hr {
     max-width: 30%;
   }
 
+  .enter-mobile-flex {
+    max-width: 60%;
+  }
+
   .large-margin {
     margin-left: 20vw;
     margin-right: 20vw;
-  }
-
-  .parallax-prototypes {
-    background-image: url("../images/desktop/mobile-triptic-wide.png");
-    background-size: 90%;
   }
 }
 
@@ -1893,11 +1903,17 @@ hr {
   }
 
   .parallax-prototypes {
-    background-image: url("/images/desktop/mobile-triptic-wide.png")
+    background-image: url("/images/desktop/mobile-triptic-wide.png");
+    background-position: top 20vh left 50%;
+    background-size: 1400px;
   }
 
   .parallax-survey {
     background-size: 1000px;
+  }
+
+  .parallax-personas {
+    background-size: 1440px;
   }
 
   .key-takeaway {
