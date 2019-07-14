@@ -27,7 +27,7 @@ header {
   padding: 2rem 5vw;
   position: fixed;
   width: 100%;
-  z-index: 999;
+  z-index: 5;
 }
 
 .header-flex {
@@ -245,7 +245,7 @@ video {
 }
 
 .key-takeaway {
-  /* background-image: url("../images/mobile/parentheses.png"); */
+  background-image: url("../images/mobile/parentheses.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% 100%;
@@ -607,6 +607,13 @@ p {
 .really p {
   color: #FAFAFA;
   margin-bottom: 1rem;
+}
+
+footer p {
+  color: #D5EAEF;
+  position: relative;
+  margin-bottom: 4rem;
+  z-index: 1
 }
 
 li {
@@ -1399,7 +1406,7 @@ hr {
   }
 
   .key-takeaway {
-    /* background-image: url("../images/tablet/parentheses.png"); */
+    background-image: url("../images/tablet/parentheses.png");
     margin-bottom: 15rem;
     margin-left: auto;
     margin-right: auto;
@@ -1474,6 +1481,10 @@ hr {
 
   p {
     font-size: 2.2rem;
+  }
+
+  footer p {
+    margin-bottom: -8rem;
   }
 
   .bio-para-1 {
@@ -1832,7 +1843,7 @@ hr {
   }
 
   .key-takeaway {
-    /* background-image: url("../images/desktop/parentheses.png"); */
+    background-image: url("../images/desktop/parentheses.png");
   }
 
   .really {
@@ -1940,6 +1951,26 @@ hr {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 2rem;
+  }
+
+  .sticky {
+  background-color: #EBF3F6;
+  display: flex;
+  height: 8rem;
+  justify-content: space-around;
+  max-width: 1500px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+  }
+
+  .sticky + .content {
+    padding-top: 102px;
+  }
+
+  .sticky .process-step {
+    margin-bottom: 0;
   }
 
   .process-step {
