@@ -27,7 +27,7 @@ header {
   padding: 2rem 5vw;
   position: fixed;
   width: 100%;
-  z-index: 3;
+  z-index: 999;
 }
 
 .header-flex {
@@ -55,13 +55,30 @@ header {
 }
 
 .hero {
+  height: 100%;
   overflow: hidden;
+  position: relative;
   text-align: center;
 }
 
+video {
+  z-index: 0;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  background: #035668;
+  opacity: 0.4;
+}
+
 .hero-logo {
-  max-height: 328px;
-  max-width: 357px;
+  max-height: auto;
+  max-width: 139px;
   position: relative;
   width: 90%;
 }
@@ -69,14 +86,26 @@ header {
 .hero-content {
   left: calc(50% - 40%);
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   width: 80%;
+  z-index: 3;
 }
 
 .hero-img {
-  height: 90vh;
+  max-height: 90vh;
   position: relative;
   width: auto;
+}
+.intro {
+  background-color: #FAFAFA;
+  padding-bottom: 1rem;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.intro-1 {
+  position: relative;
+  z-index: 4;
 }
 
 .bio-hero {
@@ -100,18 +129,6 @@ header {
   padding-top: 3rem;
 }
 
-.intro {
-  background-color: #F9F9FA;
-  padding-bottom: 1rem;
-  padding-top: 6rem;
-  position: relative;
-}
-
-.intro-1, .intro-2 {
-  position: relative;
-  z-index: 2;
-}
-
 .page-title-small {
   color: #730039;
   text-align: left;
@@ -124,14 +141,14 @@ header {
 }
 
 .project {
-  background-color: #F9F9FA;
+  background-color: #FAFAFA;
   text-align: center;
   margin-bottom: 6rem;
   margin-top: 2rem;
   padding-bottom: 0;
   padding-left: 5%;
   padding-right: 5%;
-  padding-top: 6rem;
+  padding-top: 2rem;
 }
 
 .project-image {
@@ -157,7 +174,7 @@ header {
 }
 
 .bio-section-title {
-  background-color: #F9F9FA;
+  background-color: #FAFAFA;
   margin-bottom: 2rem;
   margin-top: 8%;
   padding: 3rem 5%;
@@ -228,7 +245,7 @@ header {
 }
 
 .key-takeaway {
-  background-image: url("../images/mobile/parentheses.png");
+  /* background-image: url("../images/mobile/parentheses.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90% 100%;
@@ -279,13 +296,17 @@ header {
 
 input[type=text], textarea, input[type=email] {
   -webkit-appearance: none;
-  background-color: #f9f9fa;
+  background-color: #FAFAFA;
   border: 1.5px solid #D5EAEF;
   border-radius: 8px;
   box-shadow: none;
   margin-bottom: 3rem;
   padding: 1rem;
   width: 100%;
+}
+
+textarea {
+  height: 200px;
 }
 
 input[type=submit] {
@@ -311,7 +332,7 @@ footer {
 /* Typography */
 
 .hero-text {
-  color: #F9F9FA;
+  color: #FAFAFA;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
   margin-top: 2rem;
@@ -347,7 +368,7 @@ blockquote {
 h1 {
   text-align: center;
   background-color: #035668;
-  color: #F9F9FA;
+  color: #FAFAFA;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2.6rem;
   line-height: 141%;
@@ -401,6 +422,22 @@ h3 {
   padding-top: 2rem;
 }
 
+.hero-content h3 {
+  color: #FAFAFA;
+  font-size: 1.8rem;
+  padding: 0;
+}
+
+.hero-text {
+  margin-top: 5rem;
+}
+
+.hero-content hr {
+  background-color: #D5EAEF;
+  margin-top: 2rem;
+  width: 5rem;
+}
+
 .step-intro h3 {
   color: #3B3F41;
   padding-bottom: 3rem;
@@ -447,11 +484,11 @@ h4 {
 }
 
 footer h4 {
-  color: #F9F9FA;
+  color: #FAFAFA;
 }
 
 footer p {
-  color: #F9F9FA;
+  color: #FAFAFA;
   margin-bottom: 6rem;
 }
 
@@ -568,7 +605,7 @@ p {
 }
 
 .really p {
-  color: #F9F9FA;
+  color: #FAFAFA;
   margin-bottom: 1rem;
 }
 
@@ -642,12 +679,21 @@ button:active, .email-button:active {
   top: 1px;
 }
 
-.case-study-hero button {
+.case-study-hero .button-top-case-study {
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.case-study-hero .button-bottom-case-study {
   display: block;
   margin-bottom: -5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   position: relative;
 }
 
@@ -697,12 +743,12 @@ a {
 /* Image and icon styling */
 
 .blobs {
-  margin-bottom: -64rem;
-  margin-top: -18rem;
+  /* margin-bottom: -70vh; */
+  /* margin-top: -70vh; */
   position: absolute;
   right: 0;
   width: 110vw;
-  z-index: 1;
+  z-index: 4;
 }
 
 .blobs-bio {
@@ -715,16 +761,8 @@ a {
   z-index: 1;
 }
 
-.hello-img {
-  display: block;
-  height: auto;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-  width: 100%;
-}
-
 .tldr {
-  background-color: #F9F9FA;
+  background-color: #FAFAFA;
   margin-bottom: 6rem;
   padding-bottom: 0;
   padding-top: 2rem;
@@ -734,6 +772,17 @@ a {
   display: block;
   height: auto;
   width: 100%;
+}
+
+.bw {
+  height: 66px;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.bw img {
+  height: 100%;
+  width: auto;
 }
 
 .img-wrapper + footer {
@@ -827,7 +876,7 @@ a {
 /* Spacing and colors */
 
 .grey {
-  background-color: #F9F9FA;
+  background-color: #FAFAFA;
   padding-bottom: 4rem;
   padding-top: 3rem;
 }
@@ -944,7 +993,7 @@ hr {
 @media screen and (max-width: 1023px) {
 
   .blobs {
-    margin-top: -13rem;
+    margin-top: -14vh;
   }
 
   .really-bullet {
@@ -965,11 +1014,10 @@ hr {
       "persona-1"
       "persona-2"
       "persona-3";
-    max-width: 995px;
   }
 
   .persona-1, .persona-3 {
-    background-color: #F9F9FA;
+    background-color: #FAFAFA;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
@@ -980,7 +1028,7 @@ hr {
   }
 
   .persona-2 {
-    background-color: #F9F9FA;
+    background-color: #FAFAFA;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-areas:
@@ -1041,14 +1089,6 @@ hr {
     box-shadow: -1px 4px 8px rgba(0,0,0,.2);
   }
 
-  .persona-1 .frust-goals {
-    margin-left: 2.5vw;
-  }
-
-  .persona-3 .frust-goals {
-    margin-left: 2.5vw;
-  }
-
   .progression-grid {
     display: grid;
     grid-gap: 2rem;
@@ -1101,20 +1141,57 @@ hr {
 
 @media screen and (min-width: 415px) and (max-width: 767px) {
 
-    .logo-header-mobile {
-      width: 3.5rem;
-    }
+  .logo-header-mobile {
+    width: 3.5rem;
+  }
 
   .hero-img, .enter-mobile-3 {
     display: none;
+  }
+
+  button {
+    min-width: 60vw;
   }
 
   .process-1, .process-2, .process-3, .process-4 {
     background-position: 3vw 0vw;
     background-size: auto auto;
   }
+
+  .case-study-hero .button-top-case-study {
+    display: block;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    min-width: 60vw;
+    position: relative;
+  }
+
+  .case-study-hero .button-bottom-case-study {
+    display: block;
+    margin-bottom: -5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    min-width: 60vw;
+    position: relative;
+  }
+
+  .email-button {
+    min-width: 40vw;
+  }
 }
 
+/*tablet only*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .button-flex {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /*tablet*/
 
@@ -1139,6 +1216,17 @@ hr {
 
   .padding-bottom {
     padding-bottom: 4rem;
+  }
+
+  .bw {
+    height: 90px;
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  .bw img {
+    height: 100%;
+    width: auto;
   }
 
   header {
@@ -1221,10 +1309,11 @@ hr {
 .parallax-visual {
   background-attachment: fixed;
   background-image: url("../images/logo-sketches.png");
-  background-position: top 10vh left 50%;
+  background-position: top 10rem left 50%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100vh;
+  background-size: auto;
+  background-size: 95vw;
+  max-width: 1500px;
   min-height: 70vh;
 }
 
@@ -1277,23 +1366,8 @@ hr {
     margin-right: 0;
   }
 
-  .intro-2 {
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
-
-  .intro-2 p {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .body-bullet {
     text-indent: -3rem;
-  }
-
-  .intro-2 blockquote {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .bio-hero h3 {
@@ -1325,7 +1399,7 @@ hr {
   }
 
   .key-takeaway {
-    background-image: url("../images/tablet/parentheses.png");
+    /* background-image: url("../images/tablet/parentheses.png"); */
     margin-bottom: 15rem;
     margin-left: auto;
     margin-right: auto;
@@ -1337,6 +1411,11 @@ hr {
     margin-right: 0;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-top: .75rem;
+  }
+
+  .overview-section .small-list {
+    padding-top: .5rem;
   }
 
   .frustrations-desktop {
@@ -1353,6 +1432,12 @@ hr {
     display: block;
     margin-bottom: -2rem;
     margin-top: 0;
+  }
+
+  .case-study-hero .button-flex {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
   }
 
   h1 {
@@ -1524,34 +1609,39 @@ hr {
       "persona-1 persona-2"
       "persona-3 persona-2";
     grid-template-columns: 1.75fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: .5fr auto;
     margin-left: auto;
     margin-right: auto;
     max-width: 995px;
   }
 
   .persona-1, .persona-3 {
-    background-color: #F9F9FA;
+    background-color: #FAFAFA;
     display: grid;
     grid-template-areas:
       "photo frust-goals"
       "persona-profile frust-goals";
-    grid-template-columns: .66fr 1fr;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: auto 1fr;
     justify-content: start;
     padding: 2rem;
   }
 
   .persona-2 {
-    background-color: #F9F9FA;
+    background-color: #FAFAFA;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 1fr 1fr 4.5fr;
     grid-template-areas:
       "photo"
       "persona-profile"
       "frust-goals";
     justify-content: start;
     padding: 2rem;
+  }
+
+  .persona-profile {
+    justify-self: start;
   }
 
   .persona-1 {
@@ -1596,7 +1686,6 @@ hr {
 
   .personas-grid img {
     box-shadow: -1px 4px 8px rgba(0,0,0,.2);
-    max-width: 18rem;
   }
 
   .persona-1 .frust-goals {
@@ -1607,6 +1696,10 @@ hr {
   .persona-3 .frust-goals {
     margin-left: 2rem;
     margin-top: 0;
+  }
+
+  .persona-profile h6 {
+    margin-right: 10%;
   }
 
   .enter-mobile-flex {
@@ -1643,7 +1736,7 @@ hr {
   }
 
   .email-button {
-    min-width: 30vw
+    min-width: 20vw
   }
 
   footer.scroll {
@@ -1671,22 +1764,13 @@ hr {
   }
 
   .blobs {
-    width: 90vw;
+    margin-top: -13vh;
+    width: 75vw;
   }
 
   .intro-1 {
     margin-left: 20vw;
     margin-right: 20vw;
-  }
-
-  .intro-2 {
-    margin-left: 20vw;
-    margin-right: 20vw;
-  }
-
-  .intro-2 blockquote {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .header-work:hover, .header-bio:hover, .header-contact:hover {
@@ -1697,6 +1781,14 @@ hr {
     margin-left: 2.5%;
     margin-right: 2.5%;
     width: auto;
+  }
+
+  .process-4 {
+    z-index: 3;
+  }
+
+  .process-list .small {
+    padding-top: .75rem;
   }
 
   .process-1 {
@@ -1740,7 +1832,7 @@ hr {
   }
 
   .key-takeaway {
-    background-image: url("../images/desktop/parentheses.png");
+    /* background-image: url("../images/desktop/parentheses.png"); */
   }
 
   .really {
@@ -1759,6 +1851,24 @@ hr {
   button {
     max-width: 30rem;
     min-width: 25vw;
+  }
+
+  .case-study-hero .button-top-case-study {
+    margin-bottom: -5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+
+  .case-study-hero .button-bottom-case-study {
+    margin-bottom: -5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 3rem;
+  }
+
+  .project-overview .col-4-flex {
+    margin-top: 3rem;
   }
 
   .underline:hover {
@@ -1826,8 +1936,10 @@ hr {
     flex-basis: 20%;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 2rem;
     padding-left: 2vw;
     padding-right: 2vw;
+    padding-top: 2rem;
   }
 
   .process-step {
@@ -1842,12 +1954,20 @@ hr {
     font-size: 1.8rem;
   }
 
+  .personas-grid {
+    max-width: 1350px;
+  }
+
   .persona-1, .persona-3 {
     padding: 5rem;
   }
 
   .persona-2 {
     padding: 5rem;
+  }
+
+  .persona-2 .frust-goals {
+    padding-top: 2rem;
   }
 
   .pref-test-flex {
@@ -1905,6 +2025,12 @@ hr {
   .parallax-prototypes {
     background-image: url("/images/desktop/mobile-triptic-wide.png");
     background-position: top 20vh left 50%;
+    background-size: 1400px;
+  }
+
+  .parallax-visual {
+    background-image: url("../images/logo-sketches.png");
+    background-position: top 10rem left 50%;
     background-size: 1400px;
   }
 
