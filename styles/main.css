@@ -1267,6 +1267,10 @@ hr {
     padding-bottom: 4rem;
   }
 
+  .hero-content h3 {
+    font-size: 2.4rem;
+  }
+
   .bw {
     height: 90px;
     overflow: hidden;
