@@ -1310,7 +1310,7 @@ hr {
  .parallax-competitors {
    background-attachment: fixed;
    background-image: url("../images/competitors.png");
-   background-position: top 7rem left 50%;
+   background-position: top 15rem left 50%;
    background-repeat: no-repeat;
    background-size: contain;
    min-height: 70vh;
@@ -1329,7 +1329,7 @@ hr {
 .parallax-personas {
   background-attachment: fixed;
   background-image: url("../images/mobile/personas.png");
-  background-position: top 10vh left 50%;
+  background-position: top 14vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vw;
@@ -1339,7 +1339,7 @@ hr {
 .parallax-sitemap {
   background-attachment: fixed;
   background-image: url("../images/desktop/sitemap.png");
-  background-position: center top 1rem;
+  background-position: center top 2rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vh;
@@ -1349,7 +1349,7 @@ hr {
 .parallax-wireframes {
   background-attachment: fixed;
   background-image: url("../images/desktop/wireframes-sketches.png");
-  background-position: top 10rem left 50%;
+  background-position: top 14rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 70vh;
@@ -1358,7 +1358,7 @@ hr {
 .parallax-visual {
   background-attachment: fixed;
   background-image: url("../images/logo-sketches.png");
-  background-position: top 10rem left 50%;
+  background-position: top 15rem left 50%;
   background-repeat: no-repeat;
   background-size: auto;
   background-size: 95vw;
@@ -1369,17 +1369,18 @@ hr {
 .parallax-mockups {
   background-attachment: fixed;
   background-image: url("../images/desktop-landing.png");
-  background-position: top 8rem left 50%;
+  background-position: top 12rem left 50%;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-size: 100vh;
+  background-size: 100vw;
+  max-width: 1500px;
   min-height: 70vh;
+  width: 100%;
 }
 
 .parallax-prototypes {
   background-attachment: fixed;
   background-image: url("../images/desktop/mobile-triptic.png");
-  background-position: top 12rem left 50%;
+  background-position: top 15rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 1500px;
@@ -1519,8 +1520,8 @@ hr {
     font-size: 2.2rem;
   }
 
-  footer p {
-    margin-bottom: -8rem;
+  footer .small {
+    margin-bottom: -6rem;
   }
 
   .bio-para-1 {
@@ -1815,11 +1816,7 @@ hr {
   } */
 
 
-  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .style-guide-mobile, .logo-options-mobile {
-    display: none;
-  }
-
-  .step-skip-label {
+  .logo-header-mobile, .hero-img, .step-skip-label, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .style-guide-mobile, .logo-options-mobile {
     display: none;
   }
 
@@ -1973,6 +1970,7 @@ hr {
 
   .parallax-prototypes {
     background-image: url("../images/desktop/mobile-triptic-wide.png");
+    background-position: top 20rem;
     background-size: 90%;
   }
 
@@ -2017,6 +2015,10 @@ hr {
     width: 100%;
   }
 
+  .process-steps {
+    padding-top: 6rem;
+  }
+
   .process-steps-flex {
     align-items: flex-end;
     display: flex;
@@ -2032,12 +2034,12 @@ hr {
   .sticky {
   background-color: #EBF3F6;
   display: flex;
-  height: 5rem;
+  height: 5.6rem;
   justify-content: space-around;
   max-width: 1500px;
   padding-bottom: 1rem;
   position: fixed;
-  top: 7.5rem;
+  top: 6rem;
   width: 100%;
   z-index: 6;
   }
@@ -2051,9 +2053,9 @@ hr {
     margin-bottom: 0;
   }
 
-  .process-step {
+  /* .process-step {
     margin: 1.6%;
-  }
+  } */
 
   .col-4-flex .process-icon {
     width: 22%;
