@@ -5,6 +5,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -86,7 +87,7 @@ video {
 .hero-content {
   left: calc(50% - 40%);
   position: absolute;
-  top: 20vh;
+  top: 15vh;
   width: 80%;
   z-index: 3;
 }
@@ -194,6 +195,10 @@ video {
 
 .intro .button-flex {
   margin: 0 auto;
+}
+
+.intro a {
+  z-index: 10;
 }
 
 .work .button-flex {
@@ -487,8 +492,8 @@ footer h4 {
   color: #FAFAFA;
 }
 
-footer p {
-  color: #FAFAFA;
+footer .small {
+  color: #8FAEB5;
   margin-bottom: 6rem;
 }
 
@@ -644,6 +649,10 @@ header .header-logo {
   text-indent: -2.2rem;
 }
 
+.bottom-bullet {
+  padding-bottom: 2rem;
+}
+
 .small-list {
   font-size: 1.4rem;
 }
@@ -749,9 +758,15 @@ a {
 /* -------------------------------------------------------- */
 /* Image and icon styling */
 
-.blobs {
-  /* margin-bottom: -70vh; */
-  /* margin-top: -70vh; */
+.blobs-desktop {
+  position: absolute;
+  right: 0;
+  width: 110vw;
+  z-index: 4;
+}
+
+.blobs-mobile {
+  margin-top: -10rem;
   position: absolute;
   right: 0;
   width: 110vw;
@@ -940,7 +955,7 @@ hr {
 /*mobile to large mobile*/
 @media screen and (max-width: 767px) {
 
-  .logo-header-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey, .enter-mobile-3 {
+  .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey, .enter-mobile-3 {
     display: none;
   }
 
@@ -999,7 +1014,7 @@ hr {
 
 @media screen and (max-width: 1023px) {
 
-  .blobs {
+  .blobs-desktop {
     margin-top: -14vh;
   }
 
@@ -1126,6 +1141,31 @@ hr {
     max-width: 90vw;
   }
 
+  .icons-grid {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "draft"
+      "final";
+    justify-items: left;
+  }
+
+  .icons-grid h6 {
+    text-align: left;
+  }
+
+  .draft {
+    grid-area: draft;
+    margin-top: 2rem;
+  }
+
+  .final {
+    grid-area: final;
+    margin-top: 2rem;
+  }
+
   .contact h3 {
     margin-bottom: 0;
     margin-left: 0;
@@ -1198,6 +1238,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
   }
+
+
 }
 
 /*tablet*/
@@ -1240,7 +1282,7 @@ hr {
     padding-top: 1.5rem;
   }
 
-  .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile {
+  .logo-header-mobile, .hero-img, .blobs-mobile, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile {
     display: none;
   }
 
@@ -1433,12 +1475,6 @@ hr {
     margin-left: 20%;
     margin-right: 20%;
     padding-left: 1.5rem;
-  }
-
-  .bottom-button, .top-button {
-    display: block;
-    margin-bottom: -2rem;
-    margin-top: 0;
   }
 
   .case-study-hero .button-flex {
@@ -1760,6 +1796,25 @@ hr {
 /*desktop*/
 @media screen and (min-width: 1024px) {
 
+  /* .bg {
+    background-color: #000;
+    width: 100%;
+    height: 100px;
+    opacity: 0;
+  }
+
+  .show {
+    opacity: 0.4;
+  }
+
+  .transition {
+    -webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+  } */
+
+
   .logo-header-mobile, .hero-img, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .style-guide-mobile, .logo-options-mobile {
     display: none;
   }
@@ -1774,9 +1829,9 @@ hr {
     width: 50%;
   }
 
-  .blobs {
-    margin-top: -13vh;
-    width: 75vw;
+  .blobs-desktop {
+    margin-top: -16rem;
+    width: 90vw;
   }
 
   .intro-1 {
@@ -1795,7 +1850,7 @@ hr {
   }
 
   .process-4 {
-    z-index: 3;
+    z-index: 6;
   }
 
   .process-list .small {
@@ -1822,8 +1877,29 @@ hr {
     flex-basis: 25%;
   }
 
+  .icons-grid {
+    display: grid;
+    grid-column-gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "draft" "final";
+    justify-items: center;
+    padding-top: 3rem;
+  }
+
+  .icons-grid h6 {
+    text-align: left;
+  }
+
   .tldr {
     padding-top: calc(.49 * 40vw);
+  }
+
+  .bottom-button, .top-button {
+    display: block;
+    margin-bottom: -2rem;
+    margin-top: 0;
   }
 
   .bio-hero .img-wrapper {
@@ -1947,27 +2023,29 @@ hr {
     flex-basis: 20%;
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 2rem;
+    padding-bottom: 0;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-top: 2rem;
+    padding-top: 0;
   }
 
   .sticky {
   background-color: #EBF3F6;
   display: flex;
-  height: 8rem;
+  height: 5rem;
   justify-content: space-around;
   max-width: 1500px;
+  padding-bottom: 1rem;
   position: fixed;
-  top: 0;
+  top: 7.5rem;
   width: 100%;
   z-index: 6;
   }
 
-  .sticky + .content {
+  .sticky + .padding {
     padding-top: 102px;
   }
+
 
   .sticky .process-step {
     margin-bottom: 0;
@@ -2041,6 +2119,10 @@ hr {
     width: 1500px;
   }
 
+  .intro-1 {
+    margin-top: 4rem;
+  }
+
   .container.bio {
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);
   }
@@ -2080,7 +2162,7 @@ hr {
     max-width: 1000px;
   }
 
-  .blobs {
+  .blobs-desktop {
     display: absolute;
     right: 0;
     width: 90%;
