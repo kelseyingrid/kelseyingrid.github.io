@@ -11,18 +11,21 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
+    document.getElementsById("myContainer").setAttribute("paddingTop", "8rem");
   } else {
     header.classList.remove("sticky");
+    container.attributeList.remove("paddingTop");
   }
 }
 
+// document.getElementsByTagName("sticky").style.paddingTop = "100rem";
 
 // $(window).scroll(function() {
 // // 100 = The point you would like to fade the nav in.
 //
 // 	if ($(window).scrollTop() > 100 ){
 //
-//  		$('.bg').addClass('show');
+//  		$('.bg').addClass('shows
 //
 //   } else {
 //
@@ -33,7 +36,7 @@ function myFunction() {
 //
 // $('.scroll').on('click', function(e){
 // 		e.preventDefault()
-// 
+//
 //   $('html, body').animate({
 //       scrollTop : $(this.hash).offset().top
 //     }, 1500);
