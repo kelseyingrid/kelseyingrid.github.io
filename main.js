@@ -1,23 +1,40 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+const nav = document.querySelector("#sub")
+const topOfNav = nav.offsetTop;
 
-// Get the header
-var header = document.getElementById("myHeader");
-var container = document.getElementById("myContainer");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    document.getElementById("myContainer").style.paddingTop = "8rem";
+function fixNav() {
+  if(window.scrollY >= topOfNav) {
+    document.main.style.paddingTop = nav.offsetHeight + "px";
+    document.main.classList.add("fixed-nav");
   } else {
-    header.classList.remove("sticky");
+    document.main.style.paddingTop = 0;
+    document.main.classList.remove("fixed-nav");
   }
 }
-// container.attributeList.remove("paddingTop");
+
+window.addEventListener("scroll", fixNav)
+
+
+
+// // When the user scrolls the page, execute myFunction
+// window.onscroll = function() {myFunction()};
+//
+// // Get the header
+// var header = document.getElementById("myHeader");
+// var container = document.getElementById("myContainer");
+//
+// // Get the offset position of the navbar
+// var sticky = header.offsetTop;
+//
+// // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//     document.getElementById("myContainer").style.paddingTop = "8rem";
+//   } else {
+//     header.classList.remove("sticky");
+//     container.attributeList.remove("paddingTop");
+//   }
+// }
 
 // document.getElementsByTagName("sticky").style.paddingTop = "100rem";
 

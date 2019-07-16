@@ -1801,25 +1801,6 @@ hr {
 /*desktop*/
 @media screen and (min-width: 1024px) {
 
-  /* .bg {
-    background-color: #000;
-    width: 100%;
-    height: 100px;
-    opacity: 0;
-  }
-
-  .show {
-    opacity: 0.4;
-  }
-
-  .transition {
-    -webkit-transition: all 1s ease-in-out;
-  	-moz-transition: all 1s ease-in-out;
-  	-o-transition: all 1s ease-in-out;
-  	transition: all 1s ease-in-out;
-  } */
-
-
   .logo-header-mobile, .hero-img, .step-skip-label, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .style-guide-mobile, .logo-options-mobile {
     display: none;
   }
@@ -1876,6 +1857,10 @@ hr {
   .process-4 {
     background-image: url("../images/desktop/process-4-background.png");
     flex-basis: 25%;
+  }
+
+  .process-1, .process-2, .process-3, .process-4 {
+    background-size: contain;
   }
 
   .icons-grid {
@@ -1986,10 +1971,6 @@ hr {
     margin-right: 5vw;
   }
 
-  .process-1, .process-2, .process-3, .process-4 {
-    background-size: contain;
-  }
-
   .progression-grid {
     display: grid;
     grid-gap: 2rem;
@@ -2035,7 +2016,11 @@ hr {
     padding-top: 0;
   }
 
-  .sticky {
+  .fixed-nav nav {
+    position: fixed;
+  }
+
+  /* .sticky {
   background-color: #EBF3F6;
   display: flex;
   height: 5.6rem;
@@ -2055,7 +2040,7 @@ hr {
 
   .sticky .process-step {
     margin-bottom: 0;
-  }
+  } */
 
   /* .process-step {
     margin: 1.6%;
