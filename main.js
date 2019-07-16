@@ -5,10 +5,10 @@ const main = document.getElementById("main");
 function fixNav() {
   if(window.scrollY >= topOfNav) {
     main.style.paddingTop = nav.offsetHeight + "px";
-    main.classList.add("fixed-nav");
+    nav.classList.add("fixed-nav");
   } else {
     main.style.paddingTop = 0;
-    main.classList.remove("fixed-nav");
+    nav.classList.remove("fixed-nav");
   }
 }
 
