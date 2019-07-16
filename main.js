@@ -11,7 +11,7 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementsById("myContainer").setAttribute("paddingTop", "8rem");
+    document.getElementById("myContainer").style.paddingTop = "8rem";
   } else {
     header.classList.remove("sticky");
     container.attributeList.remove("paddingTop");
