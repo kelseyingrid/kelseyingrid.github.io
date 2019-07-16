@@ -3,6 +3,7 @@ window.onscroll = function() {myFunction()};
 
 // Get the header
 var header = document.getElementById("myHeader");
+var container = document.getElementById("myContainer");
 
 // Get the offset position of the navbar
 var sticky = header.offsetTop;
@@ -14,9 +15,9 @@ function myFunction() {
     document.getElementById("myContainer").style.paddingTop = "8rem";
   } else {
     header.classList.remove("sticky");
-    container.attributeList.remove("paddingTop");
   }
 }
+// container.attributeList.remove("paddingTop");
 
 // document.getElementsByTagName("sticky").style.paddingTop = "100rem";
 
