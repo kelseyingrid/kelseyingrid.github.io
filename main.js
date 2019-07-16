@@ -1,13 +1,14 @@
-const nav = document.querySelector("#sub")
+const nav = document.querySelector("#sub");
 const topOfNav = nav.offsetTop;
+const main = document.getElementById("main");
 
 function fixNav() {
   if(window.scrollY >= topOfNav) {
-    document.main.style.paddingTop = nav.offsetHeight + "px";
-    document.main.classList.add("fixed-nav");
+    main.style.paddingTop = nav.offsetHeight + "px";
+    main.classList.add("fixed-nav");
   } else {
-    document.main.style.paddingTop = 0;
-    document.main.classList.remove("fixed-nav");
+    main.style.paddingTop = 0;
+    main.classList.remove("fixed-nav");
   }
 }
 

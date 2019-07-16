@@ -2016,35 +2016,9 @@ hr {
     padding-top: 0;
   }
 
-  .fixed-nav nav {
+  .fixed-nav #main {
     position: fixed;
   }
-
-  /* .sticky {
-  background-color: #EBF3F6;
-  display: flex;
-  height: 5.6rem;
-  justify-content: space-around;
-  max-width: 1500px;
-  padding-bottom: 1rem;
-  position: fixed;
-  top: 6rem;
-  width: 100%;
-  z-index: 6;
-  }
-
-  .sticky + .padding {
-    padding-top: 102px;
-  }
-
-
-  .sticky .process-step {
-    margin-bottom: 0;
-  } */
-
-  /* .process-step {
-    margin: 1.6%;
-  } */
 
   .col-4-flex .process-icon {
     width: 22%;
