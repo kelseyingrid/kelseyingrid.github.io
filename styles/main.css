@@ -2016,8 +2016,12 @@ hr {
     padding-top: 0;
   }
 
-  .fixed-nav #main {
+  .fixed-nav {
+    padding: 0;
     position: fixed;
+    top: 80px;
+    width: 100%;
+    z-index: 2;
   }
 
   .col-4-flex .process-icon {
