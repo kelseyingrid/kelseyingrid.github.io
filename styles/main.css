@@ -2015,6 +2015,7 @@ hr {
     flex-basis: 20%;
     flex-direction: row;
     justify-content: space-around;
+    max-width: 1500px;
     padding-bottom: 0;
     padding-left: 2vw;
     padding-right: 2vw;
