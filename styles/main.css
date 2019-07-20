@@ -1961,13 +1961,14 @@ hr {
   }
 
   .parallax-survey {
-    background-size: 100vh;
+    background-position: center top 18rem;
+    background-size: 60vw;
   }
 
   .parallax-personas {
     background-image: url("../images/desktop/personas.png");
     background-position: center top 14rem;
-    background-size: 90vw;
+    background-size: 90%;
   }
 
   .parallax-prototypes {
@@ -2138,7 +2139,7 @@ hr {
   }
 
   .parallax-personas {
-    background-size: 1440px;
+    background-size: 1200px;
   }
 
   .key-takeaway {
