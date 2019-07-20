@@ -1334,17 +1334,17 @@ hr {
  .parallax-survey {
    background-attachment: fixed;
    background-image: url("../images/survey.png");
-   background-position: top 15vh left 50%;
+   background-position: top 18vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
-   background-size: 90%;
+   background-size: 90vw;
    min-height: 70vh;
 }
 
 .parallax-personas {
   background-attachment: fixed;
   background-image: url("../images/mobile/personas.png");
-  background-position: top 14vh left 50%;
+  background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vw;
@@ -1961,11 +1961,12 @@ hr {
   }
 
   .parallax-survey {
-    background-size: 75%;
+    background-size: 100vh;
   }
 
   .parallax-personas {
     background-image: url("../images/desktop/personas.png");
+    background-position: center top 14rem;
     background-size: 90vw;
   }
 
