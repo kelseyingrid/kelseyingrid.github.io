@@ -99,8 +99,8 @@ video {
 }
 .intro {
   background-color: #FAFAFA;
-  padding-bottom: 1rem;
-  padding-top: 4rem;
+  /* padding-bottom: 1rem;
+  padding-top: 4rem; */
   position: relative;
 }
 
@@ -594,10 +594,19 @@ p {
   margin-bottom: 2rem;
 }
 
-.intro p {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 2rem;
+.intro-1 p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 4rem;
+  font-size: 2.4rem;
+}
+
+.intro-p-top {
+  padding-top: 8rem;
+}
+
+.intro-p-bottom {
+  padding-bottom: 2.5rem;
 }
 
 .key-takeaway p {
@@ -717,7 +726,7 @@ button:active, .email-button:active {
 
 .intro button {
   display: block;
-  margin-bottom: -6rem;
+  margin-bottom: -5rem;
   margin-top: 3rem;
   position: relative;
 }
@@ -1345,19 +1354,20 @@ hr {
 .parallax-sitemap {
   background-attachment: fixed;
   background-image: url("../images/desktop/sitemap.png");
-  background-position: center top 2rem;
+  background-position: center top 8rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 100vh;
+  background-size: 90vh;
   min-height: 70vh;
 }
 
 .parallax-wireframes {
   background-attachment: fixed;
   background-image: url("../images/desktop/wireframes-sketches.png");
-  background-position: top 14rem left 50%;
+  background-position: center top 16rem;
   background-repeat: no-repeat;
   background-size: contain;
+  background-size: 60vh;
   min-height: 70vh;
 }
 
@@ -1386,7 +1396,7 @@ hr {
 .parallax-prototypes {
   background-attachment: fixed;
   background-image: url("../images/desktop/mobile-triptic.png");
-  background-position: top 15rem left 50%;
+  background-position: top 18rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
   max-width: 1500px;
@@ -1412,7 +1422,7 @@ hr {
     margin-right: 20vw;
   }
 
-  .intro-1 h3 {
+  /* .intro-1 h3 {
     margin-left: 0;
     margin-right: 0;
   }
@@ -1420,7 +1430,7 @@ hr {
   .intro-1 h4 {
     margin-left: 0;
     margin-right: 0;
-  }
+  } */
 
   .body-bullet {
     text-indent: -3rem;
@@ -2094,9 +2104,9 @@ hr {
     width: 1500px;
   }
 
-  .intro-1 {
+  /* .intro-1 {
     margin-top: 4rem;
-  }
+  } */
 
   .container.bio {
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);
