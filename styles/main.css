@@ -87,7 +87,7 @@ video {
 .hero-content {
   left: calc(50% - 40%);
   position: absolute;
-  top: 15vh;
+  top: 10vh;
   width: 80%;
   z-index: 3;
 }
@@ -1277,6 +1277,10 @@ hr {
 
   .padding-bottom {
     padding-bottom: 4rem;
+  }
+
+  .hero-content {
+    top: 15vh;
   }
 
   .hero-content h3 {
