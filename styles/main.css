@@ -273,6 +273,7 @@ video {
 .enter-mobile-flex {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 .enter-mobile-1 {
@@ -1385,12 +1386,11 @@ hr {
 .parallax-mockups {
   background-attachment: fixed;
   background-image: url("../images/desktop-landing.png");
-  background-position: top 12rem left 50%;
+  background-position: center top 12rem;
   background-repeat: no-repeat;
   background-size: 100vw;
   max-width: 1500px;
   min-height: 70vh;
-  width: 100%;
 }
 
 .parallax-prototypes {
@@ -1421,16 +1421,6 @@ hr {
     margin-left: 20vw;
     margin-right: 20vw;
   }
-
-  /* .intro-1 h3 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .intro-1 h4 {
-    margin-left: 0;
-    margin-right: 0;
-  } */
 
   .body-bullet {
     text-indent: -3rem;
@@ -1770,7 +1760,6 @@ hr {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
-    width: 100vw;
   }
 
   .enter-mobile-1, .enter-mobile-2, .enter-mobile-3 {
@@ -2037,7 +2026,6 @@ hr {
   }
 
   .fixed-nav {
-    /* padding: 0; */
     position: fixed;
     top: 80px;
   }
@@ -2106,10 +2094,6 @@ hr {
     width: 1500px;
   }
 
-  /* .intro-1 {
-    margin-top: 4rem;
-  } */
-
   .container.bio {
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);
   }
@@ -2140,6 +2124,10 @@ hr {
 
   .parallax-personas {
     background-size: 1200px;
+  }
+
+  .parallax-mockups {
+    background-size: contain;
   }
 
   .key-takeaway {
