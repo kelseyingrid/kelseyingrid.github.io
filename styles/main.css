@@ -375,7 +375,8 @@ video {
     "draft-1-toggle"
     "draft-2-toggle"
     "draft-3-toggle";
-  justify-content: center;
+  justify-items: center;
+  margin: auto;
 }
 
 .draft-1-toggle {
@@ -398,7 +399,7 @@ video {
 
 .button-grid {
   display: grid;
-  grid-gap: 4rem;
+  grid-gap: 3rem;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
@@ -406,6 +407,7 @@ video {
     "button2"
     "button3";
   justify-items: center;
+  margin: auto;
 }
 
 .button1 {
@@ -1497,8 +1499,8 @@ hr {
     margin-right: auto;
   }
 
-
 }
+
 
 /*tablet*/
 
@@ -2129,7 +2131,7 @@ hr {
   .button-grid {
     display: grid;
     grid-gap: 4rem;
-    grid-template-columns: 1fr 1.25fr 1.5fr;
+    grid-template-columns: 1.4fr 1.25fr 1fr;
     grid-template-areas:
       "button1 button2 button3";
     justify-content: center;
@@ -2137,7 +2139,7 @@ hr {
 
   .button1, .button2, .button3 {
     align-self: center;
-    justify-self: start;
+    justify-self: center;
     max-width: 100%;
   }
 
@@ -2474,13 +2476,10 @@ hr {
   }
 
   .toggle-grid {
-    display: grid;
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 1.25fr 1.5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-      "draft-1-toggle draft-2-toggle draft-3-toggle";
-    justify-content: center;
+    max-width: 1000px;
+  }
+
+  .button-grid {
     max-width: 1000px;
   }
 
