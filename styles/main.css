@@ -130,6 +130,10 @@ video {
   padding-top: 3rem;
 }
 
+.left-align {
+  text-align: left;
+}
+
 .page-title-small {
   color: #730039;
   text-align: left;
@@ -371,22 +375,25 @@ video {
     "draft-1-toggle"
     "draft-2-toggle"
     "draft-3-toggle";
-  justify-items: center;
+  justify-content: center;
 }
 
 .draft-1-toggle {
   grid-area: draft-1-toggle;
   max-width: 20rem;
+  width: 100%;
 }
 
 .draft-2-toggle {
   grid-area: draft-2-toggle;
   max-width: 25rem;
+  width: 100%;
 }
 
 .draft-3-toggle {
   grid-area: draft-3-toggle;
   max-width: 30rem;
+  width: 100%;
 }
 
 .button-grid {
@@ -815,7 +822,7 @@ footer p {
 li {
   color: #3B3F41;
   font-family: 'Nunito', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 300;
   line-height: 141%;
   margin-bottom: 1rem;
@@ -831,7 +838,8 @@ header .header-logo {
 }
 
 .body-bullet {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
+  font-weight: 400;
   line-height: 141%;
   list-style-image: none;
   list-style-position: inside;
@@ -1164,9 +1172,9 @@ hr {
 
 .wave {
   background-image: url("/images/dively/mobile/hero-background.png");
-  background-position: top;
+  background-position: 0 -20rem;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100%;
 }
 
 .animation {
@@ -1347,7 +1355,7 @@ hr {
   }
 
   .personas-grid img {
-    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+    filter: drop-shadow(-1px 4px 4px rgba(0,0,0,.2));
   }
 
   .progression-grid {
@@ -1407,12 +1415,13 @@ hr {
   .draft {
     grid-area: draft;
     margin-top: 2rem;
-    justify-content: flex-start;
+    justify-self: start;
   }
 
   .final {
     grid-area: final;
     margin-top: 2rem;
+    justify-self: start;
   }
 
   .contact h3 {
@@ -1594,7 +1603,6 @@ hr {
    background-position: top 18vh left 50%;
    background-repeat: no-repeat;
    background-size: contain;
-   background-size: 90vw;
    min-height: 70vh;
 }
 
@@ -1604,7 +1612,6 @@ hr {
   background-position: top 18vh left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 90vw;
   min-height: 70vh;
 }
 
@@ -1614,7 +1621,6 @@ hr {
   background-position: top 10rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 100vw;
   min-height: 70vh;
 }
 
@@ -1624,7 +1630,6 @@ hr {
   background-position: top 12rem left 50%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 80vw;
   min-height: 70vh;
 }
 
@@ -1634,7 +1639,6 @@ hr {
   background-position: center top 8rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-size: 90vh;
   min-height: 70vh;
 }
 
@@ -1747,6 +1751,7 @@ hr {
   }
 
   .body-bullet {
+    font-size: 2.4rem;
     text-indent: -3rem;
   }
 
@@ -2127,7 +2132,7 @@ hr {
     grid-template-columns: 1fr 1.25fr 1.5fr;
     grid-template-areas:
       "button1 button2 button3";
-    justify-items: center;
+    justify-content: center;
   }
 
   .button1, .button2, .button3 {
@@ -2333,10 +2338,18 @@ hr {
     color: #035668;
   }
 
-  .parallax-survey {
+  .parallax-survey, .parallax-survey-dively {
     background-position: center top 18rem;
-    background-size: 60vw;
+    background-size: 70vw;
+    max-width: 1500px;
   }
+
+  .parallax-competitors-dively {
+    background-position: center top 18rem;
+    background-size: 70vw;
+    max-width: 1500px;
+  }
+
 
   .parallax-personas {
     background-image: url("../images/desktop/personas.png");
@@ -2467,7 +2480,8 @@ hr {
     grid-template-rows: 1fr;
     grid-template-areas:
       "draft-1-toggle draft-2-toggle draft-3-toggle";
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 1000px;
   }
 
   .competitors-grid {
