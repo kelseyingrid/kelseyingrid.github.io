@@ -251,6 +251,102 @@ video {
   text-align: center;
 }
 
+.logos-row1-grid {
+  align-items: end;
+  display: grid;
+  grid-column-gap: 10%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "logo1 logo2"
+}
+
+.logos-row2-grid {
+  align-items: end;
+  display: grid;
+  grid-gap: 10%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "logo3 logo4 logo5"
+}
+
+.logo1 {
+  grid-area: logo1;
+  max-width: 40vw;
+}
+
+.logo2 {
+  grid-area: logo2;
+  max-width: 40vw;
+}
+
+.logo3 {
+  grid-area: logo3;
+  max-width: 25vw;
+}
+
+.logo4 {
+  grid-area: logo4;
+  max-width: 25vw;
+}
+
+.logo5 {
+  grid-area: logo5;
+  max-width: 25vw;
+}
+
+.toggle-grid {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "draft-1-toggle"
+    "draft-2-toggle"
+    "draft-3-toggle";
+  justify-items: center;
+}
+
+.draft-1-toggle {
+  grid-area: draft-1-toggle;
+  max-width: 20rem;
+}
+
+.draft-2-toggle {
+  grid-area: draft-2-toggle;
+  max-width: 25rem;
+}
+
+.draft-3-toggle {
+  grid-area: draft-3-toggle;
+  max-width: 30rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "button1"
+    "button2"
+    "button3";
+  justify-items: center;
+}
+
+.button1 {
+  grid-area: button1;
+}
+
+.button2 {
+  grid-area: button2;
+}
+
+.button3 {
+  grid-area: button3;
+}
+
 .key-takeaway {
   background-image: url("../images/mobile/parentheses.png");
   background-position: center;
@@ -486,6 +582,23 @@ h4 {
   margin-bottom: 3rem;
 }
 
+.testimonials h4 {
+  color: #3B3F41
+}
+
+.quote {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 141%;
+  list-style-image: none;
+  list-style-position: inside;
+  list-style-type: disc;
+  padding-left: 12%;
+  text-indent: -2.2rem;
+
+}
+
 .grey > h4 {
   margin-top: 0;
   padding-top: 0;
@@ -657,8 +770,23 @@ header .header-logo {
   list-style-image: none;
   list-style-position: inside;
   list-style-type: disc;
-  padding-left: 12%;
+  padding-left: 5rem;
   text-indent: -2.2rem;
+}
+
+ol {
+  font-size: 1.6rem;
+  line-height: 141%;
+  list-style-image: none;
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 5rem;
+  text-indent: -1.7rem;
+}
+
+.ol {
+  left: -1rem;
+  position: relative;
 }
 
 .bottom-bullet {
@@ -808,6 +936,12 @@ a {
   width: 100%;
 }
 
+.img-wrapper-margins > img {
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+
 .bw {
   height: 66px;
   overflow: hidden;
@@ -840,6 +974,16 @@ a {
   margin-top: 2rem;
   max-width: 329px;
   width: 50%;
+}
+
+.img-wrapper-small-no-bottom-padding > img {
+  margin-bottom: 0;
+  margin-top: 2rem;
+  max-width: 75%;
+}
+
+.dively-competitor > img {
+  max-width: 8rem;
 }
 
 .std-shadow {
@@ -892,6 +1036,11 @@ a {
   margin-top: 4rem;
 }
 
+.crabby-yay {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .footer-blobs-mobile {
   display: block;
   margin-bottom: 0;
@@ -913,6 +1062,15 @@ a {
   background-color: #FAFAFA;
   padding-bottom: 4rem;
   padding-top: 3rem;
+}
+
+.grey-no-bottom-padding {
+  background-color: #FAFAFA;
+  padding-bottom: 0;
+}
+
+.grey-no-bottom-padding img {
+  padding-bottom: 0;
 }
 
 .centered {
@@ -942,6 +1100,13 @@ hr {
   background-size: 110% auto;
 }
 
+.wave {
+  background-image: url("/images/dively/mobile/hero-background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 .animation {
   display: block;
   margin-left: auto;
@@ -967,7 +1132,7 @@ hr {
 /*mobile to large mobile*/
 @media screen and (max-width: 767px) {
 
-  .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-survey, .enter-mobile-3 {
+  .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-competitors-dively, .parallax-survey, .parallax-survey-dively, .enter-mobile-3, .hero-desktop, .desktop-img {
     display: none;
   }
 
@@ -1136,21 +1301,30 @@ hr {
   }
 
   .draft-1 {
-    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
     grid-area: draft-1;
     max-width: 50vw;
   }
 
+  .draft-1-shadow {
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+  }
+
   .draft-2 {
-    box-shadow: -1px 4px 12px rgba(0,0,0,.2);
     grid-area: draft-2;
     max-width: 70vw;
   }
 
+  .draft-2-shadow {
+    box-shadow: -1px 4px 12px rgba(0,0,0,.2);
+  }
+
   .draft-3 {
-    box-shadow: -1px 4px 15px rgba(0,0,0,.2);
     grid-area: draft-3;
     max-width: 90vw;
+  }
+
+  .draft-3-shadow {
+    box-shadow: -1px 4px 15px rgba(0,0,0,.2);
   }
 
   .icons-grid {
@@ -1161,7 +1335,7 @@ hr {
     grid-template-areas:
       "draft"
       "final";
-    justify-items: left;
+    justify-items: start;
   }
 
   .icons-grid h6 {
@@ -1171,6 +1345,7 @@ hr {
   .draft {
     grid-area: draft;
     margin-top: 2rem;
+    justify-content: flex-start;
   }
 
   .final {
@@ -1302,8 +1477,14 @@ hr {
     padding-top: 1.5rem;
   }
 
-  .logo-header-mobile, .hero-img, .blobs-mobile, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile {
+  .logo-header-mobile, .hero-img, .blobs-mobile, .progression-mobile, .frustrations-mobile, .footer-blobs-mobile, .personas-mobile, .sitemap-mobile, .wireframes-mobile, .visual-mobile, .mockups-mobile, .style-guide-mobile, .logo-options-mobile, .prototypes-mobile, .competitors-mobile, .survey-mobile, .hero-mobile, .mobile-img {
     display: none;
+  }
+
+  .hero-desktop img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
   }
 
   main > .scroll {
@@ -1336,6 +1517,15 @@ hr {
    min-height: 70vh;
  }
 
+ .parallax-competitors-dively {
+   background-attachment: fixed;
+   background-image: url("../images/dively/desktop/competitors-parallax.png");
+   background-position: top 20rem left 50%;
+   background-repeat: no-repeat;
+   background-size: 60%;
+   min-height: 70vh;
+ }
+
  .parallax-survey {
    background-attachment: fixed;
    background-image: url("../images/survey.png");
@@ -1346,6 +1536,16 @@ hr {
    min-height: 70vh;
 }
 
+.parallax-survey-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/survey-inDevice.png");
+  background-position: top 18vh left 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 90vw;
+  min-height: 70vh;
+}
+
 .parallax-personas {
   background-attachment: fixed;
   background-image: url("../images/mobile/personas.png");
@@ -1353,6 +1553,16 @@ hr {
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100vw;
+  min-height: 70vh;
+}
+
+.parallax-personas-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/desktop/personas-stacked.png");
+  background-position: top 12rem left 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80vw;
   min-height: 70vh;
 }
 
@@ -1366,6 +1576,16 @@ hr {
   min-height: 70vh;
 }
 
+.parallax-sitemap-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/appmap-sketch.png");
+  background-position: center top 18rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80vw;
+  min-height: 70vh;
+}
+
 .parallax-wireframes {
   background-attachment: fixed;
   background-image: url("../images/desktop/wireframes-sketches.png");
@@ -1376,14 +1596,31 @@ hr {
   min-height: 70vh;
 }
 
+.parallax-wireframes-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/low-fi-mockups.png");
+  background-position: center top 5rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 100vh;
+  min-height: 70vh;
+}
+
 .parallax-visual {
   background-attachment: fixed;
   background-image: url("../images/logo-sketches.png");
   background-position: top 15rem left 50%;
   background-repeat: no-repeat;
-  background-size: auto;
-  background-size: 95vw;
-  max-width: 1500px;
+  background-size: contain;
+  min-height: 70vh;
+}
+
+.parallax-visual-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/logo-sketches.png");
+  background-position: top 15rem left 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
   min-height: 70vh;
 }
 
@@ -1397,6 +1634,17 @@ hr {
   min-height: 70vh;
 }
 
+.parallax-mockups-dively {
+  background-attachment: fixed;
+  background-color: #ECEFF0;
+  background-image: url("../images/dively/mockups-final.png");
+  background-position: center top 13rem;
+  background-repeat: no-repeat;
+  background-size: 70vh;
+  max-width: 1500px;
+  min-height: 70vh;
+}
+
 .parallax-prototypes {
   background-attachment: fixed;
   background-image: url("../images/desktop/mobile-triptic.png");
@@ -1406,6 +1654,16 @@ hr {
   max-width: 1500px;
   min-height: 70vh;
   width: 100%;
+}
+
+.parallax-prototypes-dively {
+  background-attachment: fixed;
+  background-image: url("../images/dively/mockups-slant.png");
+  background-position: center top 13rem;
+  background-repeat: no-repeat;
+  background-size: 80vh;
+  max-width: 1500px;
+  min-height: 70vh;
 }
 
  .scroll {
@@ -1774,6 +2032,52 @@ hr {
     margin-right: 5%;
   }
 
+  .logos-row1-grid, .logos-row2-grid {
+    margin: auto 20vw;
+  }
+
+  .logos-row1-grid {
+    margin-bottom: 8rem;
+  }
+
+  .logo1, .logo2 {
+    grid-area: logo1;
+    max-width: 25rem;
+  }
+
+  .logo3, .logo4, .logo5 {
+    grid-area: logo3;
+    max-width: 15rem;
+  }
+
+  .toggle-grid {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1.25fr 1.5fr;
+    grid-template-areas:
+      "draft-1-toggle draft-2-toggle draft-3-toggle";
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .button-grid {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: 1fr 1.25fr 1.5fr;
+    grid-template-areas:
+      "button1 button2 button3";
+    justify-items: center;
+  }
+
+  .button1, .button2, .button3 {
+    align-self: center;
+    justify-self: start;
+    max-width: 100%;
+  }
+
+  .img-constrain {
+    max-width: 20rem;
+  }
+
   .contact h3 {
     margin-bottom: 0;
     margin-left: 0;
@@ -1837,7 +2141,7 @@ hr {
   }
 
   .process-4 {
-    z-index: 6;
+    z-: 6;
   }
 
   .process-list .small {
@@ -2078,6 +2382,16 @@ hr {
 
   .enter-mobile-flex {
     max-width: 60%;
+  }
+
+  .toggle-grid {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1.25fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "draft-1-toggle draft-2-toggle draft-3-toggle";
+    justify-content: space-between;
   }
 
   .large-margin {

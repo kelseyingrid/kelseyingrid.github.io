@@ -1,199 +1,232 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolio | Kelsey Jacobsen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143375489-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-143375489-1');
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio | Kelsey Jacobsen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143375489-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  <body>
-    <div class="container home">
-      <header>
-        <ul class="header-flex">
-          <li class="header-logo">
-            <a href="index.html">
-              <img src="images/mobile/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-mobile">
-              <img src="images/desktop/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-desktop">
-            </a>
-          </li>
-          <li class="header-work"><a href="#work" class="header-work">work</a></li>
-          <li class="header-bio"><a href="bio.html" class="header-bio">bio</a></li>
-          <li class="header-contact"><a href="contact.html" class="header-contact">contact</a></li>
-        </ul>
-      </header>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-143375489-1');
+  </script>
+</head>
 
-      <main>
-        <section class="hero">
-          <div class="img-wrapper hero-img">
-            <img src="images/mobile/hero-water.png" alt="full-screen photo of rippling water surface">
-          </div>
-          <div class="overlay"></div>
-          <video width="1500px" height="auto" alt="full-screen video of rippling water surface" class="hero-video" autoplay muted loop>
-            <source src="images/desktop/hero-video-bw-iMovie.mp4" type="video/mp4">
-          </video>
-          <div class="hero-content">
-            <img src="images/hero-logo.png" alt="Kelsey Jacobsen's logo" class="hero-logo">
-            <div class="hero-text">
+<body>
+  <div class="container home">
+    <header>
+      <ul class="header-flex">
+        <li class="header-logo">
+          <a href="index">
+            <img src="images/mobile/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-mobile">
+            <img src="images/desktop/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-desktop">
+          </a>
+        </li>
+        <li class="header-work"><a href="#work" class="header-work">work</a></li>
+        <li class="header-bio"><a href="bio.html" class="header-bio">bio</a></li>
+        <li class="header-contact"><a href="contact.html" class="header-contact">contact</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="img-wrapper hero-img">
+          <img src="images/mobile/hero-water.png" alt="full-screen photo of rippling water surface">
+        </div>
+        <div class="overlay"></div>
+        <video width="1500px" height="auto" alt="full-screen video of rippling water surface" class="hero-video" autoplay muted loop>
+          <source src="images/desktop/hero-video-bw-iMovie.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+          <img src="images/hero-logo.png" alt="Kelsey Jacobsen's logo" class="hero-logo">
+          <div class="hero-text">
             <h3>digital product designer</h3>
             <hr>
             <h3>Oakland, CA</h3>
           </div>
-          </div>
-        </section>
-
-        <section class="intro">
-          <img src="images/desktop/blobs-hero.png" alt="bubble-like digital illustration" class="blobs-desktop">
-          <img src="images/mobile/blobs-hero.png" alt="bubble-like digital illustration" class="blobs-mobile">
-          <div class="intro-1 margins">
-            <p class="intro-p-top">I’ve turned my background in natural resources around to create <span class="bold">user experiences that thrive “in the wild.” </span></p>
-            <p class="intro-p-bottom">I enjoy creating <span class="bold">digital products of all kinds</span>, and have fun taking inspiration from nature when I can.</p>
-          </div>
-          <div class="button-flex">
-            <a href="bio.html">
-              <button>view bio</button>
-            </a>
-          </div>
-        </section>
-
-        <section class="design-process">
-          <div class="img-wrapper bw">
-            <img src="images/feathers.png" alt="black and white close-up photo of feathers">
-          </div>
-          <h1>Design process</h1>
-          <div class="content padding-top">
-            <h4 class="centered">Here’s a summary of my typical steps.</h4>
-          </div>
-
-          <div class="col-4-flex margin-top">
-            <div class="process-1">
-              <div class="process-icon">
-                <img src="images/icon-research.png" alt="research icon" class="icon-mobile">
-              </div>
-              <div class="process-list">
-                <h5>Research and scoping</h5>
-                  <ul>
-                    <li class="small">Surveys, interviews, and problem identification</li>
-                    <li class="small">Competitive analysis</li>
-                    <li class="small">User personas</li>
-                    <li class="small">User stories</li>
-                  </ul>
-              </div>
-            </div>
-
-            <div class="process-2">
-              <div class="process-icon">
-            <img src="images/icon-info-arch.png" alt="information architecture icon" class="icon-mobile">
-              </div>
-              <div class="process-list">
-              <h5>Information architecture</h5>
-                <ul class="small">
-                  <li class="small">User flows</li>
-                  <li class="small">Sitemapping</li>
-                  <li class="small">Content strategy</li>
-                  <li class="small">Sketching and wireframes</li>
-                  <li class="small">Prototyping</li>
-                  <li class="small">User testing</li>
-                </ul>
-              </div>
-            </div>
-            <div class="process-3">
-              <div class="process-icon">
-                <img src="images/icon-visual-design.png" alt="visual design icon" class="icon-mobile">
-              </div>
-              <div class="process-list">
-              <h5>Visual design</h5>
-                <ul>
-                  <li class="small">Name and logo design</li>
-                  <li class="small">Style guides</li>
-                  <li class="small">High-fidelity mockups and prototypes</li>
-                  <li class="small">Preference testing</li>
-                  <li class="small">User testing</li>
-                </ul>
-              </div>
-            </div>
-            <div class="process-4">
-              <div class="process-icon">
-                <img src="images/icon-dev-deploy.png" alt="development and deployment icon" class="icon-mobile">
-              </div>
-              <div class="process-list">
-              <h5>Development and deployment</h5>
-                <ul>
-                  <li class="small">Basic frontend</li>
-                  <li class="small">Developer deliverables</li>
-                  <li class="small">Process presentation</li>
-                  <li class="small">User testing</li>
-                </ul>
-              </div>
-            </div>
-        </section>
-        <a id="work"></a>
-        <section class="work">
-          <div class="img-wrapper bw margin-top">
-            <img src="images/sand.png" alt="black and white photo of ripples in wet sand">
-          </div>
-          <h1>Work</h1>
-          <section class="project">
-            <div class="img-wrapper project-image">
-              <img src="images/logo-intro-final.gif" alt="animation of dogear logo displayed in iPhone" class="animation-on-top">
-              <img src="images/dogear-dashboard-desktop.png" alt="dogear dashboard shown on a laptop" class="screen-in-back">
-            </div>
-            <div class="img-wrapper-small">
-              <img src="images/dogear-logo.png" alt="dogear logo, which resembles a folded corner of paper">
-            </div>
-            <h4>Ease your writing process</h4>
-            <div class="button-flex">
-              <a href="dogear.html">
-                <button class="margin-top">view case study</button>
-              </a>
-            </div>
-          </section>
-        </section>
-      </main>
-
-      <div class="img-wrapper bw">
-        <img src="images/coral.png" alt="black and white photo of branching fan coral">
-      </div>
-      <footer>
-        <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo" class="logo-footer">
-        <div class="content">
-          <h4>Want to get in touch?</h4>
-          <div class="button-flex">
-            <a href="contact.html">
-              <button>email me</button>
-            </a>
-          </div>
-          <a href="https://www.linkedin.com/in/kelseyingrid/" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn logo" class="social margin-bottom">
-          </a>
-          <a href="https://github.com/kelseyingrid" target="_blank">
-            <img src="images/github.png" alt="GitHub logo" class="social margin-bottom">
-          </a>
-          <a href="https://www.instagram.com/kelseyingrid8/" target="_blank">
-            <img src="images/instagram.png" alt="Instagram logo" class="social margin-bottom">
-          </a>
-        <p class="small margin-top">&copy; Designed and developed by Kelsey Jacobsen</p>
         </div>
-        <img src="images/mobile/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-mobile">
-        <img src="images/desktop/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-desktop">
-      </footer>
+      </section>
+
+      <section class="intro">
+        <img src="images/desktop/blobs-hero.png" alt="bubble-like digital illustration" class="blobs-desktop">
+        <img src="images/mobile/blobs-hero.png" alt="bubble-like digital illustration" class="blobs-mobile">
+        <div class="intro-1 margins">
+          <p class="intro-p-top">I’ve turned my background in natural resources around to create <span class="bold">user experiences that thrive “in the wild.” </span></p>
+          <p class="intro-p-bottom">I enjoy creating <span class="bold">digital products of all kinds</span>, and have fun taking inspiration from nature when I can.</p>
+        </div>
+        <div class="button-flex">
+          <a href="bio.html">
+            <button>view bio</button>
+          </a>
+        </div>
+      </section>
+
+      <section class="design-process">
+        <div class="img-wrapper bw">
+          <img src="images/feathers.png" alt="black and white close-up photo of feathers">
+        </div>
+        <h1>Design process</h1>
+        <div class="content padding-top">
+          <h4 class="centered">Here’s a summary of my typical steps.</h4>
+        </div>
+
+        <div class="col-4-flex margin-top">
+          <div class="process-1">
+            <div class="process-icon">
+              <img src="images/icon-research.png" alt="research icon" class="icon-mobile">
+            </div>
+            <div class="process-list">
+              <h5>Research and scoping</h5>
+              <ul>
+                <li class="small">Surveys, interviews, and problem identification</li>
+                <li class="small">Competitive analysis</li>
+                <li class="small">User personas</li>
+                <li class="small">User stories</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-2">
+            <div class="process-icon">
+              <img src="images/icon-info-arch.png" alt="information architecture icon" class="icon-mobile">
+            </div>
+            <div class="process-list">
+              <h5>Information architecture</h5>
+              <ul class="small">
+                <li class="small">User flows</li>
+                <li class="small">Sitemapping</li>
+                <li class="small">Content strategy</li>
+                <li class="small">Sketching and wireframes</li>
+                <li class="small">Prototyping</li>
+                <li class="small">User testing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="process-3">
+            <div class="process-icon">
+              <img src="images/icon-visual-design.png" alt="visual design icon" class="icon-mobile">
+            </div>
+            <div class="process-list">
+              <h5>Visual design</h5>
+              <ul>
+                <li class="small">Name and logo design</li>
+                <li class="small">Style guides</li>
+                <li class="small">High-fidelity mockups and prototypes</li>
+                <li class="small">Preference testing</li>
+                <li class="small">User testing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="process-4">
+            <div class="process-icon">
+              <img src="images/icon-dev-deploy.png" alt="development and deployment icon" class="icon-mobile">
+            </div>
+            <div class="process-list">
+              <h5>Testing and deliverables</h5>
+              <ul>
+                <li class="small">User testing</li>
+                <li class="small">Basic frontend</li>
+                <li class="small">Developer deliverables</li>
+                <li class="small">Process presentation</li>
+              </ul>
+            </div>
+          </div>
+      </section>
+      <a id="work"></a>
+      <section class="work">
+        <div class="img-wrapper bw margin-top">
+          <img src="images/sand.png" alt="black and white photo of ripples in wet sand">
+        </div>
+        <h1>Work</h1>
+        <section class="project">
+          <div class="img-wrapper project-image">
+            <img src="images/dively/mockups-slant.png" alt="three iPhones displaying dively screens, with one playing an animated flow">
+          </div>
+          <div class="img-wrapper-small">
+            <img src="images/dively/logo.png" alt="dively logo, in which three circles representing bubbles come out of the letter i">
+          </div>
+          <h4>Your dive logging assistant</h4>
+          <div class="button-flex">
+            <a href="dively.html">
+              <button class="margin-top">view case study</button>
+            </a>
+          </div>
+        </section>
+        <section class="project">
+          <div class="img-wrapper project-image">
+            <img src="images/logo-intro-final.gif" alt="animation of dogear logo displayed in iPhone" class="animation-on-top">
+            <img src="images/dogear-dashboard-desktop.png" alt="dogear dashboard shown on a laptop" class="screen-in-back">
+          </div>
+          <div class="img-wrapper-small">
+            <img src="images/dogear-logo.png" alt="dogear logo, which resembles a folded corner of paper">
+          </div>
+          <h4>Ease your writing process</h4>
+          <div class="button-flex">
+            <a href="dogear.html">
+              <button class="margin-top">view case study</button>
+            </a>
+          </div>
+        </section>
+      </section>
+
+        <section class="testimonials">
+          <h1>Testimonial</h1>
+          <div class="content padding-bottom">
+            <h4>"Kelsey is an extraordinary young woman that I mentored during her time at Bloc. In terms of her work and abilities, she is in the top 10% of the 300-400 students I have mentored. She has mastered the whole UX design process from start to finish within a very impressive timeframe.</p>
+            <h4>I would describe her as:</h4>
+            <ul>
+              <li class="quote">motivated</li>
+              <li class="quote">proactive</li>
+              <li class="quote">a fast learner</li>
+              <li class="quote">professional</li>
+              <h4>I would like to highly recommend her to anyone that is looking for a UX/Product designer that is genuinely working from a user-centered point of view and that has all the skills required to design a product from start to finish."</h4>
+            <h4>-Mike Dekker, Design Mentor at Bloc/Thinkful San Francisco</h4>
+          </div>
+        </section>
+    </main>
+
+    <div class="img-wrapper bw">
+      <img src="images/coral.png" alt="black and white photo of branching fan coral">
     </div>
-  </body>
+    <footer>
+      <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo" class="logo-footer">
+      <div class="content">
+        <h4>Want to get in touch?</h4>
+        <div class="button-flex">
+          <a href="contact.html">
+            <button>email me</button>
+          </a>
+        </div>
+        <a href="https://www.linkedin.com/in/kelseyingrid/" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn logo" class="social margin-bottom">
+        </a>
+        <a href="https://github.com/kelseyingrid" target="_blank">
+          <img src="images/github.png" alt="GitHub logo" class="social margin-bottom">
+        </a>
+        <a href="https://www.instagram.com/kelseyingrid8/" target="_blank">
+          <img src="images/instagram.png" alt="Instagram logo" class="social margin-bottom">
+        </a>
+        <p class="small margin-top">&copy; Designed and developed by Kelsey Jacobsen</p>
+      </div>
+      <img src="images/mobile/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-mobile">
+      <img src="images/desktop/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-desktop">
+    </footer>
+  </div>
+</body>
+
 </html>

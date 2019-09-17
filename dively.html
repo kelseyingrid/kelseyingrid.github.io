@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>dively case study | Kelsey Jacobsen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Nunito:300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143375489-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-143375489-1');
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <ul class="header-flex">
+        <li class="header-logo">
+          <a href="index.html">
+            <img src="images/mobile/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-mobile">
+            <img src="images/desktop/logo-for-header.png" alt="Kelsey Jacobsen's logo, which resembles a branching coral" class="logo-header-desktop">
+          </a>
+        </li>
+        <li class="header-work"><a href="index.html#work" class="header-work">work</a></li>
+        <li class="header-bio"><a href="bio.html" class="header-bio">bio</a></li>
+        <li class="header-contact"><a href="contact.html" class="header-contact">contact</a></li>
+      </ul>
+    </header>
+
+    <main id="main">
+      <div class="scroll">
+        <section class="case-study-hero wave">
+          <div class="img-wrapper padding-top hero-mobile">
+            <img src="images/dively/mobile/hero.png" alt="Three dively screens showin in iPhones">
+          </div>
+          <div class="hero-desktop padding-top margin-top padding-bottom">
+            <img src="images/dively/desktop/hero.png" alt="Five dively screens shown in iPhones">
+          </div>
+          <div class="img-wrapper-small padding-top content">
+            <img src="images/dively/logo.png" alt="dively logo, in which three circles representing bubbles come out of the letter i">
+          </div>
+          <div class="content">
+            <h4>Your dive logging assistant</h4>
+            <div class="button-flex">
+              <a href="https://sketch.cloud/s/2byGG?settings=2byGG" target="_blank">
+                <button class="button-top-case-study">view prototypes</button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="process-steps centered">
+          <p class="padding-top small step-skip-label">Skip to design process step</p>
+          <nav class="process-steps-flex">
+            <div class="process-step step-skip-label">
+              <img src="images/mobile/chevron-down.png" alt="down arrow">
+            </div>
+            <div class="process-step">
+              <a href="#overview-step">
+                <h5 class="underline">Overview</h5>
+              </a>
+            </div>
+            <div class="process-step">
+              <a href="#research-step">
+                <h5 class="underline">Research and scoping</h5>
+              </a>
+            </div>
+            <div class="process-step">
+              <a href="#info-arch-step">
+                <h5 class="underline">Information architecture</h5>
+              </a>
+            </div>
+            <div class="process-step">
+              <a href="#visual-step">
+                <h5 class="underline">Visual design</h5>
+              </a>
+            </div>
+            <div class="process-step">
+              <a href="#development-step">
+                <h5 class="underline">Testing and deliverables</h5>
+              </a>
+            </div>
+          </nav>
+        </section>
+
+        <div class="anchor">
+          <a id="overview-step"></a>
+        </div>
+
+        <section class="project-overview">
+          <h1>Overview</h1>
+          <div class="col-4-flex margin-bottom">
+            <div class="overview-section">
+              <img src="images/icon-roles.png" alt="roles icon" class="icon-mobile">
+              <h5>Roles</h5>
+              <ul>
+                <li class="small-list">Researcher and analyst</li>
+                <li class="small-list">UX and UI designer</li>
+              </ul>
+            </div>
+
+            <div class="overview-section">
+              <img src="images/icon-tools.png" alt="tools icon" class="icon-mobile">
+              <h5>Tools</h5>
+              <ul>
+                <li class="small-list">Google Forms</li>
+                <li class="small-list">Numbers for Mac</li>
+                <li class="small-list">Whimsical</li>
+                <li class="small-list">Sketch</li>
+                <li class="small-list">Adobe Illustrator</li>
+                <li class="small-list">Usability Hub</li>
+                <li class="small-list">InVision</li>
+                <li class="small-list">Maze</li>
+                <li class="small-list">Principle</li>
+                <li class="small-list">Keynote for Mac</li>
+              </ul>
+            </div>
+
+            <div class="overview-section">
+              <img src="images/icon-dev-deploy.png" alt="deveopment and deployment icon" class="icon-mobile">
+              <ul>
+                <h5>Deliverables</h5>
+                <li class="small-list">Style guide</li>
+                <li class="small-list">High-fidelity mockups</li>
+                <li class="small-list">Clickable prototypes</li>
+                <li class="small-list">Animated flow prototypes</li>
+                <li class="small-list">Assets for developer handoff</li>
+              </ul>
+            </div>
+
+            <div class="overview-section">
+              <img src="images/icon-timeframe.png" alt="timeframe icon" class="icon-mobile">
+              <h5>Timeframe</h5>
+              <ul>
+                <li class="small-list">6 weeks</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="img-wrapper-med centered progression-mobile padding-top">
+          <img src="images/dively/mobile/intro-progression.png" alt="three images: an initial paper sketch, wireframe, and final dashboard">
+        </div>
+        <div class="img-wrapper progression-desktop padding-top">
+          <img src="images/dively/desktop/intro-progression.png" alt="three images: an initial paper sketch, wireframe, and final dashboard">
+        </div>
+
+        <section class="col-2-flex margin">
+          <div>
+            <h5>Problem</h5>
+            <p>Scuba divers are taught to log each of their dives as proof of experience. But, paper logbooks are easily lost and damaged, and it can be a pain to upload information from a dive computer.* As a result, logging becomes a burden and many divers don’t log all their dives.</p>
+            <p class="small">*A dive computer is a device worn during a dive that collects data</p>
+          </div>
+          <div>
+            <h5>Solution</h5>
+            <p>Dively offers a mobile digital logbook. After a dive, divers can upload data directly from their dive computer, or snap a photo of the dive computer screen for the app to read and log. Dively also stores the diver’s certification information and gear “outfits,” making both dive-day check-in and post-dive logging a breeze.</p>
+          </div>
+        </section>
+
+        <div class="anchor">
+          <a id="research-step"></a>
+        </div>
+        <section>
+          <section class="step-intro">
+            <h1>Research and Scoping</h1>
+            <hr>
+            <div class="content">
+              <h2>user research</h2>
+              <h3>What problems, if any, could a new app solve for scuba divers?</h3>
+              <div class="button-flex">
+                <a href="https://drive.google.com/open?id=1QveUHrCKJZpPMPdvBMNvZb6dmPy87nbZQSk9YGQefYY" target="_blank">
+                  <button>view survey questions</button>
+                </a>
+                <a href="https://drive.google.com/open?id=1DDCtCHF9qZZpIupE8Sbtx7yG8y1exbsfiJct0Butk88" target="_blank">
+                  <button>view survey summary</button>
+                </a>
+                <a href="https://drive.google.com/open?id=129rXLzW2JNIPxAqpbu-DMxy_nBVYaN8YoVtE5zdYTUk" target="_blank">
+                  <button>view interview notes</button>
+                </a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <div class="img-wrapper survey-mobile">
+        <img src="images/dively/survey-inDevice.png" alt="an opening question of the online survey shown on a laptop screen">
+      </div>
+      <div class="parallax-survey-dively" alt="an opening question of the online survey shown on a laptop screen">
+      </div>
+
+      <div class="scroll">
+        <section class="content grey padding-top margin-top">
+          <h4>User survey</h4>
+          <p>I began by creating an online survey to learn about scuba divers’ needs and frustrations regarding dive logging. 24 divers shared input.</p>
+          <h5>Level of diving experience</h5>
+          <p>More than 60% of respondents consider themselves casual divers, meaning they dive for fun when they have the chance.</p>
+          <h5>Dive logging methods</h5>
+          <p>More than 50% still use paper logbooks. While they are free of technical challenges, paper logbooks are easy to get wet or forget to bring on a dive trip. Most said they would prefer to either log data by connecting to their dive computer wirelessly or taking a photo of their dive computer screen.</p>
+          <h5>Device preferences</h5>
+          <p>More than 80% of respondents would use a dive logging app most or all the time on a mobile device. Half use iOS and a third use a combination of iOS, Android, and others.</p>
+          <h5>App feature wishlist</h5>
+          <p>From a list of possible features, respondents rated these at the top:</p>
+          <ol>
+            <li>Automatic upload of dive information</li>
+            <li>Search and sort among logged dives</li>
+            <li>View dive history statistics </li>
+            <li>Rate a dive</li>
+            <li>Rate a dive site</li>
+            <li class="bottom-bullet">Save gear specifications and receive alerts when it’s time for servicing</li>
+          </ol>
+          <h5>Personal vs. social goals</h5>
+          <p>More than 70% preferred an app for their personal use only. Fewer wanted to connect with other divers and/or share via social media.</p>
+          <h5>App name</h5>
+          <p>Divers ranked possible names:</p>
+          <ol>
+            <li>Dively</li>
+            <li>Remora</li>
+            <li>Barnacle</li>
+            <li>Bubble Buddy</li>
+            <li>Viz</li>
+          </ol>
+        </section>
+
+        <section class="content margin-top">
+          <h4>Interviews</h4>
+          <p>I held follow-up phone interviews with two survey respondents, who shared some other actionable input.</p>
+          <h5>Dive history</h5>
+          <p>The total number of dives is the most useful piece of information for an at-a-glance dive log summary.</p>
+          <h5>Logging gear</h5>
+          <p>Saving “outfits” of dive gear would avoid having to select each piece of gear every time they log a dive.</p>
+          <h5>Certifications</h5>
+          <p>Saving dive certification info in the app would mean divers don’t need to carry their certification cards.</p>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
+            <h2>lesson learned</h2>
+          </div>
+          <p>Asking divers about possible app names in the user survey was useful for setting up the branding process early. It was also helpful to have a name selected before diving into logo development and preference testing.</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+            <hr>
+            <h2>competitive analysis</h2>
+            <h3>What other scuba dive logging apps are available?</h3>
+            <div class="button-flex">
+              <a href="https://drive.google.com/open?id=1WD0UAES8GWB1H31-hputvanwgOLvKlQvJjfFalqwaSE" target="_blank">
+                <button>view competitive analysis</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="img-wrapper competitors-mobile">
+        <img src="images/dively/mobile/competitors-triptych.png" alt="one screen each from three competitor apps">
+      </div>
+      <div class="fixed parallax-competitors-dively" alt="one screen each from three competitor apps">
+      </div>
+
+      <div class="scroll">
+        <section class="grey">
+          <div class="content">
+            <h4>Competitive analysis</h4>
+            <p>Reviewing the landscape of existing scuba dive logging apps helped me identify a possible niche for a new product.</p>
+            <h5>Narrowing the search</h5>
+            <p>A quick keyword search revealed that there are a lot of apps for scuba divers. But, digging a little deeper, I found that many had poor or very few ratings, signaling they probably aren’t strong players in the competitive landscape.</p>
+            <p>I focused on apps that:</p>
+            <ul class="body-bullet">
+              <li>Offer dive logging as a core feature</li>
+              <li>Have at least a 4-star rating</li>
+              <li>Have at least 100 reviews on Google Play or 20 on the App Store</li>
+              <li>Are available for iOS</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="content padding-top">
+          <p>This left me with three apps for deeper analysis.</p>
+          <div class="col-3-flex"> <!--need to figure out flex-->
+            <div class="dively-competitor">
+              <h5>Dive Log</h5>
+              <img src="images/dively/bug-dive-log.png" alt="Dive Log's app icon, featuring a dive flag and line representing a dive profile">
+            </div>
+            <ul>
+              <li class="small">Utilitarian UI</li>
+              <li class="small">Advanced data visualizations</li>
+              <li class="small">Users can connect with each other</li>
+            </ul>
+            <div class="dively-competitor">
+              <h5>MacDive</h5>
+              <img src="images/dively/bug-macdive.png" alt="MacDive's app icon, featuring a dive log and dive computer">
+            </div>
+            <ul>
+              <li class="small">Detailed data</li>
+              <li class="small">Options for technical divers</li>
+              <li class="small">No social aspect</li>
+            </ul>
+            <div class="dively-competitor">
+              <h5>Dive+</h5>
+              <img src="images/dively/bug-dive+.jpeg" alt="Dive+'s app icon, featuring a logo that combines a circle/d and a + sign" class="img-small">
+            </div>
+            <ul>
+              <li class="small">Social media style UI</li>
+              <li class="small">In-app photo editing</li>
+              <li class="small">Less focus on dive log</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="img-wrapper content grey">
+          <h4>Focusing on the audience</h4>
+          <p>From the user survey and competitive analysis, I found an audience not yet served by the existing dive logging apps.</p>
+          <div class="centered padding-top padding-bottom mobile-img"> <!--fit into 90% width-->
+            <img src="images/dively/mobile/audience-graph.png" alt="pie chart showing that technical divers and casual divers wanting an app with social features have good options with existing apps, and the target audience of casual divers who want an app for personal use">
+          </div>
+          <div class="centered padding-top padding-bottom desktop-img">
+            <img src="images/dively/desktop/audience-graph.png" alt="pie chart showing that technical divers and casual divers wanting an app with social features have good options with existing apps, and the target audience of casual divers who want an app for personal use">
+          </div>
+          <p>I created a mobile MVP, given that 85% of survey respondents would use a dive logging app mostly or always on their phone.</p>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
+            <h2>lesson learned</h2>
+          </div>
+          <p>Working on the user survey and a competitive analysis simultaneously was helpful since findings and questions in each of them fed into each other.</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+            <hr>
+            <h2>user personas & user stories</h2>
+            <h3>What would casual divers want a new app to do?</h3>
+            <div class="button-flex">
+              <a href="https://sketch.cloud/s/OWwWG" target="_blank">
+                <button>view user personas</button>
+              </a>
+              <a href="https://docs.google.com/spreadsheets/d/1vCPSXFK5kyRvaTfbuwBSmpsUlW2lA5FJqgp49zpJV2k/edit?usp=sharing" target="_blank">
+                <button>view user stories</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="img-wrapper personas-mobile">
+        <img src="images/dively/mobile/personas-stacked.png" alt="image of three personas stacked on each other">
+      </div>
+      <div class="personas-desktop parallax-personas-dively" alt="image of three personas stacked on each other">
+      </div>
+
+      <div class="scroll">
+        <section class="content padding-top">
+          <h4>User personas</h4>
+          <p>Based on the user survey results, I created three personas representing casual divers who might want a new dive logging app.</p>
+        </section>
+
+        <section class="personas-grid margin margin-top">
+          <div class="persona-1">
+            <div class="photo"> <!--fix box around persona photos-->
+              <img src="images/dively/persona-roman.png" alt="photo of opportunistic diver">
+            </div>
+            <div class="persona-profile">
+              <h5>The Opportunistic Diver</h5>
+              <h6>Age 37</h6>
+              <h6>Medford, MA</h6>
+              <h6>47 dives completed</h6>
+            </div>
+            <div class="frust-goals">
+              <h6>Motivations</h6>
+              <ul>
+                <li class="small-list">Roman uses a paper dive log because that’s what he was taught, but it seems outdated given modern technology. He wants to make dive logging quick and painless and minimize the number of things he has to remember in order to go diving.</li>
+              </ul>
+              <h6>Frustrations</h6>
+              <ul>
+                <li class="small-list">Unsure why people still user old school paper logbooks</li>
+                <li class="small-list">Certain he’ll get his paper log wet</li>
+                <li class="small-list">Annoyed at having to use loose papers when he forgets his log</li>
+              </ul>
+              <h6>Goals</h6>
+              <ul>
+                <li class="small-list">Use technology to ease dive logging</li>
+                <li class="small-list">Capture basic dive data</li>
+                <li class="small-list">Kep a log that’s accessible in the cloud</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="persona-2">
+            <div class="photo">
+              <img src="images/dively/persona-eva.png" alt="photo of avid diver">
+            </div>
+            <div class="persona-profile">
+              <h5>The Avid Diver</h5>
+              <h6>Age 42</h6>
+              <h6>Bristol, UK</h6>
+              <h6>298 dives completed</h6>
+            </div>
+            <div class="frust-goals">
+              <h6>Motivations</h6>
+              <ul>
+                <li class="small-list">Eva uses a paper dive log, but she knows there’s a wealth of data in her dive computer that she never sees because it’s a pain to remember how to use its fiddly buttons. She’s interested in an app that allows her to safely store her log and occasionally peruse her dive data.</li>
+              </ul>
+              <h6>Frustrations</h6>
+              <ul>
+                <li class="small-list">Can’t use desktop apps while traveling</li>
+                <li class="small-list">Getting info out of her dive computer is a pain</li>
+                <li class="small-list">Loses track of when gear needs to be serviced</li>
+              </ul>
+              <h6>Goals</h6>
+              <ul>
+                <li class="small-list">Upload data with minimal technological fuss</li>
+                <li class="small-list">Search and review dive history at a glance</li>
+                <li class="small-list">Keep on top of gear servicing</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="persona-3">
+            <div class="photo">
+              <img src="images/dively/persona-kalani.png" alt="photo of enthusiastic newbie">
+            </div>
+            <div class="persona-profile">
+              <h5>The Enthusiastic Newbie</h5>
+              <h6>Age 22</h6>
+              <h6>San Diego, CA<h6>
+              <h6>13 dives completed</h6>
+            </div>
+            <div class="frust-goals">
+              <h6>Motivations</h6>
+              <ul>
+                <li class="small-list">Kalani is taking a meticulous approach to her dive logging, trying to capture all the necessary information as well as personal notes on each dive. She doesn’t own a dive computer, and wants to transfer accurate dive statistics from rented computers to a digital log.</li>
+              </ul>
+              <h6>Frustrations</h6>
+              <ul>
+                <li class="small-list">Keeps getting paper log wet on the boat</li>
+                <li class="small-list">Rents dive computers and can’t remember all the statistics after returning them</li>
+              </ul>
+              <h6>Goals</h6>
+              <ul>
+                <li class="small-list">Capture accurate data without owning a dive computer</li>
+                <li class="small-list">Enter data in metric or imperial units</li>
+                <li class="small-list">Include notes and photos on each dive</li>
+              </ul>
+            </div>
+        </section>
+
+        <section class="content margin-top">
+          <h4>User stories</h4>
+          <p>Using the personas and the top ranked features in the online survey as a guide, I created user stories. Below are the MVP user stories for new and returning divers.</p>
+        </section>
+        <div class="stories-grid margin margin-top">
+          <div class="title-1">
+            <h5>New users</h5>
+          </div>
+          <div class="list-1">
+            <ul>
+              <li>Set up an account</li>
+              <li>Configure my dive computer</li>
+              <li>Save my gear and set servicing reminders</li>
+              <li>Choose settings, such as location tracking and push notifications</li>
+              <li>Fill in my dive certification info</li>
+            </ul>
+          </div>
+          <div class="title-2">
+            <h5>Returning users</h5>
+          </div>
+          <div class="list-2">
+            <ul>
+              <li>Upload data from my dive computer via bluetooth or wifi</li>
+              <li>Take a photo of my dive computer to upload basic data</li>
+              <li>Manually edit and input data</li>
+              <li>View my dive history</li>
+            </ul>
+          </div>
+          <div class="list-3">
+            <ul>
+              <li>Keyword search and sort past dives</li>
+              <li>Rate a dive site and an individual dive</li>
+              <li>Record dive info in imperial or metric units</li>
+              <li>Upload photos</li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-do-different.png" alt="would do differently icon" class="icon-mobile">
+            <h2>Would do<br>differently</h2>
+          </div>
+          <p>It’s easy to throw in extra user stories thinking they’ll be no big deal to implement. But of course, even seemingly simple features can create complex design challenges. If I started again, I might trim the MVP user stories.</p>
+        </section>
+
+        <div class="anchor">
+          <a id="info-arch-step"></a>
+        </div>
+        <section>
+          <h1>Information architecture</h1>
+          <hr>
+          <section class="step-intro">
+            <div class="content">
+              <h2>user flows, appmap, & content strategy</h2>
+              <h3>How will divers navigate the app?</h3>
+              <div class="button-flex">
+                <a href="https://whimsical.com/WFUS6GpRStBNwKRNUZFLZc" target="_blank">
+                  <button>view user flows & appmap</button>
+                </a>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <div class="img-wrapper-margins sitemap-mobile">
+        <img src="images/dively/appmap-sketch.png" alt="sketch of the app's appmap">
+      </div>
+      <div class="parallax-sitemap-dively">
+      </div>
+
+      <div class="scroll">
+        <section class="content padding-top margin-bottom">
+          <h4>User flows</h4>
+          <p>To visualize how divers would accomplish key tasks, I created user flows capturing each of the MVP user stories.</p>
+          <a href="https://whimsical.com/WFUS6GpRStBNwKRNUZFLZc" target="_blank" class="img-wrapper padding-bottom padding-top mobile-img">
+            <img src="images/dively/mobile/flow-diagram.png" alt="a section of a user flow diagram" class="std-shadow">
+          </a>
+          <a href="https://whimsical.com/WFUS6GpRStBNwKRNUZFLZc" target="_blank" class="img-wrapper padding-bottom padding-top desktop-img">
+            <img src="images/dively/desktop/flow-diagrams.png" alt="a few example user flow diagrams" class="std-shadow">
+          </a>
+        </section>
+
+        <section class="content grey">
+          <h4>"Appmap"</h4>
+          <p>How do the user flows translate into app screens? I created a sitemap - I call it an “appmap” - that outlines the app architecture.</p>
+          <a href="https://whimsical.com/WFUS6GpRStBNwKRNUZFLZc" target="_blank" class="img-wrapper padding-bottom padding-top mobile-img">
+            <img src="images/dively/mobile/appmap.png" alt="a section of the appmap" class="std-shadow">
+          </a>
+          <a href="https://whimsical.com/WFUS6GpRStBNwKRNUZFLZc" target="_blank" class="img-wrapper padding-bottom padding-top desktop-img">
+            <img src="images/dively/desktop/appmap.png" alt="the app's appmap" class="std-shadow">
+          </a>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-challenge.png" alt="challenge icon" class="icon-mobile">
+            <h2>challenge</h2>
+          </div>
+          <p>The overarching architecture of an app can make or break its usability, and I was challenged to identify a structure that would work well for a dive logging app.</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+            <hr>
+            <h2>wireframes</H2>
+            <H3>What screen layouts will be most effective?</h3>
+            <div class="button-flex">
+              <a href="../images/dively/wireframe-sketches-compiled.pdf#view=fitH" target="_blank">
+                <button>view sketches</button>
+              </a>
+              <a href="https://whimsical.com/WxaeQ1THYPCsYYuvkkJRYJ" target="_blank">
+                <button>view low-fi mockups</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="img-wrapper wireframes-mobile margin">
+        <img src="images/dively/low-fi-mockups.png" alt="black and white low-fidelity mockups of several screens">
+      </div>
+      <div class="parallax-wireframes-dively" alt="black and white low-fidelity mockups of several screens">
+      </div>
+
+      <div class="scroll">
+        <section class="content padding-top">
+          <h4>Wireframes</h4>
+          <p>I sketched wireframes to test various layout options and create a clearer picture of each screen, first on paper and then in Whimsical. The process resulted in some tweaking of the appmap as issues arose.</p>
+          <div class="img-wrapper margin-top margin-bottom wireframes-mobile">
+            <img src="images/dively/sketches-mockups.png" alt="two sketches and two low-fi mockups of the same screens">
+          </div>
+        </section>
+
+        <section class="content grey margin-top">
+          <h4>User testing</h4>
+          <p>I created a quick set of Maze missions with the low-fidelity mockups and asked two divers to perform a few tasks.</p>
+          <h5>Tasks</h5>
+          <p>I tested the low-fidelity clickable prototype by asking three users to perform a few tasks:</p>
+          <ul class="body-bullet">
+            <li>Take the tour and sign up</li>
+            <li>View a list of your logged dives</li>
+            <li>Log a dive by taking a photo of your dive computer</li>
+            <li class="bottom-bullet">Navigate to your gear list and add a new piece of gear</li>
+          </ul>
+          <h5>Results</h5>
+          <p>The testers uncovered some aspects that needed to be fixed; most notably, they had a hard time finding where to log a dive and see their gear list.</p>
+          <h5>Revisions</h5>
+          <p>I made the following changes:</p>
+          <ul class="body-bullet">
+            <li>Reorganized sections so each has hits own button in the navbar</li>
+            <li>Renamed “gear kit” to “gear outfit” and added explanatory copy</li>
+            <li>Added a title to each feature description in the onboarding overview</li>
+            <li class="bottom-bullet">Added the option to upload images</li>
+          </ul>
+          <p>Here are my initial revisions to the navbar based on the divers’ feedback: </p>
+          <div class="centered icons-grid">
+            <div class="draft img-wrapper-med">
+              <h6>Before user testing</h6>
+              <img src="images/dively/navbar-before.png" alt="Initial navbar mockup including only Log, plus sign, and Profile buttons">
+            </div>
+            <div class="final img-wrapper-med">
+              <h6>Revised based on user testing</h6>
+              <img src="images/dively/navbar-after.png" alt="Revised navbar mockup including Log, Certs, Add Dive, Gear, and Settings buttons">
+            </div>
+          </div>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
+            <h2>lesson learned</h2>
+          </div>
+          <p>Content is, of course, king. I enjoy writing, yet it can be hard to create a content strategy without seeing it in the context of the screens. For products like this without a maketing site or loads of content, I found that writing it within the low-fidelity mockups was most efficient.</p>
+        </section>
+
+        <div class="anchor">
+          <a id="visual-step"></a>
+        </div>
+        <section>
+          <h1>Visual design</h1>
+          <section class="step-intro content">
+            <hr>
+            <h2>branding</h2>
+            <h3>What look and feel are we going for?</h3>
+            <div class="button-flex">
+              <a href="https://sketch.cloud/s/D88pq" target="_blank">
+                <button>view style guide</button>
+              </a>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <div class="img-wrapper visual-mobile">
+        <img src="images/dively/logo-sketches.png" alt="initial sketches of possible logos and names">
+      </div>
+      <div class="parallax-visual-dively" alt="initial sketches of possible logos and names">
+      </div>
+
+      <div class="scroll">
+        <section class="content padding-top">
+          <h4>Logo iterations</h4>
+          <p>Based on input from the user survey, I decided on the name dively. This name captured the playful tone I was after and includes the word “dive,” which would help make the app discoverable in searches.</p>
+          <p>After some quick paper sketches, I moved to Illustrator to get more precise.</p>
+        </section>
+
+        <section class="grey margin-top padding-top">
+          <div class="content">
+            <h4>Preference testing</h4>
+            <p>I sent several options for preference testing with Usability Hub, which resulted in an exciting neck-and-neck race!</p>
+            <h5>Results</h5>
+            <p>With a total of 58 votes cast, two options surfaced as the clear favorites.</p>
+          </div>
+          <div class="margin logos-row1-grid margin-top padding-top">
+            <div>
+              <img src="images/dively/logo-for-preftest-1.png" alt="Black and white logo in which 3 bubbles rise from the letter i in dively" class="logo1">
+              <h6>Votes: 20</h6>
+            </div>
+            <div>
+              <img src="images/dively/logo-for-preftest-2.png" alt="Black and white logo in which the word dively is formed in the shape of a fish" class="logo2">
+              <h6>Votes: 20</h6>
+            </div>
+          </div>
+          <div class="margin logos-row2-grid margin-top">
+            <div>
+              <img src="images/dively/logo-for-preftest-3.png" alt="Black and white logo in which 3 bubbles appear after the word dively" class="logo3">
+              <h6>Votes: 10</h6>
+            </div>
+            <div>
+              <img src="images/dively/logo-for-preftest-4.png" alt="Black and white logo in which a diver's fin takes the place of the letter v" class="logo4">
+              <h6>Votes: 8</h6>
+            </div>
+            <div>
+              <img src="images/dively/logo-for-preftest-5.png" alt="Black and white logo in which 3 bubbles aligned vertically take the place of the letter i" class="logo5">
+              <h6>Votes: 1</h6>
+            </div>
+          </div>
+        </section>
+        <section class="grey">
+          <div class="col-2-flex margin">
+            <div>
+              <h5>Decision</h5>
+              <p>Because dively’s MVP is mobile-only, I chose the logo that lends itself most readily to an app icon. I also felt this logo felt more natural and easy.</p>
+            </div>
+            <div>
+              <h5>Revisions</h5>
+              <p>I found the friendly, bubbly typeface Comfortaa, and removed the reflections from the bubbles for a more flat, modern look. I also applied a blue-to-teal color palette that evokes the sea and helps identify the mark as bubbles.</p>
+            </div>
+          </div>
+        </section>
+        <section class="grey-no-bottom-padding margin-bottom">
+          <div class="img-wrapper-small centered">
+            <img src="images/dively/logo.png" alt="final dively logo">
+          </div>
+          <div class="img-wrapper-small-no-bottom-padding centered">
+            <img src="images/dively/bug-inDevice.png" alt="final dively app icon shown in an iphone with other app icons">
+          </div>
+        </section>
+
+        <section class="content margin-top padding-top">
+          <div class="margin">
+            <h4>Look and feel</h4>
+            <p>With the help of a moodboard of bright colors and ocean cartoons, I created a brand for dively.</p>
+            <h5>Style guide</h5>
+            <p>The style guide captures a fun, irreverent approach to dive logging. Below is some example material from the syle guide. </p>
+            <a href="https://sketch.cloud/s/D88pq" target="_blank" class="img-wrapper margin-top style-guide-mobile">
+              <img src="images/dively/style-guide-page-fonts.png" alt="one style guide page, showing typography specifications" class="std-shadow">
+            </a>
+          </div>
+        </section>
+        <section class="margin margin-top margin-bottom padding-bottom">
+          <div>
+            <a href="https://sketch.cloud/s/D88pq" target="_blank" class="img-wrapper margin-top style-guide-desktop">
+              <img src="images/dively/desktop/style-guide-pages.png" alt="small images of four style guide pages">
+            </a>
+          </div>
+        </section>
+        <section class="content">
+          <div>
+            <h5>Icons</h5>
+            <p>This product required some pretty specific iconography, so I created icons to indicate gear and functions.</p>
+            <div class="img-wrapper-med img-constrain centered mobile-img">
+              <img src="images/dively/mobile/icons.png" alt="13 icons">
+            </div>
+            <div class="centered img-constrain desktop-img margin-bottom padding-bottom">
+              <img src="images/dively/desktop/icons.png" alt="13 icons">
+            </div>
+            <h5 class="margin-top">Illustrations</h5>
+            <p>To embody the app’s playful spirit, I created a crab character that turns up throughout the UI, congratulating the user on successes and modeling dive gear.</p>
+            <div class="img-wrapper-med centered margin-top img-constrain mobile-img">
+              <img src="images/dively/mobile/crabby-illustrations.png" alt="4 illustrations of the crab character: waving, holding a certification card, wearing a mask and snorkel, and wearing fins">
+            </div>
+          </div>
+        </section>
+        <section class="margin padding-bottom">
+          <div class="img-wrapper centered margin-top desktop-img">
+            <img src="images/dively/desktop/crabbys.png" alt="4 illustrations of the crab character: waving, holding a certification card, wearing a mask and snorkel, and wearing fins">
+          </div>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-lesson.png" alt="lesson learned icon" class="icon-mobile">
+            <h2>lesson learned</h2>
+          </div>
+          <p>For a mobile-only app, the icon that appears on the phone’s home screen is perhaps just as important as the logo. Keeping the platform in mind is key!</p>
+        </section>
+
+        <section class="step-intro">
+          <div class="content">
+            <hr>
+            <h2>mockups</H2>
+            <H3>How does the style guide come to life in the app?</h3>
+            <div class="button-flex">
+              <a href="https://sketch.cloud/s/2byGG" target="_blank">
+                <button>view hi-fi mockups</button>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="img-wrapper mockups-mobile">
+        <img src="images/dively/mockups-final.png" alt="high-fidelity mockups of several screens">
+      </div>
+      <div class="parallax-mockups-dively" alt="high-fidelity mockups of several screens">
+      </div>
+
+      <div class="scroll">
+        <section>
+          <div class="content padding-top">
+            <h4>Design iterations</h4>
+            <p>With the draft style guide in hand, I sat down with Sketch to think more deeply about how to apply the guidelines. My high-fidelity mockups went through several rounds of revisions based on design mentor and peer feedback - and resulted in numerous updates to the style guide.</p>
+            <h5>Toggle</h5>
+            <p>I wanted an easy way for the user to flip between the two subsections of the Log - Summary and List. My design progression is shown below.</p>
+          </div>
+          <div class="content toggle-grid margin-bottom padding-top">
+            <div>
+              <h6>Draft 1</h6>
+              <img src="images/dively/toggle-draft1.png" alt="snapshot of Dive Log screen where Summary and List are separate buttons" class="draft-1-toggle">
+            </div>
+            <div>
+              <h6>Draft 2</h6>
+              <img src="images/dively/toggle-draft2.png" alt="snapshot of Dive Log screen where Summary and List are on opposite sides of a long purple and white toggle" class="draft-2-toggle">
+            </div>
+            <div>
+              <h6>Final</h6>
+              <img src="images/dively/toggle-draft3.png" alt="snapshot of Dive Log screen where Summary and List are on opposeite sides of a simplified pink and white toggle" class="draft-3-toggle">
+            </div>
+          </div>
+          <div class="content">
+            <h5>Buttons</h5>
+            <p>I started out thinking I should make the buttons something special, but they were too big and heavy. I pared them down to their essence - and to a pattern more expected in an iOS app.</p>
+          </div>
+          <!--need to add flex and retain size of buttons-->
+          <div class="button-grid content">
+            <div class="button1">
+              <h6>Draft 1</h6>
+              <img src="images/dively/button-draft1.png" alt="Larger, darker blue button with inner hairline detail">
+            </div>
+            <div class="button2">
+              <h6>Draft 2</h6>
+              <img src="images/dively/button-draft2.png" alt="Smaller button with subtle wave/reflection in two shades of blue">
+            </div>
+            <div class="button3">
+              <h6>Draft 3</h6>
+              <img src="images/dively/button-final.png" alt="Even smaller button, in plain lighter blue">
+            </div>
+          </div>
+        </section>
+
+        <section class="key-takeaway">
+          <div class="centered">
+            <img src="images/icon-do-different.png" alt="would do differently icon" class="icon-mobile">
+            <h2>Would do<br>differently</h2>
+          </div>
+          <p>I could have taken the visual look and feel in a number of directions, for example by using underwater photographs. But, I wanted to challenge myself to create illustrations. If I had the resources, I would make quick mockups of different design directions and send them to the target audience for preference testing.</p>
+        </section>
+
+        <div class="anchor">
+          <a id="development-step"></a>
+        </div>
+        <section>
+          <h1>Testing and deliverables</h1>
+          <section class="step-intro">
+            <hr>
+            <h2 class="content">user testing & animated flows</h2>
+            <h3 class="content">What details will enhance the user experience?</h3>
+            <div class="button-flex">
+              <a href="https://docs.google.com/document/d/1m_Vj2RM2fYEW4tXQFIf_8HIj7OsRW-iarC4fZZaq1fg/edit?usp=sharing" target="_blank">
+                <button>view user testing results</button>
+              </a>
+              <a href="https://sketch.cloud/s/2byGG" target="_blank">
+                <button>view hi-fi mockups</button>
+              </a>
+            </div>
+          </section>
+        </section>
+      </div>
+
+      <div class="img-wrapper prototypes-mobile">
+        <img src="images/dively/mockups-final.png" alt="final mockups of various screens">
+      </div>
+      <div class="parallax-prototypes-dively" alt="final mockups of various screens">
+      </div>
+
+      <div class="scroll">
+        <section class="content padding-top">
+          <h4>User testing</h4>
+          <p>Using InVision, I created simple clickable prototypes for testing. I dropped them into Maze, where nine people completed the tasks on their own time and I led five one-on-one sessions.</p>
+            <div> <!--add flex-->
+              <h5>Task 1: Take the onboarding tour and log in</h5>
+              <h6>Users' sticking point<h6>
+              <p>The onboarding tour was a bit long</p>
+              <h6>Revision<h6>
+              <p>Consolidated to reduce the number of overview screens</p>
+              <div class="img-wrapper">
+                <img src="images/dively/onboarding-animated.gif">
+              </div>
+            </div>
+            <div>
+              <h5>Task 2: View a list of your logged dives</h5>
+              <h6>Users' sticking point<h6>
+              <p>Some users took a few seconds to find the “list” toggle</p>
+              <h6>Revision<h6>
+              <p>None; all users were able to complete the task in a reasonable amount of time</p>
+              <div class="img-wrapper">
+                <img src="images/dively/log-list-animated.gif">
+              </div>
+            </div>
+            <div>
+              <h5>Task 3: Log a dive by taking a photo of your dive computer screen</h5>
+              <h6>Users' sticking point<h6>
+              <p>To log a dive, many users first went to the “Log” section instead of the “Add dive” section</p>
+              <h6>Revision<h6>
+              <p>I added an “Add” button at the top of the “Log” section, which provides an alternate pathway to the “Add dive” section.</p>
+              <div class="img-wrapper">
+                <img src="images/dively/log-dive-photo-animated.gif">
+              </div>
+            </div>
+            <div>
+              <h5>Task 4: Save a new dive computer and add it to your “Tropical” gear outfit</h5>
+              <h6>Users' sticking point<h6>
+              <p>After entering information about the new computer, some users were unsure whether or how they needed to save the information.</p>
+              <h6>Revision<h6>
+              <p>The “Save” button was all the way at the bottom of a long scrolling page, so I moved it to the top based on the Human Interface Guidelines. I also broke the content into collabsible sections to let users pick and choose the information they want to enter at a glance.</p>
+              <div class="img-wrapper">
+                <img src="images/dively/new-computer-animated.gif">
+              </div>
+            </div>
+          <div>
+            <h4>Animated interactions</h4>
+            <p>While creating the high-fidelity mockups, I imagined the transitions and animations that would take place as a user moves through the screens. The typical prototyping tools weren’t up for the job, so I picked up Principle to help the prototypes come to life.</p>
+          </div>
+        </section>
+
+        <section class="content grey margin-top">
+          <h4>Final deliverables</h4>
+          <p>In the end, I have the following assets:</p>
+          <ul>
+            <li class="body-bullet">High-fidelity mockups</li>
+            <li class="body-bullet">Style guide</li>
+            <li class="body-bullet"> Assets for developer hand-off</li>
+            <li class="body-bullet bottom-bullet">Example animated interactions</li>
+          <h4>Conclusion</h4>
+          <p>This project was a fun opportunity to create a playful brand and helpful product for a niche audience. There are things that I would continue working on, like:</p>
+          <ul>
+            <li class="body-bullet">Carefully thinking through how a user configures a dive computer for uploading dive data with a photo</li>
+            <li class="body-bullet">Modernizing the Certifications section, such as by displaying cert cards as a 3D stack </li>
+            <li class="body-bullet bottom-bullet">Conducting more user testing on each of the main tasks</li>
+          </ul>
+          <p>There are countless development challenges in here that could be ripe for solving. If you’d like to collaborate to bring dively to reality in the App Store, please get in touch!</p>
+          <div class="img-wrapper-small centered margin-top crabby-yay">
+            <img src="images/dively/crabby-yay.png">
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="scroll">
+      <img src="images/logo-for-footer.png" alt="Kelsey Jacobsen's logo" class="logo-footer">
+      <div class="content">
+        <h4>Want to get in touch?</h4>
+        <div class="button-flex">
+          <a href="contact.html">
+            <button>email me</button>
+          </a>
+        </div>
+        <a href="https://www.linkedin.com/in/kelseyingrid/" target="_blank">
+          <img src="images/linkedin.png" alt="LinkedIn logo" class="social margin-bottom">
+        </a>
+        <a href="https://github.com/kelseyingrid" target="_blank">
+          <img src="images/github.png" alt="GitHub logo" class="social margin-bottom">
+        </a>
+        <a href="https://www.instagram.com/kelseyingrid8/" target="_blank">
+          <img src="images/instagram.png" alt="Instagram logo" class="social margin-bottom">
+        </a>
+        <p class="small margin-top">&copy; Designed and developed by Kelsey Jacobsen</p>
+      </div>
+      <img src="images/mobile/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-mobile">
+      <img src="images/desktop/blobs-for-footer.png" alt="bubble-like digital illustration" class="footer-blobs-desktop">
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
