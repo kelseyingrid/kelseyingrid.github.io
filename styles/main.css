@@ -1595,7 +1595,7 @@ hr {
    background-image: url("../images/dively/desktop/competitors-parallax.png");
    background-position: top 20rem left 50%;
    background-repeat: no-repeat;
-   background-size: 60%;
+   background-size: contain;
    min-height: 70vh;
  }
 
@@ -2119,30 +2119,6 @@ hr {
     max-width: 15rem;
   }
 
-  .toggle-grid {
-    grid-gap: 2rem;
-    grid-template-columns: 1fr 1.25fr 1.5fr;
-    grid-template-areas:
-      "draft-1-toggle draft-2-toggle draft-3-toggle";
-    justify-content: center;
-    justify-items: center;
-  }
-
-  .button-grid {
-    display: grid;
-    grid-gap: 4rem;
-    grid-template-columns: 1.4fr 1.25fr 1fr;
-    grid-template-areas:
-      "button1 button2 button3";
-    justify-content: center;
-  }
-
-  .button1, .button2, .button3 {
-    align-self: center;
-    justify-self: center;
-    max-width: 100%;
-  }
-
   .img-constrain {
     max-width: 20rem;
   }
@@ -2340,18 +2316,11 @@ hr {
     color: #035668;
   }
 
-  .parallax-survey, .parallax-survey-dively {
+  .parallax-survey {
     background-position: center top 18rem;
     background-size: 70vw;
     max-width: 1500px;
   }
-
-  .parallax-competitors-dively {
-    background-position: center top 18rem;
-    background-size: 70vw;
-    max-width: 1500px;
-  }
-
 
   .parallax-personas {
     background-image: url("../images/desktop/personas.png");
@@ -2476,11 +2445,29 @@ hr {
   }
 
   .toggle-grid {
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1.25fr 1.5fr;
+    grid-template-areas:
+      "draft-1-toggle draft-2-toggle draft-3-toggle";
+    justify-content: center;
+    justify-items: center;
+    max-width: 1000px;
+}
+
+  .button-grid {
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: 1.4fr 1.25fr 1fr;
+    grid-template-areas:
+      "button1 button2 button3";
+    justify-content: center;
     max-width: 1000px;
   }
 
-  .button-grid {
-    max-width: 1000px;
+  .button1, .button2, .button3 {
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
   }
 
   .competitors-grid {
@@ -2519,22 +2506,20 @@ hr {
   }
 
   .parallax-prototypes {
-    background-image: url("/images/desktop/mobile-triptic-wide.png");
     background-position: top 20vh left 50%;
     background-size: 1400px;
   }
 
-  .parallax-visual {
-    background-image: url("../images/logo-sketches.png");
+  .parallax-visual, .parallax-visual-dively {
     background-position: top 10rem left 50%;
     background-size: 1400px;
   }
 
-  .parallax-survey {
+  .parallax-survey, .parallax-survey-dively, .parallax-competitors-dively {
     background-size: 1000px;
   }
 
-  .parallax-personas {
+  .parallax-personas, .parallax-personas-dively, .parallax-sitemap-dively {
     background-size: 1200px;
   }
 
