@@ -15,6 +15,7 @@ html {
 
 main {
   position: relative;
+  padding-top: 0 !important;
 }
 
 
@@ -86,7 +87,7 @@ video {
 .hero-content {
   left: calc(50% - 40%);
   position: absolute;
-  top: 10vh;
+  top: 17vh;
   width: 80%;
   z-index: 3;
 }
@@ -98,8 +99,6 @@ video {
 }
 .intro {
   background-color: #FAFAFA;
-  /* padding-bottom: 1rem;
-  padding-top: 4rem; */
   position: relative;
 }
 
@@ -111,6 +110,7 @@ video {
 .bio-hero {
   background-color: #EBF3F6;
   margin-top: 0;
+  padding-top: 7rem;
 }
 
 .margin-top {
@@ -478,6 +478,7 @@ input[type=text], textarea, input[type=email] {
   border: 1.5px solid #D5EAEF;
   border-radius: 8px;
   box-shadow: none;
+  font-size: 1.6rem;
   margin-bottom: 3rem;
   padding: 1rem;
   width: 100%;
@@ -1197,7 +1198,7 @@ hr {
 
   .wave {
     background-image: url("/images/dively/mobile/wave.png");
-    background-position: top;
+    background-position: 0 7rem;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -1500,7 +1501,7 @@ hr {
 
   .wave {
     background-image: url("/images/dively/desktop/wave-tablet.png");
-    background-position: top;
+    background-position: 0 7rem;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -2194,7 +2195,7 @@ hr {
 
   .wave {
     background-image: url("/images/dively/desktop/wave.png");
-    background-position: 0 -4rem;
+    background-position: 0 3rem;
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -2522,7 +2523,7 @@ hr {
 
   .wave {
     background-image: url("/images/dively/desktop/wave.png");
-    background-position: 0 -9rem;
+    background-position: 0 -2rem;
     background-repeat: no-repeat;
     background-size: 100%;
   }
