@@ -820,7 +820,7 @@ footer p {
 li {
   color: #3B3F41;
   font-family: 'Nunito', sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 141%;
   margin-bottom: 1rem;
@@ -1167,13 +1167,6 @@ hr {
   background-size: 110% auto;
 }
 
-.wave {
-  background-image: url("/images/dively/mobile/hero-background.png");
-  background-position: 0 -20rem;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
 .animation {
   display: block;
   margin-left: auto;
@@ -1201,6 +1194,17 @@ hr {
 
   .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-competitors-dively, .parallax-survey, .parallax-survey-dively, .enter-mobile-3, .hero-desktop, .desktop-img {
     display: none;
+  }
+
+  .wave {
+    background-image: url("/images/dively/mobile/wave.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .graph-mobile {
+    max-width: 90%;
   }
 
   .col-3-flex {
@@ -1353,6 +1357,7 @@ hr {
 
   .personas-grid img {
     filter: drop-shadow(-1px 4px 4px rgba(0,0,0,.2));
+    max-width: 18rem;
   }
 
   .progression-grid {
@@ -1492,6 +1497,13 @@ hr {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .wave {
+    background-image: url("/images/dively/desktop/wave-tablet.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
 }
@@ -2053,6 +2065,7 @@ hr {
 
   .persona-2 .persona-profile {
     margin-left: 0;
+    width: 100%;
   }
 
   .persona-3 .persona-profile {
@@ -2065,7 +2078,8 @@ hr {
   }
 
   .personas-grid img {
-    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+    filter: drop-shadow(-1px 4px 4px rgba(0,0,0,.2));
+    max-width: 18rem;
   }
 
   .persona-1 .frust-goals {
@@ -2177,6 +2191,13 @@ hr {
   .blobs-desktop {
     margin-top: -16rem;
     width: 90vw;
+  }
+
+  .wave {
+    background-image: url("/images/dively/desktop/wave.png");
+    background-position: 0 -4rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .intro-1 {
@@ -2417,6 +2438,10 @@ hr {
     padding-top: 2rem;
   }
 
+  .personas-grid img {
+    filter: drop-shadow(-1px 4px 4px rgba(0,0,0,.2));
+  }
+
   .pref-test-flex {
     margin-left: 20vw;
     margin-right: 20vw;
@@ -2494,6 +2519,13 @@ hr {
 
   .container.home {
     box-shadow: 0px 10px 30px rgba(0,0,0,.2);
+  }
+
+  .wave {
+    background-image: url("/images/dively/desktop/wave.png");
+    background-position: 0 -9rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   button {
