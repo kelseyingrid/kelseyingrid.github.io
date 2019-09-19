@@ -14,7 +14,6 @@ html {
 }
 
 main {
-  padding-top: 7rem;
   position: relative;
 }
 
@@ -216,7 +215,7 @@ video {
 }
 
 .case-study-hero {
-  padding-top: 4rem;
+  padding-top: 11rem;
   text-align: center;
 }
 
@@ -1514,8 +1513,8 @@ hr {
 @media screen and (min-width: 768px) {
 
   .content {
-    padding-left: 20vw;
-    padding-right: 20vw;
+    padding-left: 20%;
+    padding-right: 20%;
   }
 
   .margin-top {
