@@ -27,8 +27,13 @@ header {
   background-color: #EBF3F6;
   padding: 2rem 5vw;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 999;
+}
+
+.contact {
+  margin-top: 7rem;
 }
 
 .header-flex {
@@ -478,6 +483,7 @@ input[type=text], textarea, input[type=email] {
   border: 1.5px solid #D5EAEF;
   border-radius: 8px;
   box-shadow: none;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 3rem;
   padding: 1rem;
