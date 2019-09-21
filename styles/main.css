@@ -189,6 +189,20 @@ video {
   padding: 3rem 5%;
 }
 
+.quote-start {
+  background-image: url("../images/dively/quote-start.png");
+  background-position: -5% top;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.quote-end {
+  background-image: url("../images/dively/quote-end.png");
+  background-position: 105% bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
 .bio-section-title-1 {
   margin-top: 0;
 }
@@ -800,6 +814,10 @@ p {
   padding-bottom: 2.5rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .key-takeaway p {
   margin-bottom: 1rem;
 }
@@ -1260,8 +1278,12 @@ hr {
 /*mobile to large mobile*/
 @media screen and (max-width: 767px) {
 
-  .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-competitors-dively, .parallax-survey, .parallax-survey-dively, .enter-mobile-3, .hero-desktop, .desktop-img {
+  .logo-header-desktop, .blobs-desktop, .progression-desktop, .frustrations-desktop, .footer-blobs-desktop, .personas-desktop, .sitemap-desktop, .wireframes-desktop, .style-guide-desktop, .logo-options-desktop, .parallax-competitors, .parallax-competitors-dively, .parallax-survey, .parallax-survey-dively, .enter-mobile-3, .hero-desktop, .desktop-img, .product-shot-img {
     display: none;
+  }
+
+  .product-shot-gif {
+    max-width: 250px;
   }
 
   .wave {
@@ -1635,6 +1657,18 @@ hr {
     width: 100%;
   }
 
+  .inline {
+    display: inline-block;
+  }
+
+  .product-shot-img, .product-shot-gif {
+    height: auto;
+    max-width: 22rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 6rem;
+  }
+
   main > .scroll {
     padding-top: 0;
   }
@@ -1650,10 +1684,24 @@ hr {
     min-width: 40vw;
   }
 
+  .dively-logo {
+    padding-top: 4rem;
+  }
+
   .logo-options-desktop {
     margin: auto;
     max-width: 800px;
     width: 90%;
+  }
+
+  .quote-start {
+    background-image: url("../images/dively/quote-start.png");
+    background-position: 2% top;
+  }
+
+  .quote-end {
+    background-image: url("../images/dively/quote-end.png");
+    background-position: 98% bottom;
   }
 
  .parallax-competitors {
@@ -2258,7 +2306,7 @@ hr {
   }
 
   .email-button {
-    min-width: 20vw
+    min-width: 40%;
   }
 
   footer.scroll {
@@ -2284,6 +2332,22 @@ hr {
   .blobs-desktop {
     margin-top: -16rem;
     width: 90vw;
+  }
+
+  .product-shot-img, .product-shot-gif {
+    max-width: 30rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .quote-start {
+    background-image: url("../images/dively/quote-start.png");
+    background-position: 6% top;
+  }
+
+  .quote-end {
+    background-image: url("../images/dively/quote-end.png");
+    background-position: 94% bottom;
   }
 
   .wave {
@@ -2401,6 +2465,10 @@ hr {
   button {
     max-width: 30rem;
     min-width: 25vw;
+  }
+
+  .email-button {
+    min-width: 30rem;
   }
 
   .case-study-hero .button-top-case-study {
