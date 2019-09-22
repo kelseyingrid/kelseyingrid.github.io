@@ -1877,9 +1877,9 @@ hr {
  }
 
  .mobile-gif {
-   height: auto;
-   max-width: 300px;
+   min-height: 600px;
    padding-top: 3rem;
+   width: auto;
  }
 
  .scroll {
@@ -2676,9 +2676,10 @@ hr {
    }
 
    .mobile-gif {
-     height: 100%;
+     min-height: 600px;
      margin-bottom: 0;
      padding-top: 3rem;
+     width: auto;
    }
 
   .large-margin {
