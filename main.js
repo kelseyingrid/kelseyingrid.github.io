@@ -1,5 +1,5 @@
 const nav = document.querySelector(".process-steps-flex");
-const topOfNav = nav.offsetTop - 80;
+const topOfNav = nav.offsetTop - 87;
 const main = document.getElementById("main");
 
 function fixNav() {
