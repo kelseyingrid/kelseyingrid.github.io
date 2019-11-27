@@ -1360,6 +1360,10 @@ hr {
     font-size: 1.5rem;
   }
 
+  footer .small {
+    margin-top: 6rem;
+  }
+
 }
 
 
