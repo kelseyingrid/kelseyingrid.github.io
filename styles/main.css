@@ -789,8 +789,9 @@ h5 {
  }
 
 h6 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.4rem;
+  color: #3B3F41;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 141%;
   margin-bottom: .5rem;
@@ -1356,7 +1357,7 @@ hr {
   }
 
   .small {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
 }
@@ -2012,7 +2013,7 @@ hr {
   }
 
   h6 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   p {
@@ -2036,7 +2037,7 @@ hr {
   }
 
   .small {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .small-list {
