@@ -501,7 +501,7 @@ input[type=text], textarea, input[type=email] {
   border: 1.5px solid #D5EAEF;
   border-radius: 8px;
   box-shadow: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.6rem;
   margin-bottom: 3rem;
   padding: 1rem;
@@ -536,7 +536,7 @@ footer {
 
 .hero-text {
   color: #FAFAFA;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -549,7 +549,7 @@ blockquote {
   /* border-left: 1.75px solid #D5EAEF; */
   color: #730039;
   font-size: 1.9rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Avenir', sans-serif;
   line-height: 141%;
   margin-top: 1rem;
   /* padding-left: 1.5rem; */
@@ -572,7 +572,7 @@ h1 {
   text-align: center;
   background-color: #035668;
   color: #FAFAFA;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 2.6rem;
   line-height: 141%;
   margin-bottom: 2rem;
@@ -612,8 +612,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.3rem;
+  font-weight: 500;
   line-height: 141%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -626,13 +627,13 @@ h2 {
 
 .bio-section h2 {
   color: #035668;
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   text-transform: none;
 }
 
 h3 {
   color: #3B3F41;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 2.6rem;
   line-height: 120%;
   padding-bottom: 2rem;
@@ -669,7 +670,7 @@ h3 {
 
 h4 {
   color: #730039;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.9rem;
   line-height: 141%;
   padding-bottom: 1rem;
@@ -696,7 +697,7 @@ h4 {
 }
 
 .quote {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 141%;
@@ -724,9 +725,9 @@ footer .small {
 
 h5 {
   color: #3B3F41;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.8rem;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 141%;
   margin-bottom: 0.5rem;
   margin-top: 2rem;
@@ -790,7 +791,7 @@ h5 {
 
 h6 {
   color: #3B3F41;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
   line-height: 141%;
@@ -808,8 +809,8 @@ ul + h6 {
 
 p {
   color: #3B3F41;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Avenir', sans-serif;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 141%;
   margin-top: .5rem;
@@ -858,8 +859,8 @@ footer p {
 
 li {
   color: #3B3F41;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.6rem;
+  font-family: 'Avenir', sans-serif;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 141%;
   margin-bottom: 1rem;
@@ -875,7 +876,7 @@ header .header-logo {
 }
 
 .body-bullet {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 141%;
   list-style-image: none;
   list-style-position: inside;
@@ -885,7 +886,7 @@ header .header-logo {
 }
 
 ol {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 141%;
   list-style-image: none;
   list-style-position: inside;
@@ -917,7 +918,7 @@ button, .email-button {
   border-radius: 3rem;
   color: #F2F2F3;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.5rem;
   margin-bottom: 2rem;
   min-width: 90vw;
@@ -984,7 +985,7 @@ button:active, .email-button:active {
 a {
   color: #035668;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 1.3rem;
   font-weight: normal;
   text-decoration: none;
@@ -1920,7 +1921,7 @@ hr {
   }
 
   .body-bullet {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     text-indent: -3rem;
   }
 
@@ -2021,7 +2022,7 @@ hr {
   }
 
   p {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   footer .small {
@@ -2033,15 +2034,15 @@ hr {
   }
 
   li {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .body-bullet {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 
   .small {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
   }
 
   .small-list {
@@ -2383,6 +2384,10 @@ hr {
 
   .header-work:hover, .header-bio:hover, .header-contact:hover {
     color: #730039;
+  }
+
+  .header-work, .header-bio, .header-contact {
+    font-weight: 500;
   }
 
   .process-1, .process-2, .process-3, .process-4 {
