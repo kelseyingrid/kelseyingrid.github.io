@@ -174,10 +174,23 @@ video {
   width: 100%;
 }
 
+.page-in-back {
+  position: relative;
+  width: 50%;
+}
+
 .animation-on-top {
   position: absolute;
   max-width: 30%;
   margin-left: 72%;
+  margin-top: 12%;
+  z-index: 2;
+}
+
+.screen-on-top-laptop {
+  position: absolute;
+  max-width: 60%;
+  margin-left: 25%;
   margin-top: 12%;
   z-index: 2;
 }
@@ -581,6 +594,10 @@ h1 {
   padding-bottom: 2rem;
 }
 
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
 .work > h1 {
   margin-top: 0;
 }
@@ -611,10 +628,14 @@ h1 {
   text-align: left;
 }
 
+.align-left {
+  text-align: left;
+}
+
 h2 {
   font-family: 'Avenir', sans-serif;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 141%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -622,6 +643,10 @@ h2 {
 }
 
 .step-intro h2 {
+  color: #035668;
+}
+
+.step-intro-h2 {
   color: #035668;
 }
 
@@ -687,13 +712,18 @@ h4 {
 
 .project h4 {
   color: #05055E;
-  margin-bottom: 4rem;
+  margin-bottom: 0rem;
   padding-top: 0rem;
+}
+
+.project p {
+  padding-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .case-study-hero h4 {
   color: #05055E;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .quote {
@@ -1242,6 +1272,13 @@ a {
   padding-bottom: 0;
 }
 
+.grey-small-padding {
+  background-color: #FAFAFA;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
 .centered {
   text-align: center;
 }
@@ -1255,6 +1292,10 @@ hr {
   margin-right: auto;
   margin-bottom: 2rem;
   width: 20%;
+}
+
+.left {
+  margin-left: 0;
 }
 
 .content {
@@ -1319,6 +1360,14 @@ hr {
     flex-wrap: wrap;
     margin-left: 5vw;
     margin-right: 5vw;
+  }
+
+  .col-3-flex-no-margin {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .col-4-flex {
@@ -1996,7 +2045,7 @@ hr {
   }
 
   h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   h3 {
@@ -2018,7 +2067,7 @@ hr {
   }
 
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   p {
@@ -2081,7 +2130,19 @@ hr {
     margin-top: 3rem;
   }
 
+  .col-3-flex-no-margin {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
   .col-3-flex div {
+    flex-basis: 30%;
+  }
+
+  .col-3-flex-no-margin div {
     flex-basis: 30%;
   }
 
