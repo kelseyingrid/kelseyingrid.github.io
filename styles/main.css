@@ -2211,6 +2211,30 @@ hr {
     grid-area: list-3;
   }
 
+  .ads-grid {
+    grid-gap: 2.5rem;
+    grid-template-areas:
+      "ad-1 ad-2 ad-3";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    display: grid;
+  }
+
+  .ad-1 {
+    grid-area: ad-1;
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+  }
+
+  .ad-2 {
+    grid-area: ad-2;
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+  }
+
+  .ad-3 {
+    grid-area: ad-3;
+    box-shadow: -1px 4px 8px rgba(0,0,0,.2);
+  }
+
   .footer-blobs-desktop {
     width: 90%;
   }
@@ -2525,8 +2549,8 @@ hr {
   }
 
   .bio-section blockquote {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    /* margin-left: 20vw;
+    margin-right: 20vw; */
     /* padding-left: 1.5rem; */
   }
 
